@@ -1,4 +1,6 @@
 let sentences = [];
+let acertos = 0;
+let total = 0;
 
 const questionEl = document.getElementById("question");
 const optionsEl = document.getElementById("options");
@@ -71,6 +73,8 @@ submitBtn.onclick = () => {
     return;
   }
 
+  total++;
+
   questionEl.textContent = currentQuestion.sentence.replace("___", currentQuestion.correct);
 
   const buttons = document.querySelectorAll(".options button");
@@ -91,10 +95,13 @@ submitBtn.onclick = () => {
   if (selectedOption === currentQuestion.correct) {
     submitBtn.textContent = "✔️ Correto!";
     submitBtn.style.background = "#4CAF50"; // Verde
+    acertos++;
   } else {
     submitBtn.textContent = `❌ Errado!`;
     submitBtn.style.background = "#e74c3c"; // Vermelho
   }
+
+  document.getElementById("score").textContent = `Placar: ${acertos} / ${total}`;
 
   submitBtn.disabled = true;
   submitBtn.style.opacity = "1"; // Mantém a cor viva para o feedback
