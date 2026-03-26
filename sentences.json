@@ -30,7 +30,7 @@
   {"sentence":"Se sentó ___ la mesa.","options":["a","en","por"],"correct":"a"},
   {"sentence":"Está ___ la mesa.","options":["en","a","por"],"correct":"en"},
   {"sentence":"Se subió ___ autobús.","options":["al","en el","por el"],"correct":"al"},
-  {"sentence":"Está ___ el autobús.","options":["en","a","por"],"correct":"en"},
+  {"sentence":"Está ___ autobús.","options":["en el","al","por el"],"correct":"en el"},
 
   {"sentence":"Pensó ___ dejar el trabajo.","options":["en","a","de"],"correct":"en"},
   {"sentence":"Se negó ___ ayudar.","options":["a","en","de"],"correct":"a"},
@@ -81,9 +81,9 @@
   {"sentence":"Lo explicó ___ detalle.","options":["con","en","a"],"correct":"con"},
   {"sentence":"Lo resolvió ___ facilidad.","options":["con","en","a"],"correct":"con"},
   {"sentence":"Lo hizo ___ ayuda de nadie.","options":["sin","con","de"],"correct":"sin"},
-  {"sentence":"Lo hizo ___ intención.","options":["sin","con","de"],"correct":"sin"},
-  {"sentence":"Lo hizo ___ ganas.","options":["sin","con","de"],"correct":"con"},
-  {"sentence":"Lo hizo ___ cuidado.","options":["con","sin","de"],"correct":"con"},
+  {"sentence":"Lo hizo ___ ninguna intención.","options":["sin","con","de"],"correct":"sin"},
+  {"sentence":"Lo hizo ___ todas las ganas.","options":["sin","con","de"],"correct":"con"},
+  {"sentence":"Lo hizo ___ cuidado alguno.","options":["con","sin","de"],"correct":"sin"},
   {"sentence":"Lo hizo ___ prisa.","options":["con","en","a"],"correct":"con"},
   {"sentence":"Lo hizo ___ tiempo.","options":["a","en","por"],"correct":"a"},
 
