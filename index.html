@@ -2,23 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Spanish Prepositions Quiz</title>
+  <title>Spanish App</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home">
 
-  <div class="container">
-    <h1>🇪🇸 Prepositions Quiz</h1>
-    
-    <div id="score" style="margin-bottom: 15px; font-weight: bold; color: #555;">Placar: 0 / 0</div>
-    
-    <div id="question" class="question">Loading...</div>
-    
-    <div id="options" class="options"></div>
-    
-    <button id="nextBtn">Next Question</button>
+  <div class="home-container">
+
+    <div class="card" onclick="goToQuiz()">
+      <h2>🇪🇸 Preposiciones</h2>
+      <p>Fill the blanks quiz</p>
+    </div>
+
+    <div class="card" onclick="goToFlashcards()">
+    <h2>📚 Flashcards</h2>
+    <p>Portugués → Español</p>
   </div>
 
-  <script src="script.js"></script>
+  </div>
+
+  <script>
+    function goToQuiz() {
+      window.location.href = "quiz.html";
+    }
+    function goToFlashcards() {
+      window.location.href = "flashcards.html";
+    }
+  </script>
+
 </body>
 </html>
