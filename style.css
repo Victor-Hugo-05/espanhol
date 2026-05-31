@@ -200,6 +200,16 @@ body.home {
 
 
 /* ===== Flashcards ===== */
+.training-setup {
+  text-align: left;
+}
+
+.training-setup label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+}
+
 .card-flash {
   width: 320px;
   height: 180px;
@@ -252,6 +262,29 @@ input:focus {
   box-shadow: 0 0 0 3px rgba(102,126,234,0.2);
 }
 
+select {
+  width: 100%;
+  padding: 12px;
+
+  margin-top: 10px;
+  margin-bottom: 12px;
+
+  border-radius: 12px;
+  border: 1px solid #ddd;
+
+  font-size: 16px;
+
+  outline: none;
+  background: white;
+
+  transition: 0.2s;
+}
+
+select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102,126,234,0.2);
+}
+
 /* BOTÕES GERAIS */
 button {
   margin-top: 10px;
@@ -268,15 +301,20 @@ button {
   transition: all 0.2s ease;
 }
 
-/* CHECK BUTTON */
-.flashcards button:nth-of-type(1) {
+.flashcards .start-btn,
+.flashcards .check-btn {
   background: linear-gradient(135deg, #43cea2, #185a9d);
   color: white;
 }
 
-.flashcards button:nth-of-type(3) {
+.flashcards .next-btn {
   background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
+}
+
+.flashcards button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
 }
 
 /* FEEDBACK */
