@@ -36,6 +36,7 @@ const questions = [
 
 const state = {
   setupPlayer: 1,
+  currentPlayer: 1,
   secrets: { 1: null, 2: null },
   down: { 1: new Set(), 2: new Set() }
 };
@@ -50,10 +51,14 @@ const els = {
   privacyText: document.querySelector("#privacyText"),
   continueBtn: document.querySelector("#continueBtn"),
   gameScreen: document.querySelector("#gameScreen"),
+  turnTitle: document.querySelector("#turnTitle"),
+  passTurnBtn: document.querySelector("#passTurnBtn"),
   board1: document.querySelector("#board1"),
   board2: document.querySelector("#board2"),
+  player1Area: document.querySelector(".player-one"),
+  player2Area: document.querySelector(".player-two"),
   questionsList: document.querySelector("#questionsList"),
-  secretDialog: document.querySelector("#secretDialog"),
+  secretPeek: document.querySelector("#secretPeek"),
   secretContent: document.querySelector("#secretContent"),
   guessDialog: document.querySelector("#guessDialog"),
   guessPlayer: document.querySelector("#guessPlayer"),
@@ -101,9 +106,10 @@ function chooseSecret(index) {
     els.privacyText.textContent = "El personaje del Jugador 1 ya está oculto.";
     els.privacyScreen.classList.remove("hidden");
   } else {
+    state.currentPlayer = 1;
     els.setupScreen.classList.add("hidden");
     els.privacyTitle.textContent = "Empieza la partida";
-    els.privacyText.textContent = "Los dos personajes secretos están guardados. Usad las preguntas y bajad las cartas descartadas.";
+    els.privacyText.textContent = "Los dos personajes secretos están guardados. Empieza el Jugador 1.";
     els.privacyScreen.classList.remove("hidden");
   }
 }
@@ -122,7 +128,14 @@ function startGameOrNextSetup() {
 function renderGame() {
   renderBoard(1, els.board1);
   renderBoard(2, els.board2);
+  renderTurn();
   els.questionsList.innerHTML = questions.map((q) => `<p class="question">${q}</p>`).join("");
+}
+
+function renderTurn() {
+  els.turnTitle.textContent = `Jugador ${state.currentPlayer}`;
+  els.player1Area.classList.toggle("hidden", state.currentPlayer !== 1);
+  els.player2Area.classList.toggle("hidden", state.currentPlayer !== 2);
 }
 
 function renderBoard(player, target) {
@@ -142,17 +155,20 @@ function renderBoard(player, target) {
 }
 
 function showSecret(player) {
+  if (player !== state.currentPlayer) return;
   const secretIndex = state.secrets[player];
   els.secretContent.innerHTML = "";
   els.secretContent.append(card(characters[secretIndex]));
-  if (!els.secretDialog.open) els.secretDialog.showModal();
+  els.secretPeek.classList.remove("hidden");
 }
 
 function hideSecret() {
-  if (els.secretDialog.open) els.secretDialog.close();
+  els.secretPeek.classList.add("hidden");
+  els.secretContent.innerHTML = "";
 }
 
 function openGuess(player) {
+  if (player !== state.currentPlayer) return;
   els.guessPlayer.textContent = `Jugador ${player}`;
   els.guessOptions.innerHTML = "";
   characters.forEach((person, index) => {
@@ -177,6 +193,7 @@ function resolveGuess(player, index) {
 
 function resetGame() {
   state.setupPlayer = 1;
+  state.currentPlayer = 1;
   state.secrets = { 1: null, 2: null };
   state.down = { 1: new Set(), 2: new Set() };
   els.gameScreen.classList.add("hidden");
@@ -188,16 +205,33 @@ function resetGame() {
   renderSetup();
 }
 
+function passTurn() {
+  state.currentPlayer = state.currentPlayer === 1 ? 2 : 1;
+  els.gameScreen.classList.add("hidden");
+  els.privacyTitle.textContent = `Que mire el Jugador ${state.currentPlayer}`;
+  els.privacyText.textContent = "El tablero anterior está oculto. Cuando esté listo, continúa.";
+  els.privacyScreen.classList.remove("hidden");
+}
+
 document.querySelectorAll("[data-secret]").forEach((button) => {
   const player = Number(button.dataset.secret);
-  button.addEventListener("pointerdown", () => showSecret(player));
-  button.addEventListener("pointerleave", hideSecret);
+  button.addEventListener("pointerdown", (event) => {
+    event.preventDefault();
+    showSecret(player);
+  });
+  button.addEventListener("touchstart", (event) => {
+    event.preventDefault();
+    showSecret(player);
+  });
   button.addEventListener("keydown", (event) => {
     if (event.key === " " || event.key === "Enter") showSecret(player);
   });
 });
 
 document.addEventListener("pointerup", hideSecret);
+document.addEventListener("pointercancel", hideSecret);
+document.addEventListener("touchend", hideSecret);
+document.addEventListener("touchcancel", hideSecret);
 document.addEventListener("keyup", hideSecret);
 
 document.querySelectorAll("[data-guess]").forEach((button) => {
@@ -205,6 +239,7 @@ document.querySelectorAll("[data-guess]").forEach((button) => {
 });
 
 els.continueBtn.addEventListener("click", startGameOrNextSetup);
+els.passTurnBtn.addEventListener("click", passTurn);
 els.newGameBtn.addEventListener("click", resetGame);
 els.restartFromResult.addEventListener("click", resetGame);
 

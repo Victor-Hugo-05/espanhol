@@ -38,6 +38,14 @@
       </section>
 
       <section id="gameScreen" class="game-screen hidden">
+        <section class="turn-panel" aria-live="polite">
+          <div>
+            <p class="eyebrow">Turno actual</p>
+            <h2 id="turnTitle">Jugador 1</h2>
+          </div>
+          <button id="passTurnBtn" class="primary-button" type="button">Pasar turno</button>
+        </section>
+
         <aside class="question-bank" aria-label="Preguntas útiles">
           <div class="section-heading">
             <p class="eyebrow">Preguntas útiles</p>
@@ -54,7 +62,7 @@
                 <h2>Tu tablero</h2>
               </div>
               <div class="player-tools">
-                <button class="secret-button" type="button" data-secret="1">Mantén para ver secreto</button>
+                <button class="secret-button" type="button" data-secret="1">Mantén para ver tu secreto</button>
                 <button class="guess-button" type="button" data-guess="1">Adivinar</button>
               </div>
             </div>
@@ -68,7 +76,7 @@
                 <h2>Tu tablero</h2>
               </div>
               <div class="player-tools">
-                <button class="secret-button" type="button" data-secret="2">Mantén para ver secreto</button>
+                <button class="secret-button" type="button" data-secret="2">Mantén para ver tu secreto</button>
                 <button class="guess-button" type="button" data-guess="2">Adivinar</button>
               </div>
             </div>
@@ -78,9 +86,9 @@
       </section>
     </main>
 
-    <dialog id="secretDialog" class="secret-dialog">
-      <div id="secretContent"></div>
-    </dialog>
+    <div id="secretPeek" class="secret-peek hidden" aria-live="polite">
+      <div id="secretContent" class="secret-peek-content"></div>
+    </div>
 
     <dialog id="guessDialog" class="guess-dialog">
       <form method="dialog" class="guess-panel">
