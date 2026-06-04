@@ -9,15 +9,30 @@
 
   <div class="home-container">
 
-    <div class="card" onclick="goToQuiz()">
-      <h2>🇪🇸 Preposiciones</h2>
-      <p>Fill the blanks quiz</p>
-    </div>
+    <section class="home-section" aria-labelledby="studyTitle">
+      <h1 id="studyTitle">Español</h1>
+      <div class="home-grid">
+        <div class="card" onclick="goToQuiz()" role="button" tabindex="0" data-icon="🇪🇸">
+          <h2>Preposiciones</h2>
+          <p>Fill the blanks quiz</p>
+        </div>
 
-    <div class="card" onclick="goToFlashcards()">
-    <h2>📚 Flashcards</h2>
-    <p>Portugués → Español</p>
-  </div>
+        <div class="card" onclick="goToFlashcards()" role="button" tabindex="0" data-icon="📚">
+          <h2>Flashcards</h2>
+          <p>Portugués → Español</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-section" aria-labelledby="gamesTitle">
+      <h2 id="gamesTitle" class="section-title">Juegos</h2>
+      <div class="home-grid">
+        <div class="card" onclick="goToQuienEsQuien()" role="button" tabindex="0" data-icon="🎲">
+          <h2>Quien es quien</h2>
+          <p>Juego para dos jugadores</p>
+        </div>
+      </div>
+    </section>
 
   </div>
 
@@ -27,6 +42,9 @@
     }
     function goToFlashcards() {
       window.location.href = "flashcards.html";
+    }
+    function goToQuienEsQuien() {
+      window.location.href = "juegos/quien-es-quien/index.html";
     }
   </script>
 

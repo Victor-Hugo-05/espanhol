@@ -104,11 +104,14 @@ h1 {
 
 body.home {
   background: radial-gradient(circle at top, #7f7fd5, #86a8e7, #91eae4);
+  min-height: 100vh;
+  height: auto;
 }
 
 /* centralização */
 .home-container {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 48px 20px;
 
   display: flex;
   flex-direction: column; /* 👈 ESSENCIAL */
@@ -116,7 +119,26 @@ body.home {
   justify-content: center;
   align-items: center;
 
-  gap: 20px; /* espaço entre os cards */
+  gap: 34px; /* espaço entre os cards */
+}
+
+.home-section {
+  width: min(900px, 100%);
+  text-align: center;
+}
+
+.home-section h1,
+.section-title {
+  margin: 0 0 18px;
+  color: white;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.22);
+}
+
+.home-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 /* CARD PRINCIPAL */
@@ -191,7 +213,7 @@ body.home {
 
 /* ícone estilo “app” */
 .card::after {
-  content: "📘";
+  content: attr(data-icon);
   font-size: 40px;
   position: absolute;
   top: 20px;

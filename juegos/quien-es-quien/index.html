@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quien es quien</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Juego para dos en la misma pantalla</p>
+          <h1>Quien es quien</h1>
+        </div>
+        <div class="top-actions">
+          <button id="newGameBtn" class="icon-button" type="button" title="Nueva partida" aria-label="Nueva partida">
+            <span aria-hidden="true">↻</span>
+          </button>
+        </div>
+      </header>
+
+      <section id="setupScreen" class="setup-screen">
+        <div class="setup-copy">
+          <h2 id="setupTitle">Jugador 1: elige tu personaje secreto</h2>
+          <p id="setupHint">El otro jugador debe mirar hacia otro lado. Cuando elijas, la pantalla se cubrirá antes del turno del Jugador 2.</p>
+        </div>
+        <div id="setupGrid" class="choice-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="privacyScreen" class="privacy-screen hidden" aria-live="polite">
+        <div class="privacy-panel">
+          <p class="eyebrow">Cambio privado</p>
+          <h2 id="privacyTitle">Que mire el Jugador 2</h2>
+          <p id="privacyText">La elección anterior está oculta. Cuando esté listo, continúa.</p>
+          <button id="continueBtn" class="primary-button" type="button">Continuar</button>
+        </div>
+      </section>
+
+      <section id="gameScreen" class="game-screen hidden">
+        <aside class="question-bank" aria-label="Preguntas útiles">
+          <div class="section-heading">
+            <p class="eyebrow">Preguntas útiles</p>
+            <h2>Pregunta en voz alta</h2>
+          </div>
+          <div id="questionsList" class="question-list"></div>
+        </aside>
+
+        <section class="boards" aria-label="Tableros de juego">
+          <article class="player-area player-one">
+            <div class="player-heading">
+              <div>
+                <p class="eyebrow">Jugador 1</p>
+                <h2>Tu tablero</h2>
+              </div>
+              <div class="player-tools">
+                <button class="secret-button" type="button" data-secret="1">Mantén para ver secreto</button>
+                <button class="guess-button" type="button" data-guess="1">Adivinar</button>
+              </div>
+            </div>
+            <div id="board1" class="board"></div>
+          </article>
+
+          <article class="player-area player-two">
+            <div class="player-heading">
+              <div>
+                <p class="eyebrow">Jugador 2</p>
+                <h2>Tu tablero</h2>
+              </div>
+              <div class="player-tools">
+                <button class="secret-button" type="button" data-secret="2">Mantén para ver secreto</button>
+                <button class="guess-button" type="button" data-guess="2">Adivinar</button>
+              </div>
+            </div>
+            <div id="board2" class="board"></div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <dialog id="secretDialog" class="secret-dialog">
+      <div id="secretContent"></div>
+    </dialog>
+
+    <dialog id="guessDialog" class="guess-dialog">
+      <form method="dialog" class="guess-panel">
+        <div>
+          <p id="guessPlayer" class="eyebrow">Jugador</p>
+          <h2>¿Quién es el personaje secreto?</h2>
+        </div>
+        <div id="guessOptions" class="guess-options"></div>
+        <menu class="dialog-actions">
+          <button value="cancel" type="submit">Cancelar</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <dialog id="resultDialog" class="result-dialog">
+      <form method="dialog" class="result-panel">
+        <p id="resultEyebrow" class="eyebrow">Resultado</p>
+        <h2 id="resultTitle">¡Correcto!</h2>
+        <p id="resultText"></p>
+        <menu class="dialog-actions">
+          <button value="close" type="submit">Seguir jugando</button>
+          <button id="restartFromResult" class="primary-button" value="restart" type="button">Nueva partida</button>
+        </menu>
+      </form>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
