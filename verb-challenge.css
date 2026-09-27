@@ -1,0 +1,85 @@
+body.verb-challenge {
+  min-height: 100vh;
+  height: auto;
+  padding: 30px 0;
+}
+
+.verb-container {
+  width: min(520px, calc(100% - 40px));
+}
+
+.verb-setup {
+  text-align: left;
+}
+
+.verb-setup label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 700;
+  color: #333;
+}
+
+#startVerbBtn,
+#checkVerbBtn {
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+}
+
+#nextVerbBtn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.verb-topbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  color: #555;
+  font-weight: 700;
+}
+
+.verb-question-card {
+  background: #f8f9ff;
+  border-radius: 18px;
+  padding: 22px;
+  margin-bottom: 16px;
+  box-shadow: inset 0 0 0 1px rgba(102, 126, 234, 0.12);
+}
+
+.verb-english {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.verb-portuguese {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #222;
+}
+
+.verb-hint {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #eceefe;
+  color: #5965c7;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.verb-feedback {
+  min-height: 24px;
+  margin-top: 14px;
+  font-weight: 700;
+}
+
+.verb-feedback.success {
+  color: #2e8b57;
+}
+
+.verb-feedback.error {
+  color: #d64545;
+}
