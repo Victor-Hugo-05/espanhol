@@ -2,21 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Spanish App</title>
+  <title>Language Practice</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="home">
-
   <div class="home-container">
-
-    <section class="home-section" aria-labelledby="studyTitle">
-      <h1 id="studyTitle">Español</h1>
+    <section class="home-section" aria-labelledby="spanishTitle">
+      <h1 id="spanishTitle">🇪🇸 Español</h1>
       <div class="home-grid">
-        <div class="card" onclick="goToQuiz()" role="button" tabindex="0" data-icon="🇪🇸">
+        <div class="card" onclick="goToQuiz()" role="button" tabindex="0" data-icon="🧩">
           <h2>Preposiciones</h2>
           <p>Fill the blanks quiz</p>
         </div>
-
         <div class="card" onclick="goToFlashcards()" role="button" tabindex="0" data-icon="📚">
           <h2>Flashcards</h2>
           <p>Portugués → Español</p>
@@ -24,8 +21,18 @@
       </div>
     </section>
 
+    <section class="home-section portuguese-section" aria-labelledby="portugueseTitle">
+      <h1 id="portugueseTitle">🇧🇷 Português</h1>
+      <div class="home-grid">
+        <div class="card" onclick="goToVerbChallenge()" role="button" tabindex="0" data-icon="⚡">
+          <h2>Verb Challenge</h2>
+          <p>Practice Portuguese verbs</p>
+        </div>
+      </div>
+    </section>
+
     <section class="home-section" aria-labelledby="gamesTitle">
-      <h2 id="gamesTitle" class="section-title">Juegos</h2>
+      <h2 id="gamesTitle" class="section-title">🎲 Juegos</h2>
       <div class="home-grid">
         <div class="card" onclick="goToQuienEsQuien()" role="button" tabindex="0" data-icon="🎲">
           <h2>Quien es quien</h2>
@@ -33,20 +40,13 @@
         </div>
       </div>
     </section>
-
   </div>
 
   <script>
-    function goToQuiz() {
-      window.location.href = "quiz.html";
-    }
-    function goToFlashcards() {
-      window.location.href = "flashcards.html";
-    }
-    function goToQuienEsQuien() {
-      window.location.href = "juegos/quien-es-quien/index.html";
-    }
+    function goToQuiz() { window.location.href = "quiz.html"; }
+    function goToFlashcards() { window.location.href = "flashcards.html"; }
+    function goToVerbChallenge() { window.location.href = "verb-challenge.html"; }
+    function goToQuienEsQuien() { window.location.href = "juegos/quien-es-quien/index.html"; }
   </script>
-
 </body>
 </html>
