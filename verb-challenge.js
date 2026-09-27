@@ -1,0 +1,113 @@
+let questions = [];
+let queue = [];
+let current = null;
+let asked = 0;
+let correctCount = 0;
+let targetCount = 20;
+
+const setup = document.getElementById("setup");
+const game = document.getElementById("game");
+const categorySelect = document.getElementById("categorySelect");
+const questionCount = document.getElementById("questionCount");
+const startBtn = document.getElementById("startVerbBtn");
+const progress = document.getElementById("verbProgress");
+const score = document.getElementById("verbScore");
+const english = document.getElementById("englishSentence");
+const portuguese = document.getElementById("portugueseSentence");
+const hint = document.getElementById("verbHint");
+const input = document.getElementById("verbAnswer");
+const checkBtn = document.getElementById("checkVerbBtn");
+const feedback = document.getElementById("verbFeedback");
+const nextBtn = document.getElementById("nextVerbBtn");
+
+fetch("verbs.json")
+  .then(res => res.json())
+  .then(data => { questions = data; })
+  .catch(() => { feedback.textContent = "Could not load the exercises."; });
+
+function shuffle(items) {
+  const arr = [...items];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
+function normalize(text) {
+  return text.trim().toLowerCase();
+}
+
+function startGame() {
+  const category = categorySelect.value;
+  const pool = category === "all" ? questions : questions.filter(q => q.category === category);
+  if (!pool.length) return;
+
+  targetCount = Math.min(Math.max(Number(questionCount.value) || 20, 1), pool.length);
+  queue = shuffle(pool).slice(0, targetCount);
+  asked = 0;
+  correctCount = 0;
+  setup.style.display = "none";
+  game.style.display = "block";
+  showQuestion();
+}
+
+function showQuestion() {
+  if (asked >= targetCount) {
+    english.textContent = "Challenge complete!";
+    portuguese.textContent = `You got ${correctCount} of ${targetCount} correct.`;
+    hint.textContent = "";
+    input.style.display = "none";
+    checkBtn.style.display = "none";
+    nextBtn.style.display = "none";
+    feedback.textContent = "";
+    return;
+  }
+
+  current = queue.shift();
+  asked++;
+  progress.textContent = `${asked} / ${targetCount}`;
+  score.textContent = `Score: ${correctCount}`;
+  english.textContent = current.english;
+  portuguese.textContent = current.sentence;
+  hint.textContent = current.verb.toUpperCase();
+  input.value = "";
+  input.disabled = false;
+  input.style.display = "block";
+  checkBtn.disabled = false;
+  checkBtn.style.display = "block";
+  feedback.textContent = "";
+  nextBtn.style.display = "none";
+  input.focus();
+}
+
+function checkAnswer() {
+  if (!current || !input.value.trim()) return;
+
+  const isCorrect = normalize(input.value) === normalize(current.correct);
+  input.disabled = true;
+  checkBtn.disabled = true;
+
+  if (isCorrect) {
+    correctCount++;
+    feedback.textContent = `✅ Correct! ${current.sentence.replace("___", current.correct)}`;
+    feedback.className = "verb-feedback success";
+  } else {
+    feedback.textContent = `❌ Incorrect. Correct answer: ${current.correct}`;
+    feedback.className = "verb-feedback error";
+  }
+
+  score.textContent = `Score: ${correctCount}`;
+  nextBtn.style.display = "block";
+}
+
+startBtn.addEventListener("click", startGame);
+checkBtn.addEventListener("click", checkAnswer);
+nextBtn.addEventListener("click", showQuestion);
+
+document.addEventListener("keydown", e => {
+  if (e.key !== "Enter") return;
+  if (game.style.display === "none") startGame();
+  else if (nextBtn.style.display !== "none") showQuestion();
+  else checkAnswer();
+});
