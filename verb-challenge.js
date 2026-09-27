@@ -20,10 +20,22 @@ const checkBtn = document.getElementById("checkVerbBtn");
 const feedback = document.getElementById("verbFeedback");
 const nextBtn = document.getElementById("nextVerbBtn");
 
-fetch("verbs.json")
-  .then(res => res.json())
-  .then(data => { questions = data; })
-  .catch(() => { feedback.textContent = "Could not load the exercises."; });
+const files = [
+  "verbs-present.json",
+  "verbs-preterite.json",
+  "verbs-gerund.json",
+  "verbs-participle.json",
+  "verbs-pronominal.json"
+];
+
+Promise.all(files.map(file => fetch(file).then(res => res.json())))
+  .then(groups => {
+    questions = groups.flat();
+    startBtn.disabled = false;
+  })
+  .catch(() => {
+    feedback.textContent = "Could not load the exercises.";
+  });
 
 function shuffle(items) {
   const arr = [...items];
@@ -49,6 +61,8 @@ function startGame() {
   correctCount = 0;
   setup.style.display = "none";
   game.style.display = "block";
+  input.style.display = "block";
+  checkBtn.style.display = "block";
   showQuestion();
 }
 
@@ -73,10 +87,9 @@ function showQuestion() {
   hint.textContent = current.verb.toUpperCase();
   input.value = "";
   input.disabled = false;
-  input.style.display = "block";
   checkBtn.disabled = false;
-  checkBtn.style.display = "block";
   feedback.textContent = "";
+  feedback.className = "verb-feedback";
   nextBtn.style.display = "none";
   input.focus();
 }
@@ -101,6 +114,7 @@ function checkAnswer() {
   nextBtn.style.display = "block";
 }
 
+startBtn.disabled = true;
 startBtn.addEventListener("click", startGame);
 checkBtn.addEventListener("click", checkAnswer);
 nextBtn.addEventListener("click", showQuestion);
