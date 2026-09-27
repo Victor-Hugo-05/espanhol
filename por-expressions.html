@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portuguese Expressions with Por</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="por-expressions.css">
+</head>
+<body class="por-challenge">
+  <div class="container por-container">
+    <a class="back-link" href="index.html">← Back</a>
+    <h1>🇧🇷 Expressões com “por”</h1>
+    <p class="intro">Choose the expression that best completes each sentence.</p>
+
+    <div id="setup" class="por-setup">
+      <label for="questionCount">Number of questions</label>
+      <input id="questionCount" type="number" min="5" max="100" value="20">
+      <button id="startPorBtn">Start challenge</button>
+    </div>
+
+    <div id="game" class="por-game" style="display:none;">
+      <div class="por-topbar">
+        <span id="porProgress">1 / 20</span>
+        <span id="porScore">Score: 0</span>
+      </div>
+
+      <div class="por-question-card">
+        <div id="porQuestion" class="por-question"></div>
+      </div>
+
+      <div id="porOptions" class="options por-options"></div>
+      <div id="porFeedback" class="por-feedback"></div>
+      <button id="nextPorBtn" style="display:none;">➡ Next</button>
+    </div>
+
+    <div id="result" class="por-result" style="display:none;"></div>
+  </div>
+
+  <script src="por-expressions.js"></script>
+</body>
+</html>
