@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portuguese Verb Challenge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="verb-challenge">
+  <div class="container verb-container">
+    <h1>🇧🇷 Verb Challenge</h1>
+
+    <div id="setup" class="verb-setup">
+      <label for="categorySelect">What do you want to practice?</label>
+      <select id="categorySelect">
+        <option value="all">All categories</option>
+        <option value="present">Present</option>
+        <option value="preterite">Pretérito perfeito</option>
+        <option value="gerund">Gerund</option>
+        <option value="participle">Past participle</option>
+        <option value="pronominal">Reflexive / pronominal verbs</option>
+      </select>
+
+      <label for="questionCount">Number of questions</label>
+      <input id="questionCount" type="number" min="1" max="50" value="20">
+
+      <button id="startVerbBtn">Start challenge</button>
+    </div>
+
+    <div id="game" class="verb-game" style="display:none;">
+      <div class="verb-topbar">
+        <span id="verbProgress">1 / 20</span>
+        <span id="verbScore">Score: 0</span>
+      </div>
+
+      <div class="verb-question-card">
+        <div id="englishSentence" class="verb-english"></div>
+        <div id="portugueseSentence" class="verb-portuguese"></div>
+        <div id="verbHint" class="verb-hint"></div>
+      </div>
+
+      <input id="verbAnswer" type="text" placeholder="Type the Portuguese form..." autocomplete="off">
+      <button id="checkVerbBtn">✔ Check</button>
+      <div id="verbFeedback" class="verb-feedback"></div>
+      <button id="nextVerbBtn" style="display:none;">➡ Next</button>
+    </div>
+  </div>
+
+  <script src="verb-challenge.js"></script>
+</body>
+</html>
