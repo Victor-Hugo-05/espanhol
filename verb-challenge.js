@@ -4,6 +4,7 @@ let current = null;
 let asked = 0;
 let correctCount = 0;
 let targetCount = 20;
+let showVerbHint = true;
 
 const setup = document.getElementById("setup");
 const game = document.getElementById("game");
@@ -19,13 +20,20 @@ const input = document.getElementById("verbAnswer");
 const checkBtn = document.getElementById("checkVerbBtn");
 const feedback = document.getElementById("verbFeedback");
 const nextBtn = document.getElementById("nextVerbBtn");
+const visibilityBtn = document.getElementById("verbVisibilityBtn");
 
 const files = [
   "verbs-present.json",
+  "verbs-present-extra.json",
   "verbs-preterite.json",
+  "verbs-preterite-extra.json",
   "verbs-gerund.json",
+  "verbs-gerund-extra.json",
   "verbs-participle.json",
-  "verbs-pronominal.json"
+  "verbs-participle-extra.json",
+  "verbs-pronominal.json",
+  "verbs-pronominal-extra.json",
+  "verbs-future-preterite.json"
 ];
 
 Promise.all(files.map(file => fetch(file).then(res => res.json())))
@@ -48,6 +56,13 @@ function shuffle(items) {
 
 function normalize(text) {
   return text.trim().toLowerCase();
+}
+
+function updateVerbHintVisibility() {
+  hint.style.display = showVerbHint ? "block" : "none";
+  visibilityBtn.textContent = showVerbHint
+    ? "Ocultar verbo em português"
+    : "Mostrar verbo em português";
 }
 
 function startGame() {
@@ -85,6 +100,7 @@ function showQuestion() {
   english.textContent = current.english;
   portuguese.textContent = current.sentence;
   hint.textContent = current.verb.toUpperCase();
+  updateVerbHintVisibility();
   input.value = "";
   input.disabled = false;
   checkBtn.disabled = false;
@@ -118,6 +134,12 @@ startBtn.disabled = true;
 startBtn.addEventListener("click", startGame);
 checkBtn.addEventListener("click", checkAnswer);
 nextBtn.addEventListener("click", showQuestion);
+visibilityBtn.addEventListener("click", () => {
+  showVerbHint = !showVerbHint;
+  updateVerbHintVisibility();
+});
+
+updateVerbHintVisibility();
 
 document.addEventListener("keydown", e => {
   if (e.key !== "Enter") return;
