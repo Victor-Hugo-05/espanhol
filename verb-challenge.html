@@ -24,10 +24,11 @@
         <option value="pronominal">Verbos reflexivos / pronominais</option>
         <option value="future_preterite">Futuro do pretérito</option>
         <option value="imperfect_subjunctive">Pretérito imperfeito do subjuntivo</option>
+        <option value="conditional">PIS + Futuro do pretérito</option>
       </select>
 
       <label for="questionCount">Number of questions</label>
-      <input id="questionCount" type="number" min="1" max="700" value="20">
+      <input id="questionCount" type="number" min="1" max="800" value="20">
 
       <button id="startVerbBtn">Start challenge</button>
     </div>
@@ -45,6 +46,7 @@
       </div>
 
       <input id="verbAnswer" type="text" placeholder="Type the Portuguese form..." autocomplete="off">
+      <input id="verbAnswer2" type="text" placeholder="Type the second Portuguese form..." autocomplete="off" style="display:none;">
       <button id="checkVerbBtn">✔ Check</button>
       <div id="verbFeedback" class="verb-feedback"></div>
       <button id="nextVerbBtn" style="display:none;">➡ Next</button>
