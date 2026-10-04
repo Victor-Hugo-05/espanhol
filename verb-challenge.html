@@ -11,19 +11,22 @@
   <div class="container verb-container">
     <h1>🇧🇷 Verb Challenge</h1>
 
+    <button id="verbVisibilityBtn" type="button">Ocultar verbo em português</button>
+
     <div id="setup" class="verb-setup">
       <label for="categorySelect">What do you want to practice?</label>
       <select id="categorySelect">
-        <option value="all">All categories</option>
-        <option value="present">Present</option>
+        <option value="all">Todas as categorias</option>
+        <option value="present">Presente</option>
         <option value="preterite">Pretérito perfeito</option>
-        <option value="gerund">Gerund</option>
-        <option value="participle">Past participle</option>
-        <option value="pronominal">Reflexive / pronominal verbs</option>
+        <option value="gerund">Gerúndio</option>
+        <option value="participle">Particípio passado</option>
+        <option value="pronominal">Verbos reflexivos / pronominais</option>
+        <option value="future_preterite">Futuro do pretérito</option>
       </select>
 
       <label for="questionCount">Number of questions</label>
-      <input id="questionCount" type="number" min="1" max="50" value="20">
+      <input id="questionCount" type="number" min="1" max="600" value="20">
 
       <button id="startVerbBtn">Start challenge</button>
     </div>
