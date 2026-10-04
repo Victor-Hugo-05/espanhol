@@ -23,6 +23,13 @@ const feedback = document.getElementById("verbFeedback");
 const nextBtn = document.getElementById("nextVerbBtn");
 const visibilityBtn = document.getElementById("verbVisibilityBtn");
 
+const loadStatus = document.createElement("div");
+loadStatus.id = "verbLoadStatus";
+loadStatus.style.marginTop = "10px";
+loadStatus.style.fontWeight = "700";
+loadStatus.style.fontSize = "14px";
+startBtn.insertAdjacentElement("afterend", loadStatus);
+
 const files = [
   "verbs-present.json",
   "verbs-present-extra.json",
@@ -39,14 +46,63 @@ const files = [
   "verbs-conditional.json"
 ];
 
-Promise.all(files.map(file => fetch(file).then(res => res.json())))
-  .then(groups => {
-    questions = groups.flat();
-    startBtn.disabled = false;
-  })
-  .catch(() => {
-    feedback.textContent = "Could not load the exercises.";
+async function loadExercises() {
+  startBtn.disabled = true;
+  loadStatus.textContent = "Carregando exercícios...";
+  loadStatus.style.color = "#666";
+
+  const results = await Promise.allSettled(
+    files.map(async file => {
+      const response = await fetch(file, { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error(`${file}: HTTP ${response.status} ${response.statusText}`);
+      }
+
+      let data;
+      try {
+        data = await response.json();
+      } catch (error) {
+        throw new Error(`${file}: JSON inválido (${error.message})`);
+      }
+
+      if (!Array.isArray(data)) {
+        throw new Error(`${file}: o conteúdo não é uma lista de exercícios`);
+      }
+
+      return { file, data };
+    })
+  );
+
+  const loadedGroups = [];
+  const failedFiles = [];
+
+  results.forEach((result, index) => {
+    if (result.status === "fulfilled") {
+      loadedGroups.push(result.value.data);
+      console.info(`✅ Carregado: ${result.value.file} (${result.value.data.length} exercícios)`);
+    } else {
+      const file = files[index];
+      failedFiles.push(file);
+      console.error(`❌ Falha ao carregar ${file}:`, result.reason);
+    }
   });
+
+  questions = loadedGroups.flat();
+
+  if (questions.length > 0) {
+    startBtn.disabled = false;
+
+    if (failedFiles.length === 0) {
+      loadStatus.textContent = "";
+    } else {
+      loadStatus.textContent = `⚠️ Alguns exercícios não carregaram: ${failedFiles.join(", ")}`;
+      loadStatus.style.color = "#b36b00";
+    }
+  } else {
+    loadStatus.textContent = "❌ Nenhum exercício pôde ser carregado. Abra o Console para ver os detalhes.";
+    loadStatus.style.color = "#d64545";
+  }
+}
 
 function shuffle(items) {
   const arr = [...items];
@@ -83,8 +139,15 @@ function updateVerbHintVisibility() {
 function startGame() {
   const category = categorySelect.value;
   const pool = category === "all" ? questions : questions.filter(q => q.category === category);
-  if (!pool.length) return;
 
+  if (!pool.length) {
+    loadStatus.textContent = `❌ Não há exercícios disponíveis para a categoria selecionada (${category}).`;
+    loadStatus.style.color = "#d64545";
+    console.error(`Nenhum exercício disponível para a categoria: ${category}`);
+    return;
+  }
+
+  loadStatus.textContent = "";
   targetCount = Math.min(Math.max(Number(questionCount.value) || 20, 1), pool.length);
   queue = shuffle(pool).slice(0, targetCount);
   asked = 0;
@@ -178,7 +241,6 @@ function checkAnswer() {
   nextBtn.style.display = "block";
 }
 
-startBtn.disabled = true;
 startBtn.addEventListener("click", startGame);
 checkBtn.addEventListener("click", checkAnswer);
 nextBtn.addEventListener("click", showQuestion);
@@ -188,12 +250,13 @@ visibilityBtn.addEventListener("click", () => {
 });
 
 updateVerbHintVisibility();
+loadExercises();
 
 document.addEventListener("keydown", e => {
   if (e.key !== "Enter") return;
 
   if (game.style.display === "none") {
-    startGame();
+    if (!startBtn.disabled) startGame();
     return;
   }
 
