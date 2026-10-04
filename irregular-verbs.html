@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verbos Irregulares — Português</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="verb-challenge.css">
+</head>
+<body class="verb-challenge">
+  <div class="container verb-container">
+    <h1>🧠 Verbos Irregulares</h1>
+
+    <button id="verbVisibilityBtn" type="button">Ocultar verbo em português</button>
+
+    <div id="setup" class="verb-setup">
+      <label for="tenseSelect">O que você quer praticar?</label>
+      <select id="tenseSelect">
+        <option value="all">Todos os tempos</option>
+        <option value="presente">Presente do indicativo</option>
+        <option value="preterito_perfeito">Pretérito perfeito</option>
+        <option value="imperfeito_subjuntivo">Pretérito imperfeito do subjuntivo</option>
+        <option value="futuro_subjuntivo">Futuro do subjuntivo</option>
+        <option value="futuro_presente">Futuro do presente</option>
+        <option value="futuro_preterito">Futuro do pretérito</option>
+      </select>
+
+      <label for="questionCount">Número de perguntas</label>
+      <input id="questionCount" type="number" min="1" max="150" value="20">
+
+      <button id="startVerbBtn" type="button">Começar</button>
+    </div>
+
+    <div id="game" class="verb-game" style="display:none;">
+      <div class="verb-topbar">
+        <span id="verbProgress">1 / 20</span>
+        <span id="verbScore">Score: 0</span>
+      </div>
+
+      <div class="verb-question-card">
+        <div id="englishSentence" class="verb-english"></div>
+        <div id="portugueseSentence" class="verb-portuguese"></div>
+        <div id="tenseHint" class="verb-english" style="margin-top:14px; margin-bottom:0; font-weight:700;"></div>
+        <div id="verbHint" class="verb-hint"></div>
+      </div>
+
+      <input id="verbAnswer" type="text" placeholder="Digite a forma em português..." autocomplete="off">
+      <button id="checkVerbBtn" type="button">✔ Verificar</button>
+      <div id="verbFeedback" class="verb-feedback"></div>
+      <button id="nextVerbBtn" type="button" style="display:none;">➡ Próxima</button>
+    </div>
+  </div>
+
+  <script src="irregular-verbs.js?v=20261004-1"></script>
+</body>
+</html>
