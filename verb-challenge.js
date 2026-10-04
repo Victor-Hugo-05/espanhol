@@ -17,6 +17,7 @@ const english = document.getElementById("englishSentence");
 const portuguese = document.getElementById("portugueseSentence");
 const hint = document.getElementById("verbHint");
 const input = document.getElementById("verbAnswer");
+const input2 = document.getElementById("verbAnswer2");
 const checkBtn = document.getElementById("checkVerbBtn");
 const feedback = document.getElementById("verbFeedback");
 const nextBtn = document.getElementById("nextVerbBtn");
@@ -34,7 +35,8 @@ const files = [
   "verbs-pronominal.json",
   "verbs-pronominal-extra.json",
   "verbs-future-preterite.json",
-  "verbs-imperfect-subjunctive.json"
+  "verbs-imperfect-subjunctive.json",
+  "verbs-conditional.json"
 ];
 
 Promise.all(files.map(file => fetch(file).then(res => res.json())))
@@ -57,6 +59,18 @@ function shuffle(items) {
 
 function normalize(text) {
   return text.trim().toLowerCase();
+}
+
+function isDoubleVerbQuestion(question) {
+  return Array.isArray(question.correct);
+}
+
+function fillSentence(sentence, answers) {
+  let result = sentence;
+  answers.forEach(answer => {
+    result = result.replace("___", answer);
+  });
+  return result;
 }
 
 function updateVerbHintVisibility() {
@@ -88,6 +102,7 @@ function showQuestion() {
     portuguese.textContent = `You got ${correctCount} of ${targetCount} correct.`;
     hint.textContent = "";
     input.style.display = "none";
+    input2.style.display = "none";
     checkBtn.style.display = "none";
     nextBtn.style.display = "none";
     feedback.textContent = "";
@@ -100,10 +115,25 @@ function showQuestion() {
   score.textContent = `Score: ${correctCount}`;
   english.textContent = current.english;
   portuguese.textContent = current.sentence;
-  hint.textContent = current.verb.toUpperCase();
+
+  const doubleQuestion = isDoubleVerbQuestion(current);
+  hint.textContent = doubleQuestion
+    ? current.verbs.map(verb => verb.toUpperCase()).join(" + ")
+    : current.verb.toUpperCase();
+
   updateVerbHintVisibility();
+
   input.value = "";
   input.disabled = false;
+  input.placeholder = doubleQuestion
+    ? "1º verbo: pretérito imperfeito do subjuntivo"
+    : "Type the Portuguese form...";
+
+  input2.value = "";
+  input2.disabled = false;
+  input2.style.display = doubleQuestion ? "block" : "none";
+  input2.placeholder = "2º verbo: futuro do pretérito";
+
   checkBtn.disabled = false;
   feedback.textContent = "";
   feedback.className = "verb-feedback";
@@ -114,14 +144,31 @@ function showQuestion() {
 function checkAnswer() {
   if (!current || !input.value.trim()) return;
 
-  const isCorrect = normalize(input.value) === normalize(current.correct);
+  const doubleQuestion = isDoubleVerbQuestion(current);
+  if (doubleQuestion && !input2.value.trim()) return;
+
+  const userAnswers = doubleQuestion
+    ? [input.value, input2.value]
+    : [input.value];
+  const correctAnswers = doubleQuestion
+    ? current.correct
+    : [current.correct];
+
+  const isCorrect = userAnswers.every((answer, index) =>
+    normalize(answer) === normalize(correctAnswers[index])
+  );
+
   input.disabled = true;
+  input2.disabled = true;
   checkBtn.disabled = true;
 
   if (isCorrect) {
     correctCount++;
-    feedback.textContent = `✅ Correct! ${current.sentence.replace("___", current.correct)}`;
+    feedback.textContent = `✅ Correct! ${fillSentence(current.sentence, correctAnswers)}`;
     feedback.className = "verb-feedback success";
+  } else if (doubleQuestion) {
+    feedback.textContent = `❌ Incorrect. Correct answers: ${correctAnswers[0]} / ${correctAnswers[1]}`;
+    feedback.className = "verb-feedback error";
   } else {
     feedback.textContent = `❌ Incorrect. Correct answer: ${current.correct}`;
     feedback.className = "verb-feedback error";
@@ -144,7 +191,21 @@ updateVerbHintVisibility();
 
 document.addEventListener("keydown", e => {
   if (e.key !== "Enter") return;
-  if (game.style.display === "none") startGame();
-  else if (nextBtn.style.display !== "none") showQuestion();
-  else checkAnswer();
+
+  if (game.style.display === "none") {
+    startGame();
+    return;
+  }
+
+  if (nextBtn.style.display !== "none") {
+    showQuestion();
+    return;
+  }
+
+  if (current && isDoubleVerbQuestion(current) && document.activeElement === input && !input2.value.trim()) {
+    input2.focus();
+    return;
+  }
+
+  checkAnswer();
 });
