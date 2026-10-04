@@ -33,7 +33,8 @@ const files = [
   "verbs-participle-extra.json",
   "verbs-pronominal.json",
   "verbs-pronominal-extra.json",
-  "verbs-future-preterite.json"
+  "verbs-future-preterite.json",
+  "verbs-imperfect-subjunctive.json"
 ];
 
 Promise.all(files.map(file => fetch(file).then(res => res.json())))
