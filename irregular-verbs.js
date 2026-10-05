@@ -20,6 +20,7 @@ const hint = document.getElementById("verbHint");
 const input = document.getElementById("verbAnswer");
 const checkBtn = document.getElementById("checkVerbBtn");
 const feedback = document.getElementById("verbFeedback");
+const pronounceBtn = document.getElementById("pronounceVerbBtn");
 const nextBtn = document.getElementById("nextVerbBtn");
 const visibilityBtn = document.getElementById("verbVisibilityBtn");
 
@@ -84,6 +85,36 @@ function normalize(text) {
   return text.trim().toLowerCase();
 }
 
+function getCompletedSentence(question) {
+  return question.sentence.replace("___", question.correct);
+}
+
+function canSpeak() {
+  return "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+}
+
+function getPortugueseVoice() {
+  if (!canSpeak()) return null;
+
+  const voices = window.speechSynthesis.getVoices();
+  return voices.find(voice => voice.lang.toLowerCase() === "pt-br")
+    || voices.find(voice => voice.lang.toLowerCase().startsWith("pt"))
+    || null;
+}
+
+function speakCurrentSentence() {
+  if (!current || !canSpeak()) return;
+
+  const utterance = new SpeechSynthesisUtterance(getCompletedSentence(current));
+  utterance.lang = "pt-BR";
+
+  const portugueseVoice = getPortugueseVoice();
+  if (portugueseVoice) utterance.voice = portugueseVoice;
+
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(utterance);
+}
+
 function updateVerbHintVisibility() {
   hint.style.display = showVerbHint ? "inline-block" : "none";
   visibilityBtn.textContent = showVerbHint ? "Ocultar verbo em português" : "Mostrar verbo em português";
@@ -112,6 +143,9 @@ function startGame() {
 }
 
 function showQuestion() {
+  if (canSpeak()) window.speechSynthesis.cancel();
+  pronounceBtn.style.display = "none";
+
   if (asked >= targetCount) {
     english.textContent = "Desafio concluído!";
     portuguese.textContent = `Você acertou ${correctCount} de ${targetCount}.`;
@@ -151,7 +185,7 @@ function checkAnswer() {
 
   if (isCorrect) {
     correctCount++;
-    feedback.textContent = `✅ Correto! ${current.sentence.replace("___", current.correct)}`;
+    feedback.textContent = `✅ Correto! ${getCompletedSentence(current)}`;
     feedback.className = "verb-feedback success";
   } else {
     feedback.textContent = `❌ Incorreto. Resposta correta: ${current.correct}`;
@@ -159,11 +193,13 @@ function checkAnswer() {
   }
 
   score.textContent = `Score: ${correctCount}`;
+  pronounceBtn.style.display = canSpeak() ? "block" : "none";
   nextBtn.style.display = "block";
 }
 
 startBtn.addEventListener("click", startGame);
 checkBtn.addEventListener("click", checkAnswer);
+pronounceBtn.addEventListener("click", speakCurrentSentence);
 nextBtn.addEventListener("click", showQuestion);
 visibilityBtn.addEventListener("click", () => {
   showVerbHint = !showVerbHint;
