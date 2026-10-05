@@ -30,6 +30,10 @@ body.verb-challenge {
   color: white;
 }
 
+.verb-pronounce-btn {
+  margin-top: 10px;
+}
+
 .verb-topbar {
   display: flex;
   justify-content: space-between;
