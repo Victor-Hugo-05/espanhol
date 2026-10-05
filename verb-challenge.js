@@ -20,6 +20,7 @@ const input = document.getElementById("verbAnswer");
 const input2 = document.getElementById("verbAnswer2");
 const checkBtn = document.getElementById("checkVerbBtn");
 const feedback = document.getElementById("verbFeedback");
+const pronounceBtn = document.getElementById("pronounceVerbBtn");
 const nextBtn = document.getElementById("nextVerbBtn");
 const visibilityBtn = document.getElementById("verbVisibilityBtn");
 
@@ -129,6 +130,40 @@ function fillSentence(sentence, answers) {
   return result;
 }
 
+function getCorrectAnswers(question) {
+  return isDoubleVerbQuestion(question) ? question.correct : [question.correct];
+}
+
+function getCompletedSentence(question) {
+  return fillSentence(question.sentence, getCorrectAnswers(question));
+}
+
+function canSpeak() {
+  return "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+}
+
+function getPortugueseVoice() {
+  if (!canSpeak()) return null;
+
+  const voices = window.speechSynthesis.getVoices();
+  return voices.find(voice => voice.lang.toLowerCase() === "pt-br")
+    || voices.find(voice => voice.lang.toLowerCase().startsWith("pt"))
+    || null;
+}
+
+function speakCurrentSentence() {
+  if (!current || !canSpeak()) return;
+
+  const utterance = new SpeechSynthesisUtterance(getCompletedSentence(current));
+  utterance.lang = "pt-BR";
+
+  const portugueseVoice = getPortugueseVoice();
+  if (portugueseVoice) utterance.voice = portugueseVoice;
+
+  window.speechSynthesis.cancel();
+  window.speechSynthesis.speak(utterance);
+}
+
 function updateVerbHintVisibility() {
   hint.style.display = showVerbHint ? "block" : "none";
   visibilityBtn.textContent = showVerbHint
@@ -160,6 +195,9 @@ function startGame() {
 }
 
 function showQuestion() {
+  if (canSpeak()) window.speechSynthesis.cancel();
+  pronounceBtn.style.display = "none";
+
   if (asked >= targetCount) {
     english.textContent = "Challenge complete!";
     portuguese.textContent = `You got ${correctCount} of ${targetCount} correct.`;
@@ -213,9 +251,7 @@ function checkAnswer() {
   const userAnswers = doubleQuestion
     ? [input.value, input2.value]
     : [input.value];
-  const correctAnswers = doubleQuestion
-    ? current.correct
-    : [current.correct];
+  const correctAnswers = getCorrectAnswers(current);
 
   const isCorrect = userAnswers.every((answer, index) =>
     normalize(answer) === normalize(correctAnswers[index])
@@ -238,11 +274,13 @@ function checkAnswer() {
   }
 
   score.textContent = `Score: ${correctCount}`;
+  pronounceBtn.style.display = canSpeak() ? "block" : "none";
   nextBtn.style.display = "block";
 }
 
 startBtn.addEventListener("click", startGame);
 checkBtn.addEventListener("click", checkAnswer);
+pronounceBtn.addEventListener("click", speakCurrentSentence);
 nextBtn.addEventListener("click", showQuestion);
 visibilityBtn.addEventListener("click", () => {
   showVerbHint = !showVerbHint;
