@@ -43,6 +43,7 @@ const files = [
   "verbs-pronominal.json",
   "verbs-pronominal-extra.json",
   "verbs-future-preterite.json",
+  "verbs-present-subjunctive.json",
   "verbs-imperfect-subjunctive.json",
   "verbs-conditional.json"
 ];
