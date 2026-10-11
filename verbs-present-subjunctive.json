@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "Espero que eu ___ português com mais facilidade depois do curso.",
+    "sentence": "Minha professora espera que eu ___ português com mais confiança.",
     "verb": "falar",
     "english": "",
     "category": "present_subjunctive",
@@ -459,7 +459,7 @@
     "verb": "vir",
     "english": "",
     "category": "present_subjunctive",
-    "correct": "venhamos"
+    "correct": "venham"
   },
   {
     "sentence": "É possível que ela ___ uma resposta hoje.",
