@@ -1,6 +1,6 @@
 [
   {
-    "sentence": "Espero que eu ___ português com mais confiança.",
+    "sentence": "Espero que eu ___ português com mais facilidade depois do curso.",
     "verb": "falar",
     "english": "",
     "category": "present_subjunctive",
@@ -35,7 +35,7 @@
     "correct": "trabalhe"
   },
   {
-    "sentence": "Duvido que elas ___ com mais tranquilidade.",
+    "sentence": "Duvido que elas ___ durante o feriado.",
     "verb": "trabalhar",
     "english": "",
     "category": "present_subjunctive",
@@ -49,7 +49,7 @@
     "correct": "viajem"
   },
   {
-    "sentence": "Não acho que você ___ nas próximas férias.",
+    "sentence": "Não acho que você ___ durante as próximas férias.",
     "verb": "viajar",
     "english": "",
     "category": "present_subjunctive",
@@ -84,7 +84,7 @@
     "correct": "fiquemos"
   },
   {
-    "sentence": "Não acredito que ela ___ na organização da festa.",
+    "sentence": "Não acredito que ela ___ sem receber nada em troca.",
     "verb": "ajudar",
     "english": "",
     "category": "present_subjunctive",
@@ -105,7 +105,7 @@
     "correct": "compremos"
   },
   {
-    "sentence": "Espero que eu ___ frutas no mercado.",
+    "sentence": "Talvez eu ___ frutas no mercado depois do trabalho.",
     "verb": "comprar",
     "english": "",
     "category": "present_subjunctive",
@@ -126,14 +126,14 @@
     "correct": "more"
   },
   {
-    "sentence": "Quero que eu ___ antes de responder.",
+    "sentence": "Minha professora quer que eu ___ antes de responder.",
     "verb": "pensar",
     "english": "",
     "category": "present_subjunctive",
     "correct": "pense"
   },
   {
-    "sentence": "Tomara que a gente ___ bem na proposta.",
+    "sentence": "Tomara que a gente ___ em uma boa solução.",
     "verb": "pensar",
     "english": "",
     "category": "present_subjunctive",
@@ -154,7 +154,7 @@
     "correct": "comam"
   },
   {
-    "sentence": "Não acho que a gente ___ bastante água.",
+    "sentence": "Não acho que a gente ___ água suficiente durante o dia.",
     "verb": "beber",
     "english": "",
     "category": "present_subjunctive",
@@ -175,7 +175,7 @@
     "correct": "aprendam"
   },
   {
-    "sentence": "Prefiro que você ___ a usar o aplicativo.",
+    "sentence": "Prefiro que você ___ a usar o aplicativo antes de começar a atividade.",
     "verb": "aprender",
     "english": "",
     "category": "present_subjunctive",
@@ -189,7 +189,7 @@
     "correct": "entendam"
   },
   {
-    "sentence": "Não acredito que ela ___ as instruções.",
+    "sentence": "Duvido que ela ___ todas as instruções sem ajuda.",
     "verb": "entender",
     "english": "",
     "category": "present_subjunctive",
@@ -231,7 +231,7 @@
     "correct": "escrevamos"
   },
   {
-    "sentence": "Quero que eu ___ um texto em português.",
+    "sentence": "Minha professora quer que eu ___ um texto em português.",
     "verb": "escrever",
     "english": "",
     "category": "present_subjunctive",
@@ -245,28 +245,28 @@
     "correct": "recebam"
   },
   {
-    "sentence": "Duvido que ele ___ boas notícias.",
+    "sentence": "Duvido que ele ___ uma resposta ainda hoje.",
     "verb": "receber",
     "english": "",
     "category": "present_subjunctive",
     "correct": "receba"
   },
   {
-    "sentence": "É possível que eu ___ a janela.",
+    "sentence": "É possível que eu ___ a loja mais cedo amanhã.",
     "verb": "abrir",
     "english": "",
     "category": "present_subjunctive",
     "correct": "abra"
   },
   {
-    "sentence": "Não acho que a gente ___ a porta com cuidado.",
+    "sentence": "Não acho que a gente ___ a porta antes das oito.",
     "verb": "abrir",
     "english": "",
     "category": "present_subjunctive",
     "correct": "abra"
   },
   {
-    "sentence": "Fico feliz que ele ___ cedo amanhã.",
+    "sentence": "Fico feliz que ele ___ amanhã para visitar a família.",
     "verb": "partir",
     "english": "",
     "category": "present_subjunctive",
@@ -294,7 +294,7 @@
     "correct": "assistam"
   },
   {
-    "sentence": "Não acredito que vocês ___ com calma.",
+    "sentence": "Não acredito que vocês ___ tudo em apenas cinco minutos.",
     "verb": "decidir",
     "english": "",
     "category": "present_subjunctive",
@@ -315,7 +315,7 @@
     "correct": "permitam"
   },
   {
-    "sentence": "Espero que ela ___ mais tempo para a atividade.",
+    "sentence": "Espero que ela ___ a entrada dos visitantes.",
     "verb": "permitir",
     "english": "",
     "category": "present_subjunctive",
@@ -343,21 +343,21 @@
     "correct": "seja"
   },
   {
-    "sentence": "Tomara que eles ___ sincero nesta conversa.",
+    "sentence": "Tomara que eles ___ sinceros nesta conversa.",
     "verb": "ser",
     "english": "",
     "category": "present_subjunctive",
     "correct": "sejam"
   },
   {
-    "sentence": "Duvido que nós ___ bem amanhã.",
+    "sentence": "Duvido que nós ___ prontos para sair tão cedo amanhã.",
     "verb": "estar",
     "english": "",
     "category": "present_subjunctive",
     "correct": "estejamos"
   },
   {
-    "sentence": "É possível que eu ___ pronto para a reunião.",
+    "sentence": "É possível que eu ___ pronto para a reunião de amanhã.",
     "verb": "estar",
     "english": "",
     "category": "present_subjunctive",
@@ -399,14 +399,14 @@
     "correct": "faça"
   },
   {
-    "sentence": "Não acredito que vocês ___ uma pausa agora.",
+    "sentence": "Não acredito que vocês ___ todo o trabalho sozinhos.",
     "verb": "fazer",
     "english": "",
     "category": "present_subjunctive",
     "correct": "façam"
   },
   {
-    "sentence": "Peço que a gente ___ a resposta.",
+    "sentence": "É importante que a gente ___ a resposta antes de enviar o formulário.",
     "verb": "saber",
     "english": "",
     "category": "present_subjunctive",
@@ -434,14 +434,14 @@
     "correct": "possa"
   },
   {
-    "sentence": "É importante que elas ___ participar do projeto.",
+    "sentence": "É importante que elas ___ participar do projeto por vontade própria.",
     "verb": "querer",
     "english": "",
     "category": "present_subjunctive",
     "correct": "queiram"
   },
   {
-    "sentence": "Quero que ela ___ conversar depois.",
+    "sentence": "Tomara que ela ___ conversar depois da aula.",
     "verb": "querer",
     "english": "",
     "category": "present_subjunctive",
@@ -455,7 +455,7 @@
     "correct": "venha"
   },
   {
-    "sentence": "Duvido que nós ___ nos visitar em breve.",
+    "sentence": "Duvido que nossos amigos ___ nos visitar em breve.",
     "verb": "vir",
     "english": "",
     "category": "present_subjunctive",
@@ -476,14 +476,14 @@
     "correct": "deem"
   },
   {
-    "sentence": "Fico feliz que nós ___ o resultado amanhã.",
+    "sentence": "Fico feliz que nós ___ os resultados juntos amanhã.",
     "verb": "ver",
     "english": "",
     "category": "present_subjunctive",
     "correct": "vejamos"
   },
   {
-    "sentence": "É melhor que eu ___ a mensagem a tempo.",
+    "sentence": "É melhor que eu ___ o relatório antes da reunião.",
     "verb": "ver",
     "english": "",
     "category": "present_subjunctive",
@@ -504,7 +504,7 @@
     "correct": "diga"
   },
   {
-    "sentence": "Não acredito que eu ___ os documentos.",
+    "sentence": "Não acredito que eu ___ tantos documentos na mala.",
     "verb": "trazer",
     "english": "",
     "category": "present_subjunctive",
@@ -553,7 +553,7 @@
     "correct": "ouçam"
   },
   {
-    "sentence": "Tomara que você ___ a música inteira.",
+    "sentence": "Tomara que você ___ minha música favorita na rádio.",
     "verb": "ouvir",
     "english": "",
     "category": "present_subjunctive",
@@ -574,21 +574,21 @@
     "correct": "durma"
   },
   {
-    "sentence": "Não acho que você ___ menos ansiedade.",
+    "sentence": "Não acho que você ___ tanta ansiedade depois de descansar.",
     "verb": "sentir",
     "english": "",
     "category": "present_subjunctive",
     "correct": "sinta"
   },
   {
-    "sentence": "Fico feliz que nós ___ mais segurança.",
+    "sentence": "Fico feliz que nós ___ mais segurança depois do treinamento.",
     "verb": "sentir",
     "english": "",
     "category": "present_subjunctive",
     "correct": "sintamos"
   },
   {
-    "sentence": "É melhor que ela ___ terminar a tarefa.",
+    "sentence": "É melhor que ela ___ terminar a tarefa antes do almoço.",
     "verb": "conseguir",
     "english": "",
     "category": "present_subjunctive",
@@ -602,14 +602,14 @@
     "correct": "consigam"
   },
   {
-    "sentence": "É necessário que nós ___ as orientações.",
+    "sentence": "É necessário que nós ___ as orientações do médico.",
     "verb": "seguir",
     "english": "",
     "category": "present_subjunctive",
     "correct": "sigamos"
   },
   {
-    "sentence": "Não acredito que eu ___ o caminho correto.",
+    "sentence": "Não acredito que eu ___ o caminho certo sem um mapa.",
     "verb": "seguir",
     "english": "",
     "category": "present_subjunctive",
@@ -623,7 +623,7 @@
     "correct": "prefiram"
   },
   {
-    "sentence": "É fundamental que ele ___ ficar em casa.",
+    "sentence": "É importante que ele ___ uma opção com a qual se sinta confortável.",
     "verb": "preferir",
     "english": "",
     "category": "present_subjunctive",
@@ -644,14 +644,14 @@
     "correct": "saia"
   },
   {
-    "sentence": "É importante que ele ___ na armadilha.",
+    "sentence": "É importante que ele não ___ nessa armadilha.",
     "verb": "cair",
     "english": "",
     "category": "present_subjunctive",
     "correct": "caia"
   },
   {
-    "sentence": "Quero que vocês ___ durante a corrida.",
+    "sentence": "Tomara que vocês não ___ durante a corrida.",
     "verb": "cair",
     "english": "",
     "category": "present_subjunctive",
@@ -665,7 +665,7 @@
     "correct": "leia"
   },
   {
-    "sentence": "Duvido que elas ___ as notícias em português.",
+    "sentence": "Duvido que elas ___ todas as notícias em português.",
     "verb": "ler",
     "english": "",
     "category": "present_subjunctive",
@@ -679,21 +679,21 @@
     "correct": "riam"
   },
   {
-    "sentence": "Não acho que você ___ com a gente.",
+    "sentence": "Não acho que você ___ dessa piada.",
     "verb": "rir",
     "english": "",
     "category": "present_subjunctive",
     "correct": "ria"
   },
   {
-    "sentence": "Fico feliz que elas ___ a cidade.",
+    "sentence": "Fico feliz que elas ___ a cidade durante a viagem.",
     "verb": "conhecer",
     "english": "",
     "category": "present_subjunctive",
     "correct": "conheçam"
   },
   {
-    "sentence": "É melhor que ela ___ os novos colegas.",
+    "sentence": "É melhor que ela ___ os novos colegas antes de começar o projeto.",
     "verb": "conhecer",
     "english": "",
     "category": "present_subjunctive",
