@@ -40,6 +40,8 @@
   let targetCount = 20;
   let answered = false;
   let showInfinitive = true;
+  const recordedAudio = new Audio();
+  recordedAudio.preload = "none";
 
   function shuffle(items) {
     const result = [...items];
@@ -99,7 +101,7 @@
         return data;
       }));
 
-      questions = groups.flat();
+      questions = groups.flat().map((q, index) => ({ ...q, audioId: index + 1 }));
       const unique = new Set(questions.map(q => q.sentence));
       if (questions.length !== EXPECTED_TOTAL || unique.size !== EXPECTED_TOTAL) {
         throw new Error(`Se esperaban ${EXPECTED_TOTAL} frases diferentes, pero hay ${questions.length} (${unique.size} únicas).`);
@@ -125,50 +127,28 @@
     return question.sentence.replace("___", question.correct);
   }
 
-  function speechAvailable() {
-    return "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
-  }
-
-  function spanishVoice() {
-    if (!speechAvailable()) return null;
-    const voices = window.speechSynthesis.getVoices();
-    const spanish = voices.filter(v => /^es(?:-|$)/i.test(v.lang));
-    // Never use the browser's default voice, which may be Portuguese.
-    return spanish.find(v => v.lang.toLowerCase() === "es-es")
-      || spanish.find(v => v.lang.toLowerCase() === "es-mx")
-      || spanish[0]
-      || null;
-  }
-
   function stopSpeech() {
-    if (speechAvailable()) window.speechSynthesis.cancel();
+    recordedAudio.pause();
+    recordedAudio.removeAttribute("src");
+    recordedAudio.load();
   }
 
   function speakCurrentSentence() {
     if (!current) return;
     audioStatus.textContent = "";
-    if (!speechAvailable()) {
-      audioStatus.textContent = "Tu navegador no admite la reproducción de voz.";
-      return;
-    }
-
-    // getVoices() can be populated asynchronously (voiceschanged event).
-    // Do not let a Portuguese voice read Spanish text as a fallback.
-    const voice = spanishVoice();
-    if (!voice) {
-      audioStatus.textContent = "No hay una voz en español disponible. Instala o activa una voz española en las opciones de voz de tu sistema o navegador y vuelve a cargar la página.";
-      return;
-    }
-
     stopSpeech();
-    const utterance = new SpeechSynthesisUtterance(completedSentence(current));
-    utterance.lang = voice.lang;
-    utterance.voice = voice;
-    utterance.rate = 0.95;
-    utterance.onerror = () => {
-      audioStatus.textContent = "No se pudo reproducir el audio con la voz española. Inténtalo de nuevo.";
-    };
-    window.speechSynthesis.speak(utterance);
+
+    // Static Spanish-language recordings are hosted with the site,
+    // so students never need installed system voices or browser TTS.
+    recordedAudio.src = `audio/es-present/${String(current.audioId).padStart(4, "0")}.mp3`;
+    recordedAudio.load();
+    const playback = recordedAudio.play();
+    if (playback && typeof playback.catch === "function") {
+      playback.catch(error => {
+        if (error && error.name === "AbortError") return;
+        audioStatus.textContent = "No se ha podido reproducir el audio. Comprueba tu conexión e inténtalo de nuevo.";
+      });
+    }
   }
 
   function startGame() {
@@ -260,7 +240,7 @@
     }
 
     score.textContent = `Aciertos: ${correctCount}`;
-    pronounceBtn.style.display = speechAvailable() ? "block" : "none";
+    pronounceBtn.style.display = "block";
     nextBtn.style.display = "block";
     nextBtn.focus();
   }
