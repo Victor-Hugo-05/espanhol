@@ -16,12 +16,17 @@
 
     <section id="setup" class="verb-setup" aria-label="Configurar el juego">
       <p>Completa cada frase con la forma correcta del verbo. ¡Las tildes también cuentan!</p>
-      <label for="categorySelect">¿Qué verbos quieres practicar?</label>
-      <select id="categorySelect">
-        <option value="all">Todos los verbos</option>
-        <option value="regular">Solo regulares</option>
-        <option value="irregular">Solo irregulares</option>
-      </select>
+      <fieldset class="verb-checks">
+        <legend>¿Qué verbos quieres practicar?</legend>
+        <label class="verb-check-option" for="regularVerbs">
+          <input type="checkbox" id="regularVerbs" checked>
+          <span>Verbos regulares</span>
+        </label>
+        <label class="verb-check-option" for="irregularVerbs">
+          <input type="checkbox" id="irregularVerbs" checked>
+          <span>Verbos irregulares</span>
+        </label>
+      </fieldset>
 
       <label for="questionCount">Número de preguntas</label>
       <input id="questionCount" type="number" min="1" max="200" value="20" inputmode="numeric">
@@ -48,10 +53,11 @@
       <button id="checkVerbBtn" type="button">✓ Comprobar</button>
       <div id="verbFeedback" class="verb-feedback" role="status" aria-live="polite"></div>
       <button id="pronounceVerbBtn" type="button" class="verb-pronounce-btn" style="display:none;">🔊 Escuchar la frase</button>
+      <div id="verbAudioStatus" class="audio-status" role="status" aria-live="polite"></div>
       <button id="nextVerbBtn" type="button" style="display:none;">Siguiente →</button>
       <button id="restartVerbBtn" type="button" style="display:none;">Volver a jugar</button>
     </section>
   </main>
-  <script src="verb-challenge-es.js?v=20261111-1" defer></script>
+  <script src="verb-challenge-es.js?v=20261111-2" defer></script>
 </body>
 </html>
