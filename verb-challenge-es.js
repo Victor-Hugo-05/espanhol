@@ -12,7 +12,8 @@
   const $ = id => document.getElementById(id);
   const setup = $("setup");
   const game = $("game");
-  const categorySelect = $("categorySelect");
+  const regularVerbs = $("regularVerbs");
+  const irregularVerbs = $("irregularVerbs");
   const questionCount = $("questionCount");
   const availableCount = $("availableCount");
   const startBtn = $("startVerbBtn");
@@ -28,6 +29,7 @@
   const nextBtn = $("nextVerbBtn");
   const restartBtn = $("restartVerbBtn");
   const pronounceBtn = $("pronounceVerbBtn");
+  const audioStatus = $("verbAudioStatus");
   const visibilityBtn = $("verbVisibilityBtn");
 
   let questions = [];
@@ -58,15 +60,20 @@
   }
 
   function getPool() {
-    const selected = categorySelect.value;
-    return selected === "all" ? questions : questions.filter(q => q.type === selected);
+    return questions.filter(q =>
+      (q.type === "regular" && regularVerbs.checked) ||
+      (q.type === "irregular" && irregularVerbs.checked)
+    );
   }
 
   function updateAvailableCount() {
     const size = getPool().length;
-    availableCount.textContent = size ? `${size} frases disponibles` : "";
+    availableCount.textContent = size
+      ? `${size} frases disponibles`
+      : "Selecciona al menos un tipo de verbo.";
     questionCount.max = String(Math.max(size, 1));
     if (size && Number(questionCount.value) > size) questionCount.value = String(size);
+    startBtn.disabled = size === 0;
   }
 
   async function loadExercises() {
@@ -122,20 +129,45 @@
     return "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
   }
 
+  function spanishVoice() {
+    if (!speechAvailable()) return null;
+    const voices = window.speechSynthesis.getVoices();
+    const spanish = voices.filter(v => /^es(?:-|$)/i.test(v.lang));
+    // Never use the browser's default voice, which may be Portuguese.
+    return spanish.find(v => v.lang.toLowerCase() === "es-es")
+      || spanish.find(v => v.lang.toLowerCase() === "es-mx")
+      || spanish[0]
+      || null;
+  }
+
   function stopSpeech() {
     if (speechAvailable()) window.speechSynthesis.cancel();
   }
 
   function speakCurrentSentence() {
-    if (!current || !speechAvailable()) return;
+    if (!current) return;
+    audioStatus.textContent = "";
+    if (!speechAvailable()) {
+      audioStatus.textContent = "Tu navegador no admite la reproducción de voz.";
+      return;
+    }
+
+    // getVoices() can be populated asynchronously (voiceschanged event).
+    // Do not let a Portuguese voice read Spanish text as a fallback.
+    const voice = spanishVoice();
+    if (!voice) {
+      audioStatus.textContent = "No hay una voz en español disponible. Instala o activa una voz española en las opciones de voz de tu sistema o navegador y vuelve a cargar la página.";
+      return;
+    }
+
     stopSpeech();
     const utterance = new SpeechSynthesisUtterance(completedSentence(current));
-    utterance.lang = "es-ES";
+    utterance.lang = voice.lang;
+    utterance.voice = voice;
     utterance.rate = 0.95;
-    const voices = window.speechSynthesis.getVoices();
-    const voice = voices.find(v => v.lang.toLowerCase() === "es-es")
-      || voices.find(v => v.lang.toLowerCase().startsWith("es"));
-    if (voice) utterance.voice = voice;
+    utterance.onerror = () => {
+      audioStatus.textContent = "No se pudo reproducir el audio con la voz española. Inténtalo de nuevo.";
+    };
     window.speechSynthesis.speak(utterance);
   }
 
@@ -165,6 +197,7 @@
   function showQuestion() {
     stopSpeech();
     pronounceBtn.style.display = "none";
+    audioStatus.textContent = "";
     nextBtn.style.display = "none";
     feedback.textContent = "";
     feedback.className = "verb-feedback";
@@ -233,7 +266,8 @@
   }
 
   startBtn.addEventListener("click", startGame);
-  categorySelect.addEventListener("change", updateAvailableCount);
+  regularVerbs.addEventListener("change", updateAvailableCount);
+  irregularVerbs.addEventListener("change", updateAvailableCount);
   checkBtn.addEventListener("click", checkAnswer);
   nextBtn.addEventListener("click", showQuestion);
   restartBtn.addEventListener("click", () => {
