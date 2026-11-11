@@ -1,0 +1,386 @@
+[
+  {
+    "sentence": "Yo ___ español con mis vecinos.",
+    "verb": "hablar",
+    "english": "I speak Spanish with my neighbors.",
+    "category": "present",
+    "type": "regular",
+    "correct": "hablo"
+  },
+  {
+    "sentence": "¿Tú ___ con tus padres todos los días?",
+    "verb": "hablar",
+    "english": "Do you talk with your parents every day?",
+    "category": "present",
+    "type": "regular",
+    "correct": "hablas"
+  },
+  {
+    "sentence": "Nosotros ___ de nuestros planes durante la cena.",
+    "verb": "hablar",
+    "english": "We talk about our plans during dinner.",
+    "category": "present",
+    "type": "regular",
+    "correct": "hablamos"
+  },
+  {
+    "sentence": "Ellos ___ muy rápido cuando están nerviosos.",
+    "verb": "hablar",
+    "english": "They speak very fast when they are nervous.",
+    "category": "present",
+    "type": "regular",
+    "correct": "hablan"
+  },
+  {
+    "sentence": "Yo ___ español por la mañana.",
+    "verb": "estudiar",
+    "english": "I study Spanish in the morning.",
+    "category": "present",
+    "type": "regular",
+    "correct": "estudio"
+  },
+  {
+    "sentence": "Mi hermana ___ medicina en la universidad.",
+    "verb": "estudiar",
+    "english": "My sister studies medicine at university.",
+    "category": "present",
+    "type": "regular",
+    "correct": "estudia"
+  },
+  {
+    "sentence": "Vosotros ___ juntos en la biblioteca.",
+    "verb": "estudiar",
+    "english": "You all study together at the library.",
+    "category": "present",
+    "type": "regular",
+    "correct": "estudiáis"
+  },
+  {
+    "sentence": "Los alumnos ___ para el examen de mañana.",
+    "verb": "estudiar",
+    "english": "The students study for tomorrow's exam.",
+    "category": "present",
+    "type": "regular",
+    "correct": "estudian"
+  },
+  {
+    "sentence": "¿Tú ___ los sábados?",
+    "verb": "trabajar",
+    "english": "Do you work on Saturdays?",
+    "category": "present",
+    "type": "regular",
+    "correct": "trabajas"
+  },
+  {
+    "sentence": "Mi padre ___ en un hospital.",
+    "verb": "trabajar",
+    "english": "My father works in a hospital.",
+    "category": "present",
+    "type": "regular",
+    "correct": "trabaja"
+  },
+  {
+    "sentence": "Nosotras ___ desde casa los viernes.",
+    "verb": "trabajar",
+    "english": "We work from home on Fridays.",
+    "category": "present",
+    "type": "regular",
+    "correct": "trabajamos"
+  },
+  {
+    "sentence": "Vosotros ___ hasta las seis de la tarde.",
+    "verb": "trabajar",
+    "english": "You all work until six in the evening.",
+    "category": "present",
+    "type": "regular",
+    "correct": "trabajáis"
+  },
+  {
+    "sentence": "Yo ___ cerca del centro de la ciudad.",
+    "verb": "vivir",
+    "english": "I live near the city center.",
+    "category": "present",
+    "type": "regular",
+    "correct": "vivo"
+  },
+  {
+    "sentence": "Usted ___ en un barrio muy tranquilo.",
+    "verb": "vivir",
+    "english": "You live in a very quiet neighborhood.",
+    "category": "present",
+    "type": "regular",
+    "correct": "vive"
+  },
+  {
+    "sentence": "Nosotros ___ con otros estudiantes.",
+    "verb": "vivir",
+    "english": "We live with other students.",
+    "category": "present",
+    "type": "regular",
+    "correct": "vivimos"
+  },
+  {
+    "sentence": "Ellas ___ en Madrid desde hace dos años.",
+    "verb": "vivir",
+    "english": "They have lived in Madrid for two years.",
+    "category": "present",
+    "type": "regular",
+    "correct": "viven"
+  },
+  {
+    "sentence": "Yo ___ fruta después del almuerzo.",
+    "verb": "comer",
+    "english": "I eat fruit after lunch.",
+    "category": "present",
+    "type": "regular",
+    "correct": "como"
+  },
+  {
+    "sentence": "¿Tú ___ carne o prefieres verduras?",
+    "verb": "comer",
+    "english": "Do you eat meat or do you prefer vegetables?",
+    "category": "present",
+    "type": "regular",
+    "correct": "comes"
+  },
+  {
+    "sentence": "El niño ___ una manzana en el recreo.",
+    "verb": "comer",
+    "english": "The boy eats an apple during recess.",
+    "category": "present",
+    "type": "regular",
+    "correct": "come"
+  },
+  {
+    "sentence": "Nosotros ___ en la cafetería de la escuela.",
+    "verb": "comer",
+    "english": "We eat in the school cafeteria.",
+    "category": "present",
+    "type": "regular",
+    "correct": "comemos"
+  },
+  {
+    "sentence": "Yo ___ agua durante el entrenamiento.",
+    "verb": "beber",
+    "english": "I drink water during training.",
+    "category": "present",
+    "type": "regular",
+    "correct": "bebo"
+  },
+  {
+    "sentence": "Mi abuela ___ té todas las tardes.",
+    "verb": "beber",
+    "english": "My grandmother drinks tea every afternoon.",
+    "category": "present",
+    "type": "regular",
+    "correct": "bebe"
+  },
+  {
+    "sentence": "Vosotras ___ zumo de naranja en el desayuno.",
+    "verb": "beber",
+    "english": "You all drink orange juice at breakfast.",
+    "category": "present",
+    "type": "regular",
+    "correct": "bebéis"
+  },
+  {
+    "sentence": "Los deportistas ___ mucha agua.",
+    "verb": "beber",
+    "english": "The athletes drink a lot of water.",
+    "category": "present",
+    "type": "regular",
+    "correct": "beben"
+  },
+  {
+    "sentence": "Yo ___ mensajes a mis amigos.",
+    "verb": "escribir",
+    "english": "I write messages to my friends.",
+    "category": "present",
+    "type": "regular",
+    "correct": "escribo"
+  },
+  {
+    "sentence": "¿Tú ___ en tu diario cada noche?",
+    "verb": "escribir",
+    "english": "Do you write in your diary every night?",
+    "category": "present",
+    "type": "regular",
+    "correct": "escribes"
+  },
+  {
+    "sentence": "Nosotros ___ correos electrónicos en español.",
+    "verb": "escribir",
+    "english": "We write emails in Spanish.",
+    "category": "present",
+    "type": "regular",
+    "correct": "escribimos"
+  },
+  {
+    "sentence": "Las niñas ___ cartas para sus abuelos.",
+    "verb": "escribir",
+    "english": "The girls write letters to their grandparents.",
+    "category": "present",
+    "type": "regular",
+    "correct": "escriben"
+  },
+  {
+    "sentence": "Yo ___ las noticias antes de desayunar.",
+    "verb": "leer",
+    "english": "I read the news before breakfast.",
+    "category": "present",
+    "type": "regular",
+    "correct": "leo"
+  },
+  {
+    "sentence": "Laura ___ novelas de misterio.",
+    "verb": "leer",
+    "english": "Laura reads mystery novels.",
+    "category": "present",
+    "type": "regular",
+    "correct": "lee"
+  },
+  {
+    "sentence": "Vosotros ___ las instrucciones con atención.",
+    "verb": "leer",
+    "english": "You all read the instructions carefully.",
+    "category": "present",
+    "type": "regular",
+    "correct": "leéis"
+  },
+  {
+    "sentence": "Mis amigos ___ cómics en el tren.",
+    "verb": "leer",
+    "english": "My friends read comic books on the train.",
+    "category": "present",
+    "type": "regular",
+    "correct": "leen"
+  },
+  {
+    "sentence": "Yo ___ la ventana cuando hace calor.",
+    "verb": "abrir",
+    "english": "I open the window when it is hot.",
+    "category": "present",
+    "type": "regular",
+    "correct": "abro"
+  },
+  {
+    "sentence": "¿Tú ___ la tienda a las nueve?",
+    "verb": "abrir",
+    "english": "Do you open the shop at nine?",
+    "category": "present",
+    "type": "regular",
+    "correct": "abres"
+  },
+  {
+    "sentence": "Nosotras ___ los regalos después de cenar.",
+    "verb": "abrir",
+    "english": "We open the presents after dinner.",
+    "category": "present",
+    "type": "regular",
+    "correct": "abrimos"
+  },
+  {
+    "sentence": "Los museos ___ a las diez de la mañana.",
+    "verb": "abrir",
+    "english": "The museums open at ten in the morning.",
+    "category": "present",
+    "type": "regular",
+    "correct": "abren"
+  },
+  {
+    "sentence": "Yo ___ palabras nuevas cada día.",
+    "verb": "aprender",
+    "english": "I learn new words every day.",
+    "category": "present",
+    "type": "regular",
+    "correct": "aprendo"
+  },
+  {
+    "sentence": "Mi hermano ___ a cocinar con mi madre.",
+    "verb": "aprender",
+    "english": "My brother learns to cook with my mother.",
+    "category": "present",
+    "type": "regular",
+    "correct": "aprende"
+  },
+  {
+    "sentence": "Nosotros ___ mucho cuando viajamos.",
+    "verb": "aprender",
+    "english": "We learn a lot when we travel.",
+    "category": "present",
+    "type": "regular",
+    "correct": "aprendemos"
+  },
+  {
+    "sentence": "Vosotras ___ español con canciones.",
+    "verb": "aprender",
+    "english": "You all learn Spanish with songs.",
+    "category": "present",
+    "type": "regular",
+    "correct": "aprendéis"
+  },
+  {
+    "sentence": "Yo ___ pasta los domingos.",
+    "verb": "cocinar",
+    "english": "I cook pasta on Sundays.",
+    "category": "present",
+    "type": "regular",
+    "correct": "cocino"
+  },
+  {
+    "sentence": "¿Tú ___ para toda la familia?",
+    "verb": "cocinar",
+    "english": "Do you cook for the whole family?",
+    "category": "present",
+    "type": "regular",
+    "correct": "cocinas"
+  },
+  {
+    "sentence": "Mi compañero ___ platos vegetarianos.",
+    "verb": "cocinar",
+    "english": "My roommate cooks vegetarian dishes.",
+    "category": "present",
+    "type": "regular",
+    "correct": "cocina"
+  },
+  {
+    "sentence": "Nosotras ___ juntas los fines de semana.",
+    "verb": "cocinar",
+    "english": "We cook together on weekends.",
+    "category": "present",
+    "type": "regular",
+    "correct": "cocinamos"
+  },
+  {
+    "sentence": "Yo ___ pan en la panadería.",
+    "verb": "comprar",
+    "english": "I buy bread at the bakery.",
+    "category": "present",
+    "type": "regular",
+    "correct": "compro"
+  },
+  {
+    "sentence": "Ana ___ flores para su madre.",
+    "verb": "comprar",
+    "english": "Ana buys flowers for her mother.",
+    "category": "present",
+    "type": "regular",
+    "correct": "compra"
+  },
+  {
+    "sentence": "Vosotros ___ billetes de tren por internet.",
+    "verb": "comprar",
+    "english": "You all buy train tickets online.",
+    "category": "present",
+    "type": "regular",
+    "correct": "compráis"
+  },
+  {
+    "sentence": "Ellos ___ verduras frescas en el mercado.",
+    "verb": "comprar",
+    "english": "They buy fresh vegetables at the market.",
+    "category": "present",
+    "type": "regular",
+    "correct": "compran"
+  }
+]
