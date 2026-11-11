@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verb Challenge | Español</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="verb-challenge.css">
+  <link rel="stylesheet" href="verb-challenge-es.css">
+</head>
+<body class="verb-challenge">
+  <main class="container verb-container">
+    <a class="back-link" href="index.html">← Volver al inicio</a>
+    <h1>🇪🇸 Verb Challenge</h1>
+    <p class="verb-subtitle">Presente de indicativo · 200 frases</p>
+
+    <section id="setup" class="verb-setup" aria-label="Configurar el juego">
+      <p>Completa cada frase con la forma correcta del verbo. ¡Las tildes también cuentan!</p>
+      <label for="categorySelect">¿Qué verbos quieres practicar?</label>
+      <select id="categorySelect">
+        <option value="all">Todos los verbos</option>
+        <option value="regular">Solo regulares</option>
+        <option value="irregular">Solo irregulares</option>
+      </select>
+
+      <label for="questionCount">Número de preguntas</label>
+      <input id="questionCount" type="number" min="1" max="200" value="20" inputmode="numeric">
+      <div id="availableCount" class="available-count" aria-live="polite"></div>
+      <button id="startVerbBtn" type="button" disabled>Empezar</button>
+      <div id="verbLoadStatus" class="load-status" role="status" aria-live="polite">Cargando ejercicios...</div>
+    </section>
+
+    <section id="game" class="verb-game" style="display:none;" aria-label="Ejercicio de conjugación">
+      <div class="verb-topbar">
+        <span id="verbProgress">1 / 20</span>
+        <span id="verbScore">Aciertos: 0</span>
+      </div>
+      <button id="verbVisibilityBtn" class="toggle-hint" type="button" aria-pressed="true">Ocultar infinitivo</button>
+
+      <div class="verb-question-card">
+        <div id="englishSentence" class="verb-english"></div>
+        <div id="spanishSentence" class="verb-sentence"></div>
+        <div id="verbHint" class="verb-hint"></div>
+      </div>
+
+      <label class="answer-label" for="verbAnswer">Tu respuesta</label>
+      <input id="verbAnswer" type="text" placeholder="Escribe la forma conjugada..." autocomplete="off" autocapitalize="none" spellcheck="false">
+      <button id="checkVerbBtn" type="button">✓ Comprobar</button>
+      <div id="verbFeedback" class="verb-feedback" role="status" aria-live="polite"></div>
+      <button id="pronounceVerbBtn" type="button" class="verb-pronounce-btn" style="display:none;">🔊 Escuchar la frase</button>
+      <button id="nextVerbBtn" type="button" style="display:none;">Siguiente →</button>
+      <button id="restartVerbBtn" type="button" style="display:none;">Volver a jugar</button>
+    </section>
+  </main>
+  <script src="verb-challenge-es.js?v=20261111-1" defer></script>
+</body>
+</html>
