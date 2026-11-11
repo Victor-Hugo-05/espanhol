@@ -1,0 +1,418 @@
+[
+  {
+    "sentence": "Yo ___ música mientras hago ejercicio.",
+    "verb": "escuchar",
+    "english": "I listen to music while I exercise.",
+    "category": "present",
+    "type": "regular",
+    "correct": "escucho"
+  },
+  {
+    "sentence": "¿Tú ___ la radio en el coche?",
+    "verb": "escuchar",
+    "english": "Do you listen to the radio in the car?",
+    "category": "present",
+    "type": "regular",
+    "correct": "escuchas"
+  },
+  {
+    "sentence": "Nosotros ___ al profesor con atención.",
+    "verb": "escuchar",
+    "english": "We listen to the teacher carefully.",
+    "category": "present",
+    "type": "regular",
+    "correct": "escuchamos"
+  },
+  {
+    "sentence": "Los niños ___ un cuento antes de dormir.",
+    "verb": "escuchar",
+    "english": "The children listen to a story before sleeping.",
+    "category": "present",
+    "type": "regular",
+    "correct": "escuchan"
+  },
+  {
+    "sentence": "Yo ___ un cuaderno nuevo.",
+    "verb": "necesitar",
+    "english": "I need a new notebook.",
+    "category": "present",
+    "type": "regular",
+    "correct": "necesito"
+  },
+  {
+    "sentence": "Mi amiga ___ ayuda con los deberes.",
+    "verb": "necesitar",
+    "english": "My friend needs help with her homework.",
+    "category": "present",
+    "type": "regular",
+    "correct": "necesita"
+  },
+  {
+    "sentence": "Vosotras ___ descansar después del viaje.",
+    "verb": "necesitar",
+    "english": "You all need to rest after the trip.",
+    "category": "present",
+    "type": "regular",
+    "correct": "necesitáis"
+  },
+  {
+    "sentence": "Ellos ___ más tiempo para terminar.",
+    "verb": "necesitar",
+    "english": "They need more time to finish.",
+    "category": "present",
+    "type": "regular",
+    "correct": "necesitan"
+  },
+  {
+    "sentence": "¿Tú ___ el autobús en esta parada?",
+    "verb": "esperar",
+    "english": "Do you wait for the bus at this stop?",
+    "category": "present",
+    "type": "regular",
+    "correct": "esperas"
+  },
+  {
+    "sentence": "Mi madre ___ una llamada importante.",
+    "verb": "esperar",
+    "english": "My mother is waiting for an important call.",
+    "category": "present",
+    "type": "regular",
+    "correct": "espera"
+  },
+  {
+    "sentence": "Nosotros ___ buenas noticias esta semana.",
+    "verb": "esperar",
+    "english": "We expect good news this week.",
+    "category": "present",
+    "type": "regular",
+    "correct": "esperamos"
+  },
+  {
+    "sentence": "Vosotros ___ a vuestros amigos en la plaza.",
+    "verb": "esperar",
+    "english": "You all wait for your friends in the square.",
+    "category": "present",
+    "type": "regular",
+    "correct": "esperáis"
+  },
+  {
+    "sentence": "Yo ___ a mis abuelos cada mes.",
+    "verb": "visitar",
+    "english": "I visit my grandparents every month.",
+    "category": "present",
+    "type": "regular",
+    "correct": "visito"
+  },
+  {
+    "sentence": "Marcos ___ el museo de arte los jueves.",
+    "verb": "visitar",
+    "english": "Marcos visits the art museum on Thursdays.",
+    "category": "present",
+    "type": "regular",
+    "correct": "visita"
+  },
+  {
+    "sentence": "Nosotras ___ ciudades nuevas en vacaciones.",
+    "verb": "visitar",
+    "english": "We visit new cities on vacation.",
+    "category": "present",
+    "type": "regular",
+    "correct": "visitamos"
+  },
+  {
+    "sentence": "Ustedes ___ muchos lugares interesantes.",
+    "verb": "visitar",
+    "english": "You all visit many interesting places.",
+    "category": "present",
+    "type": "regular",
+    "correct": "visitan"
+  },
+  {
+    "sentence": "Yo ___ al trabajo cuando hace buen tiempo.",
+    "verb": "caminar",
+    "english": "I walk to work when the weather is nice.",
+    "category": "present",
+    "type": "regular",
+    "correct": "camino"
+  },
+  {
+    "sentence": "¿Tú ___ por el parque por las tardes?",
+    "verb": "caminar",
+    "english": "Do you walk in the park in the afternoons?",
+    "category": "present",
+    "type": "regular",
+    "correct": "caminas"
+  },
+  {
+    "sentence": "Mi abuelo ___ despacio por la calle.",
+    "verb": "caminar",
+    "english": "My grandfather walks slowly down the street.",
+    "category": "present",
+    "type": "regular",
+    "correct": "camina"
+  },
+  {
+    "sentence": "Nosotros ___ cinco kilómetros cada domingo.",
+    "verb": "caminar",
+    "english": "We walk five kilometers every Sunday.",
+    "category": "present",
+    "type": "regular",
+    "correct": "caminamos"
+  },
+  {
+    "sentence": "Yo ___ matemáticas en una escuela.",
+    "verb": "enseñar",
+    "english": "I teach mathematics at a school.",
+    "category": "present",
+    "type": "regular",
+    "correct": "enseño"
+  },
+  {
+    "sentence": "Mi tía ___ español a estudiantes extranjeros.",
+    "verb": "enseñar",
+    "english": "My aunt teaches Spanish to international students.",
+    "category": "present",
+    "type": "regular",
+    "correct": "enseña"
+  },
+  {
+    "sentence": "Vosotros ___ las fotos de vuestro viaje.",
+    "verb": "enseñar",
+    "english": "You all show the photos of your trip.",
+    "category": "present",
+    "type": "regular",
+    "correct": "enseñáis"
+  },
+  {
+    "sentence": "Ellas ___ a los niños a leer.",
+    "verb": "enseñar",
+    "english": "They teach the children to read.",
+    "category": "present",
+    "type": "regular",
+    "correct": "enseñan"
+  },
+  {
+    "sentence": "Yo ___ en tren siempre que puedo.",
+    "verb": "viajar",
+    "english": "I travel by train whenever I can.",
+    "category": "present",
+    "type": "regular",
+    "correct": "viajo"
+  },
+  {
+    "sentence": "¿Tú ___ mucho por trabajo?",
+    "verb": "viajar",
+    "english": "Do you travel a lot for work?",
+    "category": "present",
+    "type": "regular",
+    "correct": "viajas"
+  },
+  {
+    "sentence": "Nosotros ___ al sur en verano.",
+    "verb": "viajar",
+    "english": "We travel south in the summer.",
+    "category": "present",
+    "type": "regular",
+    "correct": "viajamos"
+  },
+  {
+    "sentence": "Mis vecinos ___ por Europa en bicicleta.",
+    "verb": "viajar",
+    "english": "My neighbors travel around Europe by bicycle.",
+    "category": "present",
+    "type": "regular",
+    "correct": "viajan"
+  },
+  {
+    "sentence": "Yo ___ a mi hermana con la tarea.",
+    "verb": "ayudar",
+    "english": "I help my sister with homework.",
+    "category": "present",
+    "type": "regular",
+    "correct": "ayudo"
+  },
+  {
+    "sentence": "Lucía ___ a sus padres en la cocina.",
+    "verb": "ayudar",
+    "english": "Lucía helps her parents in the kitchen.",
+    "category": "present",
+    "type": "regular",
+    "correct": "ayuda"
+  },
+  {
+    "sentence": "Vosotras ___ a organizar la fiesta.",
+    "verb": "ayudar",
+    "english": "You all help organize the party.",
+    "category": "present",
+    "type": "regular",
+    "correct": "ayudáis"
+  },
+  {
+    "sentence": "Ellos ___ a los turistas perdidos.",
+    "verb": "ayudar",
+    "english": "They help lost tourists.",
+    "category": "present",
+    "type": "regular",
+    "correct": "ayudan"
+  },
+  {
+    "sentence": "Yo ___ mis llaves por toda la casa.",
+    "verb": "buscar",
+    "english": "I look for my keys all over the house.",
+    "category": "present",
+    "type": "regular",
+    "correct": "busco"
+  },
+  {
+    "sentence": "¿Tú ___ un piso cerca de la universidad?",
+    "verb": "buscar",
+    "english": "Are you looking for an apartment near the university?",
+    "category": "present",
+    "type": "regular",
+    "correct": "buscas"
+  },
+  {
+    "sentence": "Nosotras ___ información para el proyecto.",
+    "verb": "buscar",
+    "english": "We look for information for the project.",
+    "category": "present",
+    "type": "regular",
+    "correct": "buscamos"
+  },
+  {
+    "sentence": "Los estudiantes ___ respuestas en el libro.",
+    "verb": "buscar",
+    "english": "The students look for answers in the book.",
+    "category": "present",
+    "type": "regular",
+    "correct": "buscan"
+  },
+  {
+    "sentence": "Yo ___ muchos mensajes por la mañana.",
+    "verb": "recibir",
+    "english": "I receive many messages in the morning.",
+    "category": "present",
+    "type": "regular",
+    "correct": "recibo"
+  },
+  {
+    "sentence": "Mi hermano ___ paquetes en su oficina.",
+    "verb": "recibir",
+    "english": "My brother receives packages at his office.",
+    "category": "present",
+    "type": "regular",
+    "correct": "recibe"
+  },
+  {
+    "sentence": "Vosotros ___ a los invitados en la puerta.",
+    "verb": "recibir",
+    "english": "You all welcome the guests at the door.",
+    "category": "present",
+    "type": "regular",
+    "correct": "recibís"
+  },
+  {
+    "sentence": "Ellas ___ buenas notas en los exámenes.",
+    "verb": "recibir",
+    "english": "They get good grades on their exams.",
+    "category": "present",
+    "type": "regular",
+    "correct": "reciben"
+  },
+  {
+    "sentence": "Yo ___ por el parque antes de clase.",
+    "verb": "correr",
+    "english": "I run through the park before class.",
+    "category": "present",
+    "type": "regular",
+    "correct": "corro"
+  },
+  {
+    "sentence": "¿Tú ___ todos los días?",
+    "verb": "correr",
+    "english": "Do you run every day?",
+    "category": "present",
+    "type": "regular",
+    "correct": "corres"
+  },
+  {
+    "sentence": "Nosotros ___ una carrera solidaria cada año.",
+    "verb": "correr",
+    "english": "We run a charity race every year.",
+    "category": "present",
+    "type": "regular",
+    "correct": "corremos"
+  },
+  {
+    "sentence": "Los perros ___ detrás de la pelota.",
+    "verb": "correr",
+    "english": "The dogs run after the ball.",
+    "category": "present",
+    "type": "regular",
+    "correct": "corren"
+  },
+  {
+    "sentence": "Yo ___ qué ropa llevar por la mañana.",
+    "verb": "decidir",
+    "english": "I decide what clothes to wear in the morning.",
+    "category": "present",
+    "type": "regular",
+    "correct": "decido"
+  },
+  {
+    "sentence": "Sofía ___ el menú para la cena.",
+    "verb": "decidir",
+    "english": "Sofía decides on the menu for dinner.",
+    "category": "present",
+    "type": "regular",
+    "correct": "decide"
+  },
+  {
+    "sentence": "Vosotros ___ adónde ir de vacaciones.",
+    "verb": "decidir",
+    "english": "You all decide where to go on vacation.",
+    "category": "present",
+    "type": "regular",
+    "correct": "decidís"
+  },
+  {
+    "sentence": "Nosotras ___ juntas los próximos pasos.",
+    "verb": "decidir",
+    "english": "We decide on the next steps together.",
+    "category": "present",
+    "type": "regular",
+    "correct": "decidimos"
+  },
+  {
+    "sentence": "Yo ___ mis apuntes con mis compañeros.",
+    "verb": "compartir",
+    "english": "I share my notes with my classmates.",
+    "category": "present",
+    "type": "regular",
+    "correct": "comparto"
+  },
+  {
+    "sentence": "¿Tú ___ habitación con alguien?",
+    "verb": "compartir",
+    "english": "Do you share a room with someone?",
+    "category": "present",
+    "type": "regular",
+    "correct": "compartes"
+  },
+  {
+    "sentence": "Nosotros ___ los gastos del apartamento.",
+    "verb": "compartir",
+    "english": "We share the apartment expenses.",
+    "category": "present",
+    "type": "regular",
+    "correct": "compartimos"
+  },
+  {
+    "sentence": "Ellas ___ sus experiencias en clase.",
+    "verb": "compartir",
+    "english": "They share their experiences in class.",
+    "category": "present",
+    "type": "regular",
+    "correct": "comparten"
+  }
+]
