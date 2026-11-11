@@ -1,0 +1,418 @@
+[
+  {
+    "sentence": "Yo ___ las montañas desde mi ventana.",
+    "verb": "ver",
+    "english": "I see the mountains from my window.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "veo"
+  },
+  {
+    "sentence": "¿Tú ___ la pantalla desde allí?",
+    "verb": "ver",
+    "english": "Can you see the screen from there?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "ves"
+  },
+  {
+    "sentence": "Nosotros ___ una película los domingos.",
+    "verb": "ver",
+    "english": "We watch a movie on Sundays.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "vemos"
+  },
+  {
+    "sentence": "Ellas ___ a sus amigos después de clase.",
+    "verb": "ver",
+    "english": "They see their friends after class.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "ven"
+  },
+  {
+    "sentence": "Yo ___ clases particulares de español.",
+    "verb": "dar",
+    "english": "I give private Spanish lessons.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "doy"
+  },
+  {
+    "sentence": "¿Tú ___ propina en los restaurantes?",
+    "verb": "dar",
+    "english": "Do you tip at restaurants?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "das"
+  },
+  {
+    "sentence": "Mi profesora ___ muchos ejemplos.",
+    "verb": "dar",
+    "english": "My teacher gives many examples.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "da"
+  },
+  {
+    "sentence": "Nosotros ___ comida a un refugio local.",
+    "verb": "dar",
+    "english": "We donate food to a local shelter.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "damos"
+  },
+  {
+    "sentence": "Yo ___ ruido en la calle por la noche.",
+    "verb": "oír",
+    "english": "I hear noise in the street at night.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "oigo"
+  },
+  {
+    "sentence": "¿Tú ___ bien con estos auriculares?",
+    "verb": "oír",
+    "english": "Can you hear well with these headphones?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "oyes"
+  },
+  {
+    "sentence": "Nosotros ___ música desde el jardín.",
+    "verb": "oír",
+    "english": "We hear music from the garden.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "oímos"
+  },
+  {
+    "sentence": "Ellos ___ un pájaro cantar cada mañana.",
+    "verb": "oír",
+    "english": "They hear a bird sing every morning.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "oyen"
+  },
+  {
+    "sentence": "Yo ___ mi comida al trabajo.",
+    "verb": "traer",
+    "english": "I bring my food to work.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "traigo"
+  },
+  {
+    "sentence": "¿Tú ___ el libro que te pedí?",
+    "verb": "traer",
+    "english": "Are you bringing the book I asked you for?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "traes"
+  },
+  {
+    "sentence": "Nosotras ___ bebidas para la fiesta.",
+    "verb": "traer",
+    "english": "We bring drinks to the party.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "traemos"
+  },
+  {
+    "sentence": "Los camareros ___ los platos a la mesa.",
+    "verb": "traer",
+    "english": "The waiters bring the dishes to the table.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "traen"
+  },
+  {
+    "sentence": "Yo ___ con cuidado cuando llueve.",
+    "verb": "conducir",
+    "english": "I drive carefully when it rains.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "conduzco"
+  },
+  {
+    "sentence": "¿Tú ___ hasta la oficina todos los días?",
+    "verb": "conducir",
+    "english": "Do you drive to the office every day?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "conduces"
+  },
+  {
+    "sentence": "Nosotros ___ por carreteras secundarias.",
+    "verb": "conducir",
+    "english": "We drive on secondary roads.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "conducimos"
+  },
+  {
+    "sentence": "Vosotros ___ muy bien por la ciudad.",
+    "verb": "conducir",
+    "english": "You all drive very well around the city.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "conducís"
+  },
+  {
+    "sentence": "Yo ___ un restaurante muy bueno aquí cerca.",
+    "verb": "conocer",
+    "english": "I know a very good restaurant nearby.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "conozco"
+  },
+  {
+    "sentence": "¿Tú ___ a mi profesora de francés?",
+    "verb": "conocer",
+    "english": "Do you know my French teacher?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "conoces"
+  },
+  {
+    "sentence": "Nosotros ___ bien esta ciudad.",
+    "verb": "conocer",
+    "english": "We know this city well.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "conocemos"
+  },
+  {
+    "sentence": "Ellos ___ a mucha gente en la universidad.",
+    "verb": "conocer",
+    "english": "They know many people at university.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "conocen"
+  },
+  {
+    "sentence": "Yo ___ una ensalada para almorzar.",
+    "verb": "pedir",
+    "english": "I order a salad for lunch.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "pido"
+  },
+  {
+    "sentence": "¿Tú ___ ayuda cuando la necesitas?",
+    "verb": "pedir",
+    "english": "Do you ask for help when you need it?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "pides"
+  },
+  {
+    "sentence": "Mi hermano ___ un café sin azúcar.",
+    "verb": "pedir",
+    "english": "My brother orders a coffee without sugar.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "pide"
+  },
+  {
+    "sentence": "Vosotros ___ la cuenta al camarero.",
+    "verb": "pedir",
+    "english": "You all ask the waiter for the bill.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "pedís"
+  },
+  {
+    "sentence": "Yo ___ ocho horas casi todas las noches.",
+    "verb": "dormir",
+    "english": "I sleep eight hours almost every night.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "duermo"
+  },
+  {
+    "sentence": "¿Tú ___ bien cuando viajas?",
+    "verb": "dormir",
+    "english": "Do you sleep well when you travel?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "duermes"
+  },
+  {
+    "sentence": "Nosotras ___ en una habitación compartida.",
+    "verb": "dormir",
+    "english": "We sleep in a shared room.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "dormimos"
+  },
+  {
+    "sentence": "Los bebés ___ mucho durante el día.",
+    "verb": "dormir",
+    "english": "Babies sleep a lot during the day.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "duermen"
+  },
+  {
+    "sentence": "Yo ___ en mis vacaciones de verano.",
+    "verb": "pensar",
+    "english": "I think about my summer vacation.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "pienso"
+  },
+  {
+    "sentence": "¿Tú ___ que esta respuesta es correcta?",
+    "verb": "pensar",
+    "english": "Do you think this answer is correct?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "piensas"
+  },
+  {
+    "sentence": "Nosotros ___ en una solución diferente.",
+    "verb": "pensar",
+    "english": "We think about a different solution.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "pensamos"
+  },
+  {
+    "sentence": "Ellas ___ mucho antes de decidir.",
+    "verb": "pensar",
+    "english": "They think a lot before deciding.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "piensan"
+  },
+  {
+    "sentence": "Yo ___ a trabajar a las nueve.",
+    "verb": "empezar",
+    "english": "I start working at nine.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "empiezo"
+  },
+  {
+    "sentence": "¿Tú ___ las clases en septiembre?",
+    "verb": "empezar",
+    "english": "Do you start classes in September?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "empiezas"
+  },
+  {
+    "sentence": "El concierto ___ a las ocho.",
+    "verb": "empezar",
+    "english": "The concert starts at eight.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "empieza"
+  },
+  {
+    "sentence": "Nosotros ___ el proyecto hoy.",
+    "verb": "empezar",
+    "english": "We start the project today.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "empezamos"
+  },
+  {
+    "sentence": "Yo ___ las instrucciones del juego.",
+    "verb": "entender",
+    "english": "I understand the instructions of the game.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "entiendo"
+  },
+  {
+    "sentence": "¿Tú ___ esta palabra en español?",
+    "verb": "entender",
+    "english": "Do you understand this word in Spanish?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "entiendes"
+  },
+  {
+    "sentence": "Nosotras ___ bien la explicación.",
+    "verb": "entender",
+    "english": "We understand the explanation well.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "entendemos"
+  },
+  {
+    "sentence": "Los alumnos ___ la lección rápidamente.",
+    "verb": "entender",
+    "english": "The students understand the lesson quickly.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "entienden"
+  },
+  {
+    "sentence": "Yo ___ tomar té por la mañana.",
+    "verb": "preferir",
+    "english": "I prefer to drink tea in the morning.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "prefiero"
+  },
+  {
+    "sentence": "¿Tú ___ estudiar solo o en grupo?",
+    "verb": "preferir",
+    "english": "Do you prefer to study alone or in a group?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "prefieres"
+  },
+  {
+    "sentence": "Nosotros ___ viajar en tren.",
+    "verb": "preferir",
+    "english": "We prefer to travel by train.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "preferimos"
+  },
+  {
+    "sentence": "Ellos ___ comer temprano.",
+    "verb": "preferir",
+    "english": "They prefer to eat early.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "prefieren"
+  },
+  {
+    "sentence": "Yo ___ al ajedrez con mis amigos.",
+    "verb": "jugar",
+    "english": "I play chess with my friends.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "juego"
+  },
+  {
+    "sentence": "¿Tú ___ al fútbol los fines de semana?",
+    "verb": "jugar",
+    "english": "Do you play soccer on weekends?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "juegas"
+  },
+  {
+    "sentence": "Nosotros ___ a las cartas después de cenar.",
+    "verb": "jugar",
+    "english": "We play cards after dinner.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "jugamos"
+  },
+  {
+    "sentence": "Vosotras ___ al tenis los sábados.",
+    "verb": "jugar",
+    "english": "You all play tennis on Saturdays.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "jugáis"
+  }
+]
