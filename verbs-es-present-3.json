@@ -1,0 +1,386 @@
+[
+  {
+    "sentence": "Yo ___ estudiante de ingeniería.",
+    "verb": "ser",
+    "english": "I am an engineering student.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "soy"
+  },
+  {
+    "sentence": "¿Tú ___ de Argentina o de Chile?",
+    "verb": "ser",
+    "english": "Are you from Argentina or Chile?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "eres"
+  },
+  {
+    "sentence": "Mi profesora ___ muy paciente.",
+    "verb": "ser",
+    "english": "My teacher is very patient.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "es"
+  },
+  {
+    "sentence": "Nosotros ___ buenos amigos desde la infancia.",
+    "verb": "ser",
+    "english": "We have been good friends since childhood.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "somos"
+  },
+  {
+    "sentence": "Yo ___ cansado después de correr.",
+    "verb": "estar",
+    "english": "I am tired after running.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "estoy"
+  },
+  {
+    "sentence": "¿Tú ___ en casa ahora?",
+    "verb": "estar",
+    "english": "Are you at home now?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "estás"
+  },
+  {
+    "sentence": "Vosotros ___ preparados para empezar.",
+    "verb": "estar",
+    "english": "You all are ready to begin.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "estáis"
+  },
+  {
+    "sentence": "Las ventanas ___ abiertas.",
+    "verb": "estar",
+    "english": "The windows are open.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "están"
+  },
+  {
+    "sentence": "Yo ___ dos hermanos menores.",
+    "verb": "tener",
+    "english": "I have two younger siblings.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "tengo"
+  },
+  {
+    "sentence": "Mi amigo ___ un perro muy pequeño.",
+    "verb": "tener",
+    "english": "My friend has a very small dog.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "tiene"
+  },
+  {
+    "sentence": "Nosotras ___ clase a las ocho.",
+    "verb": "tener",
+    "english": "We have class at eight.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "tenemos"
+  },
+  {
+    "sentence": "¿Vosotros ___ tiempo libre esta tarde?",
+    "verb": "tener",
+    "english": "Do you all have free time this afternoon?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "tenéis"
+  },
+  {
+    "sentence": "Yo ___ al gimnasio después del trabajo.",
+    "verb": "ir",
+    "english": "I go to the gym after work.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "voy"
+  },
+  {
+    "sentence": "¿Tú ___ en metro a la universidad?",
+    "verb": "ir",
+    "english": "Do you go to university by subway?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "vas"
+  },
+  {
+    "sentence": "Elena ___ a la biblioteca los lunes.",
+    "verb": "ir",
+    "english": "Elena goes to the library on Mondays.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "va"
+  },
+  {
+    "sentence": "Ellos ___ al cine todos los meses.",
+    "verb": "ir",
+    "english": "They go to the movies every month.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "van"
+  },
+  {
+    "sentence": "Yo ___ ejercicio por las mañanas.",
+    "verb": "hacer",
+    "english": "I exercise in the mornings.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "hago"
+  },
+  {
+    "sentence": "¿Tú ___ la compra los sábados?",
+    "verb": "hacer",
+    "english": "Do you do the grocery shopping on Saturdays?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "haces"
+  },
+  {
+    "sentence": "Mi padre ___ café para todos.",
+    "verb": "hacer",
+    "english": "My father makes coffee for everyone.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "hace"
+  },
+  {
+    "sentence": "Vosotros ___ los deberes después de clase.",
+    "verb": "hacer",
+    "english": "You all do homework after class.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "hacéis"
+  },
+  {
+    "sentence": "Yo siempre ___ la verdad.",
+    "verb": "decir",
+    "english": "I always tell the truth.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "digo"
+  },
+  {
+    "sentence": "¿Tú ___ lo mismo que tu hermano?",
+    "verb": "decir",
+    "english": "Do you say the same thing as your brother?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "dices"
+  },
+  {
+    "sentence": "Nosotros ___ buenos días al entrar.",
+    "verb": "decir",
+    "english": "We say good morning when we enter.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "decimos"
+  },
+  {
+    "sentence": "Los niños ___ que tienen hambre.",
+    "verb": "decir",
+    "english": "The children say they are hungry.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "dicen"
+  },
+  {
+    "sentence": "Yo ___ ayudarte con el ejercicio.",
+    "verb": "poder",
+    "english": "I can help you with the exercise.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "puedo"
+  },
+  {
+    "sentence": "¿Tú ___ venir a la reunión?",
+    "verb": "poder",
+    "english": "Can you come to the meeting?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "puedes"
+  },
+  {
+    "sentence": "Nosotros ___ quedarnos hasta las seis.",
+    "verb": "poder",
+    "english": "We can stay until six.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "podemos"
+  },
+  {
+    "sentence": "Ellas ___ hablar tres idiomas.",
+    "verb": "poder",
+    "english": "They can speak three languages.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "pueden"
+  },
+  {
+    "sentence": "Yo ___ aprender a tocar la guitarra.",
+    "verb": "querer",
+    "english": "I want to learn to play the guitar.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "quiero"
+  },
+  {
+    "sentence": "¿Tú ___ un poco de agua?",
+    "verb": "querer",
+    "english": "Do you want some water?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "quieres"
+  },
+  {
+    "sentence": "Mi hermana ___ viajar a México.",
+    "verb": "querer",
+    "english": "My sister wants to travel to Mexico.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "quiere"
+  },
+  {
+    "sentence": "Vosotros ___ visitar el museo mañana.",
+    "verb": "querer",
+    "english": "You all want to visit the museum tomorrow.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "queréis"
+  },
+  {
+    "sentence": "Yo ___ dónde está la estación.",
+    "verb": "saber",
+    "english": "I know where the station is.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "sé"
+  },
+  {
+    "sentence": "¿Tú ___ nadar?",
+    "verb": "saber",
+    "english": "Do you know how to swim?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "sabes"
+  },
+  {
+    "sentence": "Nosotros ___ la respuesta correcta.",
+    "verb": "saber",
+    "english": "We know the correct answer.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "sabemos"
+  },
+  {
+    "sentence": "Los profesores ___ explicar temas difíciles.",
+    "verb": "saber",
+    "english": "The teachers know how to explain difficult topics.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "saben"
+  },
+  {
+    "sentence": "Yo ___ aquí todos los martes.",
+    "verb": "venir",
+    "english": "I come here every Tuesday.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "vengo"
+  },
+  {
+    "sentence": "¿Tú ___ con nosotros al concierto?",
+    "verb": "venir",
+    "english": "Are you coming with us to the concert?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "vienes"
+  },
+  {
+    "sentence": "Mi prima ___ de Colombia.",
+    "verb": "venir",
+    "english": "My cousin comes from Colombia.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "viene"
+  },
+  {
+    "sentence": "Vosotras ___ en autobús desde el centro.",
+    "verb": "venir",
+    "english": "You all come by bus from the city center.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "venís"
+  },
+  {
+    "sentence": "Yo ___ el teléfono en silencio durante la clase.",
+    "verb": "poner",
+    "english": "I put my phone on silent during class.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "pongo"
+  },
+  {
+    "sentence": "¿Tú ___ la mesa antes de cenar?",
+    "verb": "poner",
+    "english": "Do you set the table before dinner?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "pones"
+  },
+  {
+    "sentence": "Nosotros ___ la música para bailar.",
+    "verb": "poner",
+    "english": "We put on music to dance.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "ponemos"
+  },
+  {
+    "sentence": "Ellas ___ los libros en la estantería.",
+    "verb": "poner",
+    "english": "They put the books on the shelf.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "ponen"
+  },
+  {
+    "sentence": "Yo ___ de casa a las siete.",
+    "verb": "salir",
+    "english": "I leave home at seven.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "salgo"
+  },
+  {
+    "sentence": "¿Tú ___ con tus amigos los viernes?",
+    "verb": "salir",
+    "english": "Do you go out with your friends on Fridays?",
+    "category": "present",
+    "type": "irregular",
+    "correct": "sales"
+  },
+  {
+    "sentence": "La clase ___ al patio durante el descanso.",
+    "verb": "salir",
+    "english": "The class goes out to the courtyard during break.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "sale"
+  },
+  {
+    "sentence": "Vosotros ___ del trabajo a las cinco.",
+    "verb": "salir",
+    "english": "You all leave work at five.",
+    "category": "present",
+    "type": "irregular",
+    "correct": "salís"
+  }
+]
