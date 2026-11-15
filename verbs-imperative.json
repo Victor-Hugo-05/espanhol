@@ -1,0 +1,802 @@
+[
+  {
+    "sentence": "___ a janela para entrar um pouco de ar.",
+    "verb": "abrir",
+    "english": "Open the window to let some air in.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Abra"
+  },
+  {
+    "sentence": "___ a porta ao sair da sala.",
+    "verb": "fechar",
+    "english": "Close the door when you leave the room.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Feche"
+  },
+  {
+    "sentence": "___ um pouco todos os dias para melhorar seu português.",
+    "verb": "estudar",
+    "english": "Study a little every day to improve your Portuguese.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Estude"
+  },
+  {
+    "sentence": "___ bastante água durante a caminhada.",
+    "verb": "beber",
+    "english": "Drink plenty of water during the walk.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Beba"
+  },
+  {
+    "sentence": "___ alguma coisa antes de sair de casa.",
+    "verb": "comer",
+    "english": "Eat something before leaving home.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Coma"
+  },
+  {
+    "sentence": "___ seu nome no canto da folha.",
+    "verb": "escrever",
+    "english": "Write your name in the corner of the page.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Escreva"
+  },
+  {
+    "sentence": "___ as instruções antes de começar a prova.",
+    "verb": "ler",
+    "english": "Read the instructions before starting the exam.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Leia"
+  },
+  {
+    "sentence": "___ os exercícios com atenção.",
+    "verb": "fazer",
+    "english": "Do the exercises carefully.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Faça"
+  },
+  {
+    "sentence": "___ a verdade para seus amigos.",
+    "verb": "dizer",
+    "english": "Tell your friends the truth.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Diga"
+  },
+  {
+    "sentence": "___ ao médico se a dor continuar.",
+    "verb": "ir",
+    "english": "Go to the doctor if the pain continues.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Vá"
+  },
+  {
+    "sentence": "___ aqui quando terminar o trabalho.",
+    "verb": "vir",
+    "english": "Come here when you finish your work.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Venha"
+  },
+  {
+    "sentence": "___ o livro em cima da mesa.",
+    "verb": "pôr",
+    "english": "Put the book on the table.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Ponha"
+  },
+  {
+    "sentence": "___ seu passaporte para a reunião.",
+    "verb": "trazer",
+    "english": "Bring your passport to the meeting.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Traga"
+  },
+  {
+    "sentence": "___ este vídeo antes da nossa aula.",
+    "verb": "ver",
+    "english": "Watch this video before our class.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Veja"
+  },
+  {
+    "sentence": "___ uma resposta até amanhã, por favor.",
+    "verb": "dar",
+    "english": "Give an answer by tomorrow, please.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Dê"
+  },
+  {
+    "sentence": "___ esta música com atenção.",
+    "verb": "ouvir",
+    "english": "Listen to this song carefully.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Ouça"
+  },
+  {
+    "sentence": "___ ajuda quando não entender a explicação.",
+    "verb": "pedir",
+    "english": "Ask for help when you don't understand the explanation.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Peça"
+  },
+  {
+    "sentence": "___ um prato do cardápio.",
+    "verb": "escolher",
+    "english": "Choose a dish from the menu.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Escolha"
+  },
+  {
+    "sentence": "___ em frente até o próximo semáforo.",
+    "verb": "seguir",
+    "english": "Go straight ahead until the next traffic light.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Siga"
+  },
+  {
+    "sentence": "___ cedo para descansar bem.",
+    "verb": "dormir",
+    "english": "Go to bed early to get enough rest.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Durma"
+  },
+  {
+    "sentence": "___ às sete para não perder o ônibus.",
+    "verb": "acordar",
+    "english": "Wake up at seven so you don't miss the bus.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Acorde"
+  },
+  {
+    "sentence": "___ para sua mãe quando chegar.",
+    "verb": "ligar",
+    "english": "Call your mother when you arrive.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Ligue"
+  },
+  {
+    "sentence": "___ a luz antes de sair.",
+    "verb": "desligar",
+    "english": "Turn off the light before leaving.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Desligue"
+  },
+  {
+    "sentence": "___ alguns minutos na recepção.",
+    "verb": "esperar",
+    "english": "Wait a few minutes at reception.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Espere"
+  },
+  {
+    "sentence": "___ seu colega com a tarefa.",
+    "verb": "ajudar",
+    "english": "Help your classmate with the assignment.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Ajude"
+  },
+  {
+    "sentence": "___ ao professor se tiver dúvidas.",
+    "verb": "perguntar",
+    "english": "Ask the teacher if you have questions.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Pergunte"
+  },
+  {
+    "sentence": "___ à mensagem assim que puder.",
+    "verb": "responder",
+    "english": "Reply to the message as soon as you can.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Responda"
+  },
+  {
+    "sentence": "___ a frase em voz alta.",
+    "verb": "repetir",
+    "english": "Repeat the sentence out loud.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Repita"
+  },
+  {
+    "sentence": "___ o problema com suas próprias palavras.",
+    "verb": "explicar",
+    "english": "Explain the problem in your own words.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Explique"
+  },
+  {
+    "sentence": "___ o arquivo por e-mail.",
+    "verb": "enviar",
+    "english": "Send the file by email.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Envie"
+  },
+  {
+    "sentence": "___ a conta antes de sair do restaurante.",
+    "verb": "pagar",
+    "english": "Pay the bill before leaving the restaurant.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Pague"
+  },
+  {
+    "sentence": "___ como foi sua viagem.",
+    "verb": "contar",
+    "english": "Tell me how your trip went.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Conte"
+  },
+  {
+    "sentence": "___ seu ingresso na entrada.",
+    "verb": "mostrar",
+    "english": "Show your ticket at the entrance.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Mostre"
+  },
+  {
+    "sentence": "___ esta sobremesa típica.",
+    "verb": "experimentar",
+    "english": "Try this traditional dessert.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Experimente"
+  },
+  {
+    "sentence": "___ aqui ao meu lado, por favor.",
+    "verb": "sentar-se",
+    "english": "Sit here beside me, please.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Sente-se"
+  },
+  {
+    "sentence": "___ a mão se souber a resposta.",
+    "verb": "levantar",
+    "english": "Raise your hand if you know the answer.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Levante"
+  },
+  {
+    "sentence": "___ em equipe neste projeto.",
+    "verb": "trabalhar",
+    "english": "Work as a team on this project.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Trabalhe"
+  },
+  {
+    "sentence": "___ tranquilo, temos tempo suficiente.",
+    "verb": "ficar",
+    "english": "Stay calm; we have enough time.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Fique"
+  },
+  {
+    "sentence": "___ as palavras desconhecidas no dicionário.",
+    "verb": "procurar",
+    "english": "Look up the unfamiliar words in the dictionary.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Procure"
+  },
+  {
+    "sentence": "___ em você mesmo durante a apresentação.",
+    "verb": "confiar",
+    "english": "Believe in yourself during the presentation.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "Confie"
+  },
+  {
+    "sentence": "Não ___ essa caixa antes de amanhã.",
+    "verb": "abrir",
+    "english": "Don't open that box before tomorrow.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "abra"
+  },
+  {
+    "sentence": "Não ___ o aplicativo enquanto o arquivo é enviado.",
+    "verb": "fechar",
+    "english": "Don't close the app while the file is being uploaded.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "feche"
+  },
+  {
+    "sentence": "Não ___ tão rápido durante a apresentação.",
+    "verb": "falar",
+    "english": "Don't speak so fast during the presentation.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "fale"
+  },
+  {
+    "sentence": "Não ___ esse alimento se for alérgico a ele.",
+    "verb": "comer",
+    "english": "Don't eat that food if you're allergic to it.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "coma"
+  },
+  {
+    "sentence": "Não ___ água desta fonte.",
+    "verb": "beber",
+    "english": "Don't drink water from this fountain.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "beba"
+  },
+  {
+    "sentence": "Não ___ de casa sem o guarda-chuva.",
+    "verb": "sair",
+    "english": "Don't leave home without an umbrella.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "saia"
+  },
+  {
+    "sentence": "Não ___ barulho durante o exame.",
+    "verb": "fazer",
+    "english": "Don't make noise during the exam.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "faça"
+  },
+  {
+    "sentence": "Não ___ a senha para ninguém.",
+    "verb": "dizer",
+    "english": "Don't tell anyone the password.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "diga"
+  },
+  {
+    "sentence": "Não ___ sozinho por aquela rua à noite.",
+    "verb": "ir",
+    "english": "Don't go down that street alone at night.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "vá"
+  },
+  {
+    "sentence": "Não ___ à festa se estiver doente.",
+    "verb": "vir",
+    "english": "Don't come to the party if you're sick.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "venha"
+  },
+  {
+    "sentence": "Não ___ o celular perto da água.",
+    "verb": "pôr",
+    "english": "Don't put your phone near the water.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "ponha"
+  },
+  {
+    "sentence": "Não ___ comida para dentro do laboratório.",
+    "verb": "trazer",
+    "english": "Don't bring food into the laboratory.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "traga"
+  },
+  {
+    "sentence": "Não ___ a oportunidade de conhecer a cidade.",
+    "verb": "perder",
+    "english": "Don't miss the opportunity to explore the city.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "perca"
+  },
+  {
+    "sentence": "Não ___ de levar o documento.",
+    "verb": "esquecer",
+    "english": "Don't forget to bring the document.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "esqueça"
+  },
+  {
+    "sentence": "Não ___ nos equipamentos sem autorização.",
+    "verb": "mexer",
+    "english": "Don't touch the equipment without permission.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "mexa"
+  },
+  {
+    "sentence": "Não ___ nas obras de arte do museu.",
+    "verb": "tocar",
+    "english": "Don't touch the artwork in the museum.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "toque"
+  },
+  {
+    "sentence": "Não ___ seu colega enquanto ele estiver falando.",
+    "verb": "interromper",
+    "english": "Don't interrupt your classmate while he's speaking.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "interrompa"
+  },
+  {
+    "sentence": "Não ___ perto da piscina.",
+    "verb": "correr",
+    "english": "Don't run near the swimming pool.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "corra"
+  },
+  {
+    "sentence": "Não ___ durante a aula.",
+    "verb": "dormir",
+    "english": "Don't fall asleep during class.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "durma"
+  },
+  {
+    "sentence": "Não ___ no corredor do hospital.",
+    "verb": "gritar",
+    "english": "Don't shout in the hospital corridor.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "grite"
+  },
+  {
+    "sentence": "Não ___ o limite de velocidade.",
+    "verb": "ultrapassar",
+    "english": "Don't exceed the speed limit.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "ultrapasse"
+  },
+  {
+    "sentence": "Não ___ propostas sem ler as condições.",
+    "verb": "aceitar",
+    "english": "Don't accept offers without reading the terms.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "aceite"
+  },
+  {
+    "sentence": "Não ___ para seus pais sobre o que aconteceu.",
+    "verb": "mentir",
+    "english": "Don't lie to your parents about what happened.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "minta"
+  },
+  {
+    "sentence": "Não ___ uma resposta antes de ler todas as opções.",
+    "verb": "escolher",
+    "english": "Don't choose an answer before reading all the options.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "escolha"
+  },
+  {
+    "sentence": "Não ___ este botão vermelho.",
+    "verb": "apertar",
+    "english": "Don't press this red button.",
+    "category": "imperative",
+    "person": "você",
+    "correct": "aperte"
+  },
+  {
+    "sentence": "___ os livros na página vinte, pessoal.",
+    "verb": "abrir",
+    "english": "Open your books to page twenty, everyone.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Abram"
+  },
+  {
+    "sentence": "___ as janelas antes de sair, por favor.",
+    "verb": "fechar",
+    "english": "Close the windows before leaving, please.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Fechem"
+  },
+  {
+    "sentence": "___ juntos para a prova de sexta-feira.",
+    "verb": "estudar",
+    "english": "Study together for Friday's exam.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Estudem"
+  },
+  {
+    "sentence": "___ o texto e depois respondam às perguntas.",
+    "verb": "ler",
+    "english": "Read the text and then answer the questions.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Leiam"
+  },
+  {
+    "sentence": "___ três frases sobre suas férias.",
+    "verb": "escrever",
+    "english": "Write three sentences about your vacation.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Escrevam"
+  },
+  {
+    "sentence": "___ uma fila na entrada, por favor.",
+    "verb": "fazer",
+    "english": "Form a line at the entrance, please.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Façam"
+  },
+  {
+    "sentence": "___ seus nomes antes de começar.",
+    "verb": "dizer",
+    "english": "Say your names before starting.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Digam"
+  },
+  {
+    "sentence": "___ comigo até a biblioteca.",
+    "verb": "vir",
+    "english": "Come with me to the library.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Venham"
+  },
+  {
+    "sentence": "___ para a sala ao lado agora.",
+    "verb": "ir",
+    "english": "Go to the next room now.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Vão"
+  },
+  {
+    "sentence": "___ as mochilas debaixo das cadeiras.",
+    "verb": "pôr",
+    "english": "Put your backpacks under the chairs.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Ponham"
+  },
+  {
+    "sentence": "___ os cadernos para a próxima aula.",
+    "verb": "trazer",
+    "english": "Bring your notebooks to the next class.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Tragam"
+  },
+  {
+    "sentence": "___ as fotos que tirei na viagem.",
+    "verb": "ver",
+    "english": "Look at the photos I took on the trip.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Vejam"
+  },
+  {
+    "sentence": "___ exemplos para explicar a ideia.",
+    "verb": "dar",
+    "english": "Give examples to explain the idea.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Deem"
+  },
+  {
+    "sentence": "___ o áudio duas vezes antes de responder.",
+    "verb": "ouvir",
+    "english": "Listen to the audio twice before answering.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Ouçam"
+  },
+  {
+    "sentence": "___ pacientes com os colegas iniciantes.",
+    "verb": "ser",
+    "english": "Be patient with your beginner classmates.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Sejam"
+  },
+  {
+    "sentence": "___ prontos às oito da manhã.",
+    "verb": "estar",
+    "english": "Be ready at eight in the morning.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Estejam"
+  },
+  {
+    "sentence": "___ as placas até a saída.",
+    "verb": "seguir",
+    "english": "Follow the signs to the exit.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Sigam"
+  },
+  {
+    "sentence": "___ um representante para o grupo.",
+    "verb": "escolher",
+    "english": "Choose a representative for the group.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Escolham"
+  },
+  {
+    "sentence": "___ aqui enquanto eu busco as chaves.",
+    "verb": "esperar",
+    "english": "Wait here while I get the keys.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Esperem"
+  },
+  {
+    "sentence": "___ as frutas antes que estraguem.",
+    "verb": "comer",
+    "english": "Eat the fruit before it goes bad.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "Comam"
+  },
+  {
+    "sentence": "Não ___ os presentes antes da festa.",
+    "verb": "abrir",
+    "english": "Don't open the gifts before the party.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "abram"
+  },
+  {
+    "sentence": "Não ___ os livros ainda, turma.",
+    "verb": "fechar",
+    "english": "Don't close your books yet, class.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "fechem"
+  },
+  {
+    "sentence": "Não ___ todos ao mesmo tempo.",
+    "verb": "falar",
+    "english": "Don't all speak at the same time.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "falem"
+  },
+  {
+    "sentence": "Não ___ a tarefa na última hora.",
+    "verb": "fazer",
+    "english": "Don't do the assignment at the last minute.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "façam"
+  },
+  {
+    "sentence": "Não ___ a resposta para os outros grupos.",
+    "verb": "dizer",
+    "english": "Don't tell the other groups the answer.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "digam"
+  },
+  {
+    "sentence": "Não ___ embora antes do fim da reunião.",
+    "verb": "ir",
+    "english": "Don't leave before the end of the meeting.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "vão"
+  },
+  {
+    "sentence": "Não ___ objetos de vidro para a quadra.",
+    "verb": "trazer",
+    "english": "Don't bring glass objects onto the court.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "tragam"
+  },
+  {
+    "sentence": "Não ___ as bolsas no chão molhado.",
+    "verb": "pôr",
+    "english": "Don't put your bags on the wet floor.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "ponham"
+  },
+  {
+    "sentence": "Não ___ da sala durante a explicação.",
+    "verb": "sair",
+    "english": "Don't leave the room during the explanation.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "saiam"
+  },
+  {
+    "sentence": "Não ___ o horário do trem.",
+    "verb": "perder",
+    "english": "Don't miss the train's departure time.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "percam"
+  },
+  {
+    "sentence": "Não ___ tarde hoje: amanhã sairemos cedo.",
+    "verb": "dormir",
+    "english": "Don't go to bed late tonight: we're leaving early tomorrow.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "durmam"
+  },
+  {
+    "sentence": "Não ___ os casacos no restaurante.",
+    "verb": "esquecer",
+    "english": "Don't forget your coats at the restaurant.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "esqueçam"
+  },
+  {
+    "sentence": "Não ___ lixo na praia.",
+    "verb": "deixar",
+    "english": "Don't leave trash on the beach.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "deixem"
+  },
+  {
+    "sentence": "Não ___ nas escadas.",
+    "verb": "correr",
+    "english": "Don't run on the stairs.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "corram"
+  },
+  {
+    "sentence": "Não ___ o celular durante o teste.",
+    "verb": "usar",
+    "english": "Don't use your phones during the test.",
+    "category": "imperative",
+    "person": "vocês",
+    "correct": "usem"
+  }
+]
