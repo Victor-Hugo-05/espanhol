@@ -45,7 +45,8 @@ const files = [
   "verbs-future-preterite.json",
   "verbs-present-subjunctive.json",
   "verbs-imperfect-subjunctive.json",
-  "verbs-conditional.json"
+  "verbs-conditional.json",
+  "verbs-imperative.json"
 ];
 
 async function loadExercises() {
@@ -215,7 +216,9 @@ function showQuestion() {
   asked++;
   progress.textContent = `${asked} / ${targetCount}`;
   score.textContent = `Score: ${correctCount}`;
-  english.textContent = current.english;
+  english.textContent = current.category === "imperative"
+    ? `${current.english} · Forma pedida: ${current.person}`
+    : current.english;
   portuguese.textContent = current.sentence;
 
   const doubleQuestion = isDoubleVerbQuestion(current);
