@@ -1,342 +1,310 @@
-let questions = [];
-let queue = [];
-let current = null;
-let asked = 0;
-let correctCount = 0;
-let targetCount = 20;
-let showVerbHint = true;
+(() => {
+  "use strict";
 
-const setup = document.getElementById("setup");
-const game = document.getElementById("game");
-const categorySelect = document.getElementById("categorySelect");
-const regularCheckbox = document.getElementById("regularVerbs");
-const irregularCheckbox = document.getElementById("irregularVerbs");
-const availableCount = document.getElementById("availableCount");
-const questionCount = document.getElementById("questionCount");
-const startBtn = document.getElementById("startVerbBtn");
-const progress = document.getElementById("verbProgress");
-const score = document.getElementById("verbScore");
-const english = document.getElementById("englishSentence");
-const portuguese = document.getElementById("portugueseSentence");
-const hint = document.getElementById("verbHint");
-const input = document.getElementById("verbAnswer");
-const input2 = document.getElementById("verbAnswer2");
-const checkBtn = document.getElementById("checkVerbBtn");
-const feedback = document.getElementById("verbFeedback");
-const pronounceBtn = document.getElementById("pronounceVerbBtn");
-const nextBtn = document.getElementById("nextVerbBtn");
-const visibilityBtn = document.getElementById("verbVisibilityBtn");
+  // Todos os exercícios dos dois desafios anteriores, sem perder os tempos verbais.
+  const DATA_FILES = [
+    "verbs-present.json",
+    "verbs-present-extra.json",
+    "verbs-preterite.json",
+    "verbs-preterite-extra.json",
+    "verbs-gerund.json",
+    "verbs-gerund-extra.json",
+    "verbs-participle.json",
+    "verbs-participle-extra.json",
+    "verbs-pronominal.json",
+    "verbs-pronominal-extra.json",
+    "verbs-future-preterite.json",
+    "verbs-present-subjunctive.json",
+    "verbs-imperfect-subjunctive.json",
+    "verbs-conditional.json",
+    "verbs-imperative.json",
+    "irregular-verbs-1.json",
+    "irregular-verbs-2.json",
+    "irregular-verbs-3.json",
+    "irregular-verbs-4.json",
+    "irregular-verbs-5.json",
+    "irregular-verbs-6.json"
+  ];
 
-const loadStatus = document.createElement("div");
-loadStatus.id = "verbLoadStatus";
-loadStatus.style.marginTop = "10px";
-loadStatus.style.fontWeight = "700";
-loadStatus.style.fontSize = "14px";
-startBtn.insertAdjacentElement("afterend", loadStatus);
+  const IRREGULAR_TENSES = {
+    presente: "present",
+    preterito_perfeito: "preterite",
+    imperfeito_subjuntivo: "imperfect_subjunctive",
+    futuro_subjuntivo: "futuro_subjuntivo",
+    futuro_presente: "futuro_presente",
+    futuro_preterito: "future_preterite"
+  };
 
-const files = [
-  "verbs-present.json",
-  "verbs-present-extra.json",
-  "verbs-preterite.json",
-  "verbs-preterite-extra.json",
-  "verbs-gerund.json",
-  "verbs-gerund-extra.json",
-  "verbs-participle.json",
-  "verbs-participle-extra.json",
-  "verbs-pronominal.json",
-  "verbs-pronominal-extra.json",
-  "verbs-future-preterite.json",
-  "verbs-present-subjunctive.json",
-  "verbs-imperfect-subjunctive.json",
-  "verbs-conditional.json",
-  "verbs-imperative.json",
-  "irregular-verbs-1.json",
-  "irregular-verbs-2.json",
-  "irregular-verbs-3.json",
-  "irregular-verbs-4.json",
-  "irregular-verbs-5.json",
-  "irregular-verbs-6.json"
-];
+  // Classificação pelo infinitivo, não pela origem do arquivo.
+  // Assim, "beber"/"comer" continuam regulares mesmo no banco antigo,
+  // e "fazer"/"ser"/"ter" continuam irregulares em qualquer exercício.
+  const IRREGULAR_LEMMAS = new Set((
+    "ser estar ter haver ir vir fazer dizer trazer pôr poder querer saber dar ver ler crer " +
+    "ouvir pedir medir sentir mentir dormir servir vestir ferir seguir conseguir perseguir " +
+    "preferir repetir competir impedir despedir cair sair atrair distrair construir destruir " +
+    "possuir caber valer manter obter conter deter entreter propor supor compor repor impor " +
+    "dispor expor perder conhecer reconhecer agradecer esquecer nascer crescer descer " +
+    "corrigir dirigir exigir atingir proteger eleger cobrir descobrir abrir escrever " +
+    "descrever inscrever morrer rir sorrir"
+  ).split(" "));
 
-const irregularFile = name => name.startsWith("irregular-verbs-");
-const irregularTenseMap = {presente:"present",preterito_perfeito:"preterite",imperfeito_subjuntivo:"imperfect_subjunctive",futuro_subjuntivo:"futuro_subjuntivo",futuro_presente:"futuro_presente",futuro_preterito:"future_preterite"};
-const knownIrregulars = new Set("ser estar ter haver ir vir fazer dizer trazer pôr poder querer saber dar ver ler crer prever rever ouvir pedir medir sentir mentir dormir cobrir descobrir abrir escrever descrever inscrever fazer satisfazer desfazer refazer manter obter conter deter entreter propor supor compor repor impor dispor expor sair cair atrair distrair construir destruir possuir conseguir seguir perseguir fugir valer caber perder ganhar conhecer reconhecer agradecer esquecer nascer crescer descer subir rir sorrir preferir ferir servir vestir repetir competir impedir despedir corrigir dirigir exigir atingir proteger eleger escolher beber comer".split(" "));
-function getPool() {
-  const category = categorySelect.value;
-  return questions.filter(q => (category === "all" || q.category === category) && (q.isIrregular ? irregularCheckbox.checked : regularCheckbox.checked));
-}
-function updateAvailableCount() {
-  const count = getPool().length;
-  availableCount.textContent = `${count} frases disponíveis`;
-  questionCount.max = Math.max(1,count);
-  startBtn.disabled = !count;
-}
+  const $ = id => document.getElementById(id);
+  const setup = $("setup"), game = $("game");
+  const regularVerbs = $("regularVerbs"), irregularVerbs = $("irregularVerbs");
+  const categorySelect = $("categorySelect"), questionCount = $("questionCount");
+  const availableCount = $("availableCount"), loadStatus = $("verbLoadStatus");
+  const startBtn = $("startVerbBtn"), progress = $("verbProgress"), score = $("verbScore");
+  const english = $("englishSentence"), portuguese = $("portugueseSentence");
+  const tenseHint = $("tenseHint"), hint = $("verbHint");
+  const input = $("verbAnswer"), input2 = $("verbAnswer2");
+  const checkBtn = $("checkVerbBtn"), feedback = $("verbFeedback");
+  const pronounceBtn = $("pronounceVerbBtn"), nextBtn = $("nextVerbBtn");
+  const restartBtn = $("restartVerbBtn"), visibilityBtn = $("verbVisibilityBtn");
 
+  let questions = [], queue = [], current = null;
+  let asked = 0, correctCount = 0, targetCount = 20;
+  let answered = false, showInfinitive = true;
 
-async function loadExercises() {
-  startBtn.disabled = true;
-  loadStatus.textContent = "Carregando exercícios...";
-  loadStatus.style.color = "#666";
+  // Links antigos para a página de irregulares abrem o jogo unificado filtrado.
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("tipo") === "irregulares") regularVerbs.checked = false;
 
-  const results = await Promise.allSettled(
-    files.map(async file => {
+  function normalizeAnswer(text) {
+    return text.trim().toLocaleLowerCase("pt-BR")
+      .replace(/[.!?]+$/g, "").trim().replace(/\s+/g, " ");
+  }
+
+  function shuffle(items) {
+    const result = [...items];
+    for (let i = result.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [result[i], result[j]] = [result[j], result[i]];
+    }
+    return result;
+  }
+
+  function isIrregularVerb(verb) {
+    return IRREGULAR_LEMMAS.has(String(verb || "").toLocaleLowerCase("pt-BR").replace(/-se$/, ""));
+  }
+
+  function adaptQuestion(question, file) {
+    const fromIrregularCollection = file.startsWith("irregular-verbs-");
+    const verbs = Array.isArray(question.verbs) ? question.verbs : [question.verb];
+    const correct = Array.isArray(question.correct) ? question.correct : [question.correct];
+    const category = fromIrregularCollection
+      ? IRREGULAR_TENSES[question.tense]
+      : question.category;
+    if (!category || !verbs.every(v => typeof v === "string" && v) ||
+        !correct.every(v => typeof v === "string" && v) ||
+        verbs.length !== correct.length || !question.sentence ||
+        (question.sentence.match(/___/g) || []).length !== correct.length) {
+      throw new Error(`Exercício inválido em ${file}`);
+    }
+    return {
+      ...question,
+      category,
+      type: (fromIrregularCollection || verbs.some(isIrregularVerb)) ? "irregular" : "regular"
+    };
+  }
+
+  function getPool() {
+    return questions.filter(q =>
+      (categorySelect.value === "all" || q.category === categorySelect.value) &&
+      ((q.type === "regular" && regularVerbs.checked) ||
+       (q.type === "irregular" && irregularVerbs.checked))
+    );
+  }
+
+  function updateAvailableCount() {
+    const count = getPool().length;
+    availableCount.textContent = count
+      ? `${count} frases disponíveis`
+      : "Nenhuma frase disponível para os filtros selecionados.";
+    questionCount.max = String(Math.max(count, 1));
+    if (count && Number(questionCount.value) > count) questionCount.value = String(count);
+    startBtn.disabled = count === 0;
+  }
+
+  async function loadExercises() {
+    startBtn.disabled = true;
+    loadStatus.textContent = "Carregando exercícios...";
+    const results = await Promise.allSettled(DATA_FILES.map(async file => {
       const response = await fetch(file, { cache: "no-store" });
-      if (!response.ok) {
-        throw new Error(`${file}: HTTP ${response.status} ${response.statusText}`);
-      }
+      if (!response.ok) throw new Error(`${file}: HTTP ${response.status}`);
+      const group = await response.json();
+      if (!Array.isArray(group)) throw new Error(`${file}: formato inválido`);
+      return group.map(question => adaptQuestion(question, file));
+    }));
 
-      let data;
-      try {
-        data = await response.json();
-      } catch (error) {
-        throw new Error(`${file}: JSON inválido (${error.message})`);
-      }
+    const failed = [];
+    questions = results.flatMap((result, index) => {
+      if (result.status === "fulfilled") return result.value;
+      failed.push(DATA_FILES[index]);
+      console.error("Erro ao carregar", DATA_FILES[index], result.reason);
+      return [];
+    });
 
-      if (!Array.isArray(data)) {
-        throw new Error(`${file}: o conteúdo não é uma lista de exercícios`);
-      }
-
-      return { file, data: data.map(q => ({...q, category: irregularFile(file) ? (irregularTenseMap[q.tense] || q.tense) : q.category, isIrregular: irregularFile(file) || knownIrregulars.has((q.verb || "").toLowerCase()) || (Array.isArray(q.verbs) && q.verbs.some(v => knownIrregulars.has(v.toLowerCase()))), tenseLabel: q.tenseLabel || ""})) };
-    })
-  );
-
-  const loadedGroups = [];
-  const failedFiles = [];
-
-  results.forEach((result, index) => {
-    if (result.status === "fulfilled") {
-      loadedGroups.push(result.value.data);
-      console.info(`✅ Carregado: ${result.value.file} (${result.value.data.length} exercícios)`);
-    } else {
-      const file = files[index];
-      failedFiles.push(file);
-      console.error(`❌ Falha ao carregar ${file}:`, result.reason);
+    loadStatus.textContent = failed.length
+      ? `⚠️ Não foi possível carregar: ${failed.join(", ")}`
+      : "";
+    loadStatus.style.color = failed.length ? "#b36b00" : "#666";
+    if (!questions.length) {
+      loadStatus.textContent = "❌ Nenhum exercício pôde ser carregado.";
     }
-  });
-
-  questions = loadedGroups.flat();
-
-  if (questions.length > 0) {
     updateAvailableCount();
-
-    if (failedFiles.length === 0) {
-      loadStatus.textContent = "";
-    } else {
-      loadStatus.textContent = `⚠️ Alguns exercícios não carregaram: ${failedFiles.join(", ")}`;
-      loadStatus.style.color = "#b36b00";
-    }
-  } else {
-    loadStatus.textContent = "❌ Nenhum exercício pôde ser carregado. Abra o Console para ver os detalhes.";
-    loadStatus.style.color = "#d64545";
-  }
-}
-
-function shuffle(items) {
-  const arr = [...items];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
-
-function normalize(text) {
-  return text.trim().toLowerCase();
-}
-
-function isDoubleVerbQuestion(question) {
-  return Array.isArray(question.correct);
-}
-
-function fillSentence(sentence, answers) {
-  let result = sentence;
-  answers.forEach(answer => {
-    result = result.replace("___", answer);
-  });
-  return result;
-}
-
-function getCorrectAnswers(question) {
-  return isDoubleVerbQuestion(question) ? question.correct : [question.correct];
-}
-
-function getCompletedSentence(question) {
-  return fillSentence(question.sentence, getCorrectAnswers(question));
-}
-
-function canSpeak() {
-  return "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
-}
-
-function getPortugueseVoice() {
-  if (!canSpeak()) return null;
-
-  const voices = window.speechSynthesis.getVoices();
-  return voices.find(voice => voice.lang.toLowerCase() === "pt-br")
-    || voices.find(voice => voice.lang.toLowerCase().startsWith("pt"))
-    || null;
-}
-
-function speakCurrentSentence() {
-  if (!current || !canSpeak()) return;
-
-  const utterance = new SpeechSynthesisUtterance(getCompletedSentence(current));
-  utterance.lang = "pt-BR";
-
-  const portugueseVoice = getPortugueseVoice();
-  if (portugueseVoice) utterance.voice = portugueseVoice;
-
-  window.speechSynthesis.cancel();
-  window.speechSynthesis.speak(utterance);
-}
-
-function updateVerbHintVisibility() {
-  hint.style.display = showVerbHint ? "block" : "none";
-  visibilityBtn.textContent = showVerbHint
-    ? "Ocultar verbo em português"
-    : "Mostrar verbo em português";
-}
-
-function startGame() {
-  const pool = getPool();
-  const category = categorySelect.value;
-
-  if (!pool.length) {
-    loadStatus.textContent = `❌ Não há exercícios disponíveis para a categoria selecionada (${category}).`;
-    loadStatus.style.color = "#d64545";
-    console.error(`Nenhum exercício disponível para a categoria: ${category}`);
-    return;
   }
 
-  loadStatus.textContent = "";
-  targetCount = Math.min(Math.max(Number(questionCount.value) || 20, 1), pool.length);
-  queue = shuffle(pool).slice(0, targetCount);
-  asked = 0;
-  correctCount = 0;
-  setup.style.display = "none";
-  game.style.display = "block";
-  input.style.display = "block";
-  checkBtn.style.display = "block";
-  showQuestion();
-}
+  function isDouble(question) {
+    return Array.isArray(question.correct);
+  }
 
-function showQuestion() {
-  if (canSpeak()) window.speechSynthesis.cancel();
-  pronounceBtn.style.display = "none";
+  function completedSentence(question) {
+    const answers = Array.isArray(question.correct) ? question.correct : [question.correct];
+    return answers.reduce((sentence, answer) => sentence.replace("___", answer), question.sentence);
+  }
 
-  if (asked >= targetCount) {
-    english.textContent = "Challenge complete!";
-    portuguese.textContent = `You got ${correctCount} of ${targetCount} correct.`;
-    hint.textContent = "";
-    input.style.display = "none";
-    input2.style.display = "none";
-    checkBtn.style.display = "none";
+  function canSpeak() {
+    return "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+  }
+
+  function speakCurrentSentence() {
+    if (!current || !canSpeak()) return;
+    const utterance = new SpeechSynthesisUtterance(completedSentence(current));
+    utterance.lang = "pt-BR";
+    const voices = window.speechSynthesis.getVoices();
+    utterance.voice = voices.find(v => v.lang.toLowerCase() === "pt-br")
+      || voices.find(v => v.lang.toLowerCase().startsWith("pt")) || null;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(utterance);
+  }
+
+  function updateHintVisibility() {
+    hint.style.display = showInfinitive ? "inline-block" : "none";
+    visibilityBtn.textContent = showInfinitive ? "Ocultar infinitivo" : "Mostrar infinitivo";
+    visibilityBtn.setAttribute("aria-pressed", String(showInfinitive));
+  }
+
+  function startGame() {
+    const pool = getPool();
+    if (!pool.length || startBtn.disabled) return;
+    const requested = Number.parseInt(questionCount.value, 10);
+    targetCount = Math.min(Math.max(Number.isFinite(requested) ? requested : 20, 1), pool.length);
+    queue = shuffle(pool).slice(0, targetCount);
+    asked = 0;
+    correctCount = 0;
+    current = null;
+    answered = false;
+    setup.style.display = "none";
+    game.style.display = "block";
+    visibilityBtn.style.display = "inline-block";
+    restartBtn.style.display = "none";
+    showQuestion();
+  }
+
+  function showQuestion() {
+    if (canSpeak()) window.speechSynthesis.cancel();
+    pronounceBtn.style.display = "none";
     nextBtn.style.display = "none";
     feedback.textContent = "";
-    return;
+    feedback.className = "verb-feedback";
+
+    if (asked >= targetCount) {
+      current = null;
+      english.textContent = "Desafio concluído!";
+      portuguese.textContent = `Você acertou ${correctCount} de ${targetCount} perguntas (${Math.round(100 * correctCount / targetCount)}%).`;
+      tenseHint.textContent = "";
+      hint.textContent = "";
+      hint.style.display = "none";
+      input.style.display = "none";
+      input2.style.display = "none";
+      checkBtn.style.display = "none";
+      visibilityBtn.style.display = "none";
+      restartBtn.style.display = "block";
+      restartBtn.focus();
+      return;
+    }
+
+    current = queue[asked++];
+    answered = false;
+    progress.textContent = `${asked} / ${targetCount}`;
+    score.textContent = `Acertos: ${correctCount}`;
+    english.textContent = current.english + (current.category === "imperative"
+      ? ` · Forma pedida: ${current.person}` : "");
+    portuguese.textContent = current.sentence;
+    tenseHint.textContent = current.tenseLabel || "";
+    const verbs = Array.isArray(current.verbs) ? current.verbs : [current.verb];
+    hint.textContent = verbs.map(v => v.toLocaleUpperCase("pt-BR")).join(" + ");
+    updateHintVisibility();
+
+    input.value = "";
+    input.disabled = false;
+    input.style.display = "block";
+    input.placeholder = isDouble(current) ? "1º verbo: imperfeito do subjuntivo" : "Digite a forma conjugada...";
+    input2.value = "";
+    input2.disabled = false;
+    input2.style.display = isDouble(current) ? "block" : "none";
+    input2.placeholder = "2º verbo: futuro do pretérito";
+    checkBtn.style.display = "block";
+    checkBtn.disabled = false;
+    input.focus();
   }
 
-  current = queue.shift();
-  asked++;
-  progress.textContent = `${asked} / ${targetCount}`;
-  score.textContent = `Score: ${correctCount}`;
-  english.textContent = current.category === "imperative"
-    ? `${current.english} · Forma pedida: ${current.person}`
-    : current.english;
-  if (current.tenseLabel) english.textContent += ` · ${current.tenseLabel}`;
-  portuguese.textContent = current.sentence;
+  function checkAnswer() {
+    if (!current || answered) return;
+    const userAnswers = isDouble(current) ? [input.value, input2.value] : [input.value];
+    if (userAnswers.some(v => !v.trim())) {
+      feedback.textContent = "Preencha todas as respostas antes de verificar.";
+      feedback.className = "verb-feedback error";
+      return;
+    }
+    const correctAnswers = Array.isArray(current.correct) ? current.correct : [current.correct];
+    const allCorrect = userAnswers.every((answer, i) =>
+      normalizeAnswer(answer) === normalizeAnswer(correctAnswers[i]));
 
-  const doubleQuestion = isDoubleVerbQuestion(current);
-  hint.textContent = doubleQuestion
-    ? current.verbs.map(verb => verb.toUpperCase()).join(" + ")
-    : current.verb.toUpperCase();
-
-  updateVerbHintVisibility();
-
-  input.value = "";
-  input.disabled = false;
-  input.placeholder = doubleQuestion
-    ? "1º verbo: pretérito imperfeito do subjuntivo"
-    : "Type the Portuguese form...";
-
-  input2.value = "";
-  input2.disabled = false;
-  input2.style.display = doubleQuestion ? "block" : "none";
-  input2.placeholder = "2º verbo: futuro do pretérito";
-
-  checkBtn.disabled = false;
-  feedback.textContent = "";
-  feedback.className = "verb-feedback";
-  nextBtn.style.display = "none";
-  input.focus();
-}
-
-function checkAnswer() {
-  if (!current || !input.value.trim()) return;
-
-  const doubleQuestion = isDoubleVerbQuestion(current);
-  if (doubleQuestion && !input2.value.trim()) return;
-
-  const userAnswers = doubleQuestion
-    ? [input.value, input2.value]
-    : [input.value];
-  const correctAnswers = getCorrectAnswers(current);
-
-  const isCorrect = userAnswers.every((answer, index) =>
-    normalize(answer) === normalize(correctAnswers[index])
-  );
-
-  input.disabled = true;
-  input2.disabled = true;
-  checkBtn.disabled = true;
-
-  if (isCorrect) {
-    correctCount++;
-    feedback.textContent = `✅ Correct! ${fillSentence(current.sentence, correctAnswers)}`;
-    feedback.className = "verb-feedback success";
-  } else if (doubleQuestion) {
-    feedback.textContent = `❌ Incorrect. Correct answers: ${correctAnswers[0]} / ${correctAnswers[1]}`;
-    feedback.className = "verb-feedback error";
-  } else {
-    feedback.textContent = `❌ Incorrect. Correct answer: ${current.correct}`;
-    feedback.className = "verb-feedback error";
+    answered = true;
+    input.disabled = true;
+    input2.disabled = true;
+    checkBtn.disabled = true;
+    if (allCorrect) correctCount++;
+    feedback.textContent = allCorrect
+      ? `✅ Correto! ${completedSentence(current)}`
+      : `❌ Resposta correta: ${correctAnswers.join(" / ")}. ${completedSentence(current)}`;
+    feedback.className = allCorrect ? "verb-feedback success" : "verb-feedback error";
+    score.textContent = `Acertos: ${correctCount}`;
+    pronounceBtn.style.display = canSpeak() ? "block" : "none";
+    nextBtn.style.display = "block";
+    nextBtn.focus();
   }
 
-  score.textContent = `Score: ${correctCount}`;
-  pronounceBtn.style.display = canSpeak() ? "block" : "none";
-  nextBtn.style.display = "block";
-}
-
-[categorySelect, regularCheckbox, irregularCheckbox].forEach(el => el.addEventListener("change", updateAvailableCount));
-startBtn.addEventListener("click", startGame);
-checkBtn.addEventListener("click", checkAnswer);
-pronounceBtn.addEventListener("click", speakCurrentSentence);
-nextBtn.addEventListener("click", showQuestion);
-visibilityBtn.addEventListener("click", () => {
-  showVerbHint = !showVerbHint;
-  updateVerbHintVisibility();
-});
-
-updateVerbHintVisibility();
-loadExercises();
-
-document.addEventListener("keydown", e => {
-  if (e.key !== "Enter") return;
-
-  if (game.style.display === "none") {
-    if (!startBtn.disabled) startGame();
-    return;
-  }
-
-  if (nextBtn.style.display !== "none") {
-    showQuestion();
-    return;
-  }
-
-  if (current && isDoubleVerbQuestion(current) && document.activeElement === input && !input2.value.trim()) {
-    input2.focus();
-    return;
-  }
-
-  checkAnswer();
-});
+  startBtn.addEventListener("click", startGame);
+  [regularVerbs, irregularVerbs, categorySelect].forEach(el =>
+    el.addEventListener("change", updateAvailableCount));
+  checkBtn.addEventListener("click", checkAnswer);
+  nextBtn.addEventListener("click", showQuestion);
+  pronounceBtn.addEventListener("click", speakCurrentSentence);
+  visibilityBtn.addEventListener("click", () => {
+    showInfinitive = !showInfinitive;
+    updateHintVisibility();
+  });
+  restartBtn.addEventListener("click", () => {
+    game.style.display = "none";
+    setup.style.display = "block";
+    updateAvailableCount();
+    startBtn.focus();
+  });
+  document.addEventListener("keydown", event => {
+    if (event.key !== "Enter" || game.style.display === "none") return;
+    if (event.target === pronounceBtn || event.target === visibilityBtn) return;
+    event.preventDefault();
+    if (!current && restartBtn.style.display !== "none") {
+      restartBtn.click();
+    } else if (answered) {
+      showQuestion();
+    } else if (isDouble(current) && event.target === input && !input2.value.trim()) {
+      input2.focus();
+    } else {
+      checkAnswer();
+    }
+  });
+  loadExercises();
+})();
