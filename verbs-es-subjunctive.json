@@ -1,0 +1,1602 @@
+[
+  {
+    "sentence": "Es posible que yo ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "It is possible that I talk with my neighbors.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "hable"
+  },
+  {
+    "sentence": "Puede que tú ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "It may be that you talk with my neighbors.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "hables"
+  },
+  {
+    "sentence": "Es probable que ella ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "It is likely that she talk with my neighbors.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "hable"
+  },
+  {
+    "sentence": "No creo que nosotros ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "I don't think that we talk with my neighbors.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "hablemos"
+  },
+  {
+    "sentence": "Dudo que vosotros ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "I doubt that you all talk with my neighbors.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "habléis"
+  },
+  {
+    "sentence": "Es posible que tú ___ español.",
+    "verb": "estudiar",
+    "english": "It is possible that you study Spanish.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "estudies"
+  },
+  {
+    "sentence": "Puede que ella ___ español.",
+    "verb": "estudiar",
+    "english": "It may be that she study Spanish.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "estudie"
+  },
+  {
+    "sentence": "Es probable que nosotros ___ español.",
+    "verb": "estudiar",
+    "english": "It is likely that we study Spanish.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "estudiemos"
+  },
+  {
+    "sentence": "No creo que vosotros ___ español.",
+    "verb": "estudiar",
+    "english": "I don't think that you all study Spanish.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "estudiéis"
+  },
+  {
+    "sentence": "Dudo que ellos ___ español.",
+    "verb": "estudiar",
+    "english": "I doubt that they study Spanish.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "estudien"
+  },
+  {
+    "sentence": "Es posible que ella ___ desde casa.",
+    "verb": "trabajar",
+    "english": "It is possible that she work from home.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "trabaje"
+  },
+  {
+    "sentence": "Puede que nosotros ___ desde casa.",
+    "verb": "trabajar",
+    "english": "It may be that we work from home.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "trabajemos"
+  },
+  {
+    "sentence": "Es probable que vosotros ___ desde casa.",
+    "verb": "trabajar",
+    "english": "It is likely that you all work from home.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "trabajéis"
+  },
+  {
+    "sentence": "No creo que ellos ___ desde casa.",
+    "verb": "trabajar",
+    "english": "I don't think that they work from home.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "trabajen"
+  },
+  {
+    "sentence": "Dudo que yo ___ desde casa.",
+    "verb": "trabajar",
+    "english": "I doubt that I work from home.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "trabaje"
+  },
+  {
+    "sentence": "Es posible que nosotros ___ en tren.",
+    "verb": "viajar",
+    "english": "It is possible that we travel by train.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "viajemos"
+  },
+  {
+    "sentence": "Puede que vosotros ___ en tren.",
+    "verb": "viajar",
+    "english": "It may be that you all travel by train.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "viajéis"
+  },
+  {
+    "sentence": "Es probable que ellos ___ en tren.",
+    "verb": "viajar",
+    "english": "It is likely that they travel by train.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "viajen"
+  },
+  {
+    "sentence": "No creo que yo ___ en tren.",
+    "verb": "viajar",
+    "english": "I don't think that I travel by train.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "viaje"
+  },
+  {
+    "sentence": "Dudo que tú ___ en tren.",
+    "verb": "viajar",
+    "english": "I doubt that you travel by train.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "viajes"
+  },
+  {
+    "sentence": "Es posible que vosotros ___ la cena.",
+    "verb": "cocinar",
+    "english": "It is possible that you all cook dinner.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "cocinéis"
+  },
+  {
+    "sentence": "Puede que ellos ___ la cena.",
+    "verb": "cocinar",
+    "english": "It may be that they cook dinner.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "cocinen"
+  },
+  {
+    "sentence": "Es probable que yo ___ la cena.",
+    "verb": "cocinar",
+    "english": "It is likely that I cook dinner.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "cocine"
+  },
+  {
+    "sentence": "No creo que tú ___ la cena.",
+    "verb": "cocinar",
+    "english": "I don't think that you cook dinner.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "cocines"
+  },
+  {
+    "sentence": "Dudo que ella ___ la cena.",
+    "verb": "cocinar",
+    "english": "I doubt that she cook dinner.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "cocine"
+  },
+  {
+    "sentence": "Es posible que ellos ___ música.",
+    "verb": "escuchar",
+    "english": "It is possible that they listen to music.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "escuchen"
+  },
+  {
+    "sentence": "Puede que yo ___ música.",
+    "verb": "escuchar",
+    "english": "It may be that I listen to music.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "escuche"
+  },
+  {
+    "sentence": "Es probable que tú ___ música.",
+    "verb": "escuchar",
+    "english": "It is likely that you listen to music.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "escuches"
+  },
+  {
+    "sentence": "No creo que ella ___ música.",
+    "verb": "escuchar",
+    "english": "I don't think that she listen to music.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "escuche"
+  },
+  {
+    "sentence": "Dudo que nosotros ___ música.",
+    "verb": "escuchar",
+    "english": "I doubt that we listen to music.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "escuchemos"
+  },
+  {
+    "sentence": "Es posible que yo ___ el cielo.",
+    "verb": "mirar",
+    "english": "It is possible that I look at the sky.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "mire"
+  },
+  {
+    "sentence": "Puede que tú ___ el cielo.",
+    "verb": "mirar",
+    "english": "It may be that you look at the sky.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "mires"
+  },
+  {
+    "sentence": "Es probable que ella ___ el cielo.",
+    "verb": "mirar",
+    "english": "It is likely that she look at the sky.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "mire"
+  },
+  {
+    "sentence": "No creo que nosotros ___ el cielo.",
+    "verb": "mirar",
+    "english": "I don't think that we look at the sky.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "miremos"
+  },
+  {
+    "sentence": "Dudo que vosotros ___ el cielo.",
+    "verb": "mirar",
+    "english": "I doubt that you all look at the sky.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "miréis"
+  },
+  {
+    "sentence": "Es posible que tú ___ pan.",
+    "verb": "comprar",
+    "english": "It is possible that you buy bread.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "compres"
+  },
+  {
+    "sentence": "Puede que ella ___ pan.",
+    "verb": "comprar",
+    "english": "It may be that she buy bread.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "compre"
+  },
+  {
+    "sentence": "Es probable que nosotros ___ pan.",
+    "verb": "comprar",
+    "english": "It is likely that we buy bread.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "compremos"
+  },
+  {
+    "sentence": "No creo que vosotros ___ pan.",
+    "verb": "comprar",
+    "english": "I don't think that you all buy bread.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "compréis"
+  },
+  {
+    "sentence": "Dudo que ellos ___ pan.",
+    "verb": "comprar",
+    "english": "I doubt that they buy bread.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "compren"
+  },
+  {
+    "sentence": "Es posible que ella ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "It is possible that she visit my grandparents.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "visite"
+  },
+  {
+    "sentence": "Puede que nosotros ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "It may be that we visit my grandparents.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "visitemos"
+  },
+  {
+    "sentence": "Es probable que vosotros ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "It is likely that you all visit my grandparents.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "visitéis"
+  },
+  {
+    "sentence": "No creo que ellos ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "I don't think that they visit my grandparents.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "visiten"
+  },
+  {
+    "sentence": "Dudo que yo ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "I doubt that I visit my grandparents.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "visite"
+  },
+  {
+    "sentence": "Es posible que nosotros ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "It is possible that we call my sister.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "llamemos"
+  },
+  {
+    "sentence": "Puede que vosotros ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "It may be that you all call my sister.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "llaméis"
+  },
+  {
+    "sentence": "Es probable que ellos ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "It is likely that they call my sister.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "llamen"
+  },
+  {
+    "sentence": "No creo que yo ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "I don't think that I call my sister.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "llame"
+  },
+  {
+    "sentence": "Dudo que tú ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "I doubt that you call my sister.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "llames"
+  },
+  {
+    "sentence": "Es posible que vosotros ___ verduras.",
+    "verb": "comer",
+    "english": "It is possible that you all eat vegetables.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "comáis"
+  },
+  {
+    "sentence": "Puede que ellos ___ verduras.",
+    "verb": "comer",
+    "english": "It may be that they eat vegetables.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "coman"
+  },
+  {
+    "sentence": "Es probable que yo ___ verduras.",
+    "verb": "comer",
+    "english": "It is likely that I eat vegetables.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "coma"
+  },
+  {
+    "sentence": "No creo que tú ___ verduras.",
+    "verb": "comer",
+    "english": "I don't think that you eat vegetables.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "comas"
+  },
+  {
+    "sentence": "Dudo que ella ___ verduras.",
+    "verb": "comer",
+    "english": "I doubt that she eat vegetables.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "coma"
+  },
+  {
+    "sentence": "Es posible que ellos ___ agua.",
+    "verb": "beber",
+    "english": "It is possible that they drink water.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "beban"
+  },
+  {
+    "sentence": "Puede que yo ___ agua.",
+    "verb": "beber",
+    "english": "It may be that I drink water.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "beba"
+  },
+  {
+    "sentence": "Es probable que tú ___ agua.",
+    "verb": "beber",
+    "english": "It is likely that you drink water.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "bebas"
+  },
+  {
+    "sentence": "No creo que ella ___ agua.",
+    "verb": "beber",
+    "english": "I don't think that she drink water.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "beba"
+  },
+  {
+    "sentence": "Dudo que nosotros ___ agua.",
+    "verb": "beber",
+    "english": "I doubt that we drink water.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "bebamos"
+  },
+  {
+    "sentence": "Es posible que yo ___ francés.",
+    "verb": "aprender",
+    "english": "It is possible that I learn French.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "aprenda"
+  },
+  {
+    "sentence": "Puede que tú ___ francés.",
+    "verb": "aprender",
+    "english": "It may be that you learn French.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "aprendas"
+  },
+  {
+    "sentence": "Es probable que ella ___ francés.",
+    "verb": "aprender",
+    "english": "It is likely that she learn French.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "aprenda"
+  },
+  {
+    "sentence": "No creo que nosotros ___ francés.",
+    "verb": "aprender",
+    "english": "I don't think that we learn French.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "aprendamos"
+  },
+  {
+    "sentence": "Dudo que vosotros ___ francés.",
+    "verb": "aprender",
+    "english": "I doubt that you all learn French.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "aprendáis"
+  },
+  {
+    "sentence": "Es posible que tú ___ a los mensajes.",
+    "verb": "responder",
+    "english": "It is possible that you reply to messages.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "respondas"
+  },
+  {
+    "sentence": "Puede que ella ___ a los mensajes.",
+    "verb": "responder",
+    "english": "It may be that she reply to messages.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "responda"
+  },
+  {
+    "sentence": "Es probable que nosotros ___ a los mensajes.",
+    "verb": "responder",
+    "english": "It is likely that we reply to messages.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "respondamos"
+  },
+  {
+    "sentence": "No creo que vosotros ___ a los mensajes.",
+    "verb": "responder",
+    "english": "I don't think that you all reply to messages.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "respondáis"
+  },
+  {
+    "sentence": "Dudo que ellos ___ a los mensajes.",
+    "verb": "responder",
+    "english": "I doubt that they reply to messages.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "respondan"
+  },
+  {
+    "sentence": "Es posible que ella ___ por el parque.",
+    "verb": "correr",
+    "english": "It is possible that she run through the park.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "corra"
+  },
+  {
+    "sentence": "Puede que nosotros ___ por el parque.",
+    "verb": "correr",
+    "english": "It may be that we run through the park.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "corramos"
+  },
+  {
+    "sentence": "Es probable que vosotros ___ por el parque.",
+    "verb": "correr",
+    "english": "It is likely that you all run through the park.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "corráis"
+  },
+  {
+    "sentence": "No creo que ellos ___ por el parque.",
+    "verb": "correr",
+    "english": "I don't think that they run through the park.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "corran"
+  },
+  {
+    "sentence": "Dudo que yo ___ por el parque.",
+    "verb": "correr",
+    "english": "I doubt that I run through the park.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "corra"
+  },
+  {
+    "sentence": "Es posible que nosotros ___ libros usados.",
+    "verb": "vender",
+    "english": "It is possible that we sell used books.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "vendamos"
+  },
+  {
+    "sentence": "Puede que vosotros ___ libros usados.",
+    "verb": "vender",
+    "english": "It may be that you all sell used books.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "vendáis"
+  },
+  {
+    "sentence": "Es probable que ellos ___ libros usados.",
+    "verb": "vender",
+    "english": "It is likely that they sell used books.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "vendan"
+  },
+  {
+    "sentence": "No creo que yo ___ libros usados.",
+    "verb": "vender",
+    "english": "I don't think that I sell used books.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "venda"
+  },
+  {
+    "sentence": "Dudo que tú ___ libros usados.",
+    "verb": "vender",
+    "english": "I doubt that you sell used books.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "vendas"
+  },
+  {
+    "sentence": "Es posible que vosotros ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "It is possible that you all live near downtown.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "viváis"
+  },
+  {
+    "sentence": "Puede que ellos ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "It may be that they live near downtown.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "vivan"
+  },
+  {
+    "sentence": "Es probable que yo ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "It is likely that I live near downtown.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "viva"
+  },
+  {
+    "sentence": "No creo que tú ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "I don't think that you live near downtown.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "vivas"
+  },
+  {
+    "sentence": "Dudo que ella ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "I doubt that she live near downtown.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "viva"
+  },
+  {
+    "sentence": "Es posible que ellos ___ visitas.",
+    "verb": "recibir",
+    "english": "It is possible that they receive visitors.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "reciban"
+  },
+  {
+    "sentence": "Puede que yo ___ visitas.",
+    "verb": "recibir",
+    "english": "It may be that I receive visitors.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "reciba"
+  },
+  {
+    "sentence": "Es probable que tú ___ visitas.",
+    "verb": "recibir",
+    "english": "It is likely that you receive visitors.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "recibas"
+  },
+  {
+    "sentence": "No creo que ella ___ visitas.",
+    "verb": "recibir",
+    "english": "I don't think that she receive visitors.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "reciba"
+  },
+  {
+    "sentence": "Dudo que nosotros ___ visitas.",
+    "verb": "recibir",
+    "english": "I doubt that we receive visitors.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "recibamos"
+  },
+  {
+    "sentence": "Es posible que yo ___ las escaleras.",
+    "verb": "subir",
+    "english": "It is possible that I climb the stairs.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "suba"
+  },
+  {
+    "sentence": "Puede que tú ___ las escaleras.",
+    "verb": "subir",
+    "english": "It may be that you climb the stairs.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "subas"
+  },
+  {
+    "sentence": "Es probable que ella ___ las escaleras.",
+    "verb": "subir",
+    "english": "It is likely that she climb the stairs.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "suba"
+  },
+  {
+    "sentence": "No creo que nosotros ___ las escaleras.",
+    "verb": "subir",
+    "english": "I don't think that we climb the stairs.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "subamos"
+  },
+  {
+    "sentence": "Dudo que vosotros ___ las escaleras.",
+    "verb": "subir",
+    "english": "I doubt that you all climb the stairs.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "subáis"
+  },
+  {
+    "sentence": "Es posible que tú ___ mis ideas.",
+    "verb": "compartir",
+    "english": "It is possible that you share my ideas.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "compartas"
+  },
+  {
+    "sentence": "Puede que ella ___ mis ideas.",
+    "verb": "compartir",
+    "english": "It may be that she share my ideas.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "comparta"
+  },
+  {
+    "sentence": "Es probable que nosotros ___ mis ideas.",
+    "verb": "compartir",
+    "english": "It is likely that we share my ideas.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "compartamos"
+  },
+  {
+    "sentence": "No creo que vosotros ___ mis ideas.",
+    "verb": "compartir",
+    "english": "I don't think that you all share my ideas.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "compartáis"
+  },
+  {
+    "sentence": "Dudo que ellos ___ mis ideas.",
+    "verb": "compartir",
+    "english": "I doubt that they share my ideas.",
+    "category": "subjunctive",
+    "type": "regular",
+    "correct": "compartan"
+  },
+  {
+    "sentence": "Es posible que ella ___ amable.",
+    "verb": "ser",
+    "english": "It is possible that she be kind.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "sea"
+  },
+  {
+    "sentence": "Puede que nosotros ___ amable.",
+    "verb": "ser",
+    "english": "It may be that we be kind.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "seamos"
+  },
+  {
+    "sentence": "Es probable que vosotros ___ amable.",
+    "verb": "ser",
+    "english": "It is likely that you all be kind.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "seáis"
+  },
+  {
+    "sentence": "No creo que ellos ___ amable.",
+    "verb": "ser",
+    "english": "I don't think that they be kind.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "sean"
+  },
+  {
+    "sentence": "Dudo que yo ___ amable.",
+    "verb": "ser",
+    "english": "I doubt that I be kind.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "sea"
+  },
+  {
+    "sentence": "Es posible que nosotros ___ en casa.",
+    "verb": "estar",
+    "english": "It is possible that we be at home.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "estemos"
+  },
+  {
+    "sentence": "Puede que vosotros ___ en casa.",
+    "verb": "estar",
+    "english": "It may be that you all be at home.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "estéis"
+  },
+  {
+    "sentence": "Es probable que ellos ___ en casa.",
+    "verb": "estar",
+    "english": "It is likely that they be at home.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "estén"
+  },
+  {
+    "sentence": "No creo que yo ___ en casa.",
+    "verb": "estar",
+    "english": "I don't think that I be at home.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "esté"
+  },
+  {
+    "sentence": "Dudo que tú ___ en casa.",
+    "verb": "estar",
+    "english": "I doubt that you be at home.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "estés"
+  },
+  {
+    "sentence": "Es posible que vosotros ___ al gimnasio.",
+    "verb": "ir",
+    "english": "It is possible that you all go to the gym.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "vayáis"
+  },
+  {
+    "sentence": "Puede que ellos ___ al gimnasio.",
+    "verb": "ir",
+    "english": "It may be that they go to the gym.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "vayan"
+  },
+  {
+    "sentence": "Es probable que yo ___ al gimnasio.",
+    "verb": "ir",
+    "english": "It is likely that I go to the gym.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "vaya"
+  },
+  {
+    "sentence": "No creo que tú ___ al gimnasio.",
+    "verb": "ir",
+    "english": "I don't think that you go to the gym.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "vayas"
+  },
+  {
+    "sentence": "Dudo que ella ___ al gimnasio.",
+    "verb": "ir",
+    "english": "I doubt that she go to the gym.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "vaya"
+  },
+  {
+    "sentence": "Es posible que ellos ___ tiempo libre.",
+    "verb": "tener",
+    "english": "It is possible that they have free time.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "tengan"
+  },
+  {
+    "sentence": "Puede que yo ___ tiempo libre.",
+    "verb": "tener",
+    "english": "It may be that I have free time.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "tenga"
+  },
+  {
+    "sentence": "Es probable que tú ___ tiempo libre.",
+    "verb": "tener",
+    "english": "It is likely that you have free time.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "tengas"
+  },
+  {
+    "sentence": "No creo que ella ___ tiempo libre.",
+    "verb": "tener",
+    "english": "I don't think that she have free time.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "tenga"
+  },
+  {
+    "sentence": "Dudo que nosotros ___ tiempo libre.",
+    "verb": "tener",
+    "english": "I doubt that we have free time.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "tengamos"
+  },
+  {
+    "sentence": "Es posible que yo ___ ejercicio.",
+    "verb": "hacer",
+    "english": "It is possible that I exercise.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "haga"
+  },
+  {
+    "sentence": "Puede que tú ___ ejercicio.",
+    "verb": "hacer",
+    "english": "It may be that you exercise.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "hagas"
+  },
+  {
+    "sentence": "Es probable que ella ___ ejercicio.",
+    "verb": "hacer",
+    "english": "It is likely that she exercise.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "haga"
+  },
+  {
+    "sentence": "No creo que nosotros ___ ejercicio.",
+    "verb": "hacer",
+    "english": "I don't think that we exercise.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "hagamos"
+  },
+  {
+    "sentence": "Dudo que vosotros ___ ejercicio.",
+    "verb": "hacer",
+    "english": "I doubt that you all exercise.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "hagáis"
+  },
+  {
+    "sentence": "Es posible que tú ___ la verdad.",
+    "verb": "decir",
+    "english": "It is possible that you tell the truth.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "digas"
+  },
+  {
+    "sentence": "Puede que ella ___ la verdad.",
+    "verb": "decir",
+    "english": "It may be that she tell the truth.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "diga"
+  },
+  {
+    "sentence": "Es probable que nosotros ___ la verdad.",
+    "verb": "decir",
+    "english": "It is likely that we tell the truth.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "digamos"
+  },
+  {
+    "sentence": "No creo que vosotros ___ la verdad.",
+    "verb": "decir",
+    "english": "I don't think that you all tell the truth.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "digáis"
+  },
+  {
+    "sentence": "Dudo que ellos ___ la verdad.",
+    "verb": "decir",
+    "english": "I doubt that they tell the truth.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "digan"
+  },
+  {
+    "sentence": "Es posible que ella ___ ayudar.",
+    "verb": "poder",
+    "english": "It is possible that she be able to help.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "pueda"
+  },
+  {
+    "sentence": "Puede que nosotros ___ ayudar.",
+    "verb": "poder",
+    "english": "It may be that we be able to help.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "podamos"
+  },
+  {
+    "sentence": "Es probable que vosotros ___ ayudar.",
+    "verb": "poder",
+    "english": "It is likely that you all be able to help.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "podáis"
+  },
+  {
+    "sentence": "No creo que ellos ___ ayudar.",
+    "verb": "poder",
+    "english": "I don't think that they be able to help.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "puedan"
+  },
+  {
+    "sentence": "Dudo que yo ___ ayudar.",
+    "verb": "poder",
+    "english": "I doubt that I be able to help.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "pueda"
+  },
+  {
+    "sentence": "Es posible que nosotros ___ aprender.",
+    "verb": "querer",
+    "english": "It is possible that we want to learn.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "queramos"
+  },
+  {
+    "sentence": "Puede que vosotros ___ aprender.",
+    "verb": "querer",
+    "english": "It may be that you all want to learn.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "queráis"
+  },
+  {
+    "sentence": "Es probable que ellos ___ aprender.",
+    "verb": "querer",
+    "english": "It is likely that they want to learn.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "quieran"
+  },
+  {
+    "sentence": "No creo que yo ___ aprender.",
+    "verb": "querer",
+    "english": "I don't think that I want to learn.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "quiera"
+  },
+  {
+    "sentence": "Dudo que tú ___ aprender.",
+    "verb": "querer",
+    "english": "I doubt that you want to learn.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "quieras"
+  },
+  {
+    "sentence": "Es posible que vosotros ___ a clase.",
+    "verb": "venir",
+    "english": "It is possible that you all come to class.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "vengáis"
+  },
+  {
+    "sentence": "Puede que ellos ___ a clase.",
+    "verb": "venir",
+    "english": "It may be that they come to class.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "vengan"
+  },
+  {
+    "sentence": "Es probable que yo ___ a clase.",
+    "verb": "venir",
+    "english": "It is likely that I come to class.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "venga"
+  },
+  {
+    "sentence": "No creo que tú ___ a clase.",
+    "verb": "venir",
+    "english": "I don't think that you come to class.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "vengas"
+  },
+  {
+    "sentence": "Dudo que ella ___ a clase.",
+    "verb": "venir",
+    "english": "I doubt that she come to class.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "venga"
+  },
+  {
+    "sentence": "Es posible que ellos ___ la mesa.",
+    "verb": "poner",
+    "english": "It is possible that they set the table.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "pongan"
+  },
+  {
+    "sentence": "Puede que yo ___ la mesa.",
+    "verb": "poner",
+    "english": "It may be that I set the table.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "ponga"
+  },
+  {
+    "sentence": "Es probable que tú ___ la mesa.",
+    "verb": "poner",
+    "english": "It is likely that you set the table.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "pongas"
+  },
+  {
+    "sentence": "No creo que ella ___ la mesa.",
+    "verb": "poner",
+    "english": "I don't think that she set the table.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "ponga"
+  },
+  {
+    "sentence": "Dudo que nosotros ___ la mesa.",
+    "verb": "poner",
+    "english": "I doubt that we set the table.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "pongamos"
+  },
+  {
+    "sentence": "Es posible que yo ___ con mis amigos.",
+    "verb": "salir",
+    "english": "It is possible that I go out with my friends.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "salga"
+  },
+  {
+    "sentence": "Puede que tú ___ con mis amigos.",
+    "verb": "salir",
+    "english": "It may be that you go out with my friends.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "salgas"
+  },
+  {
+    "sentence": "Es probable que ella ___ con mis amigos.",
+    "verb": "salir",
+    "english": "It is likely that she go out with my friends.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "salga"
+  },
+  {
+    "sentence": "No creo que nosotros ___ con mis amigos.",
+    "verb": "salir",
+    "english": "I don't think that we go out with my friends.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "salgamos"
+  },
+  {
+    "sentence": "Dudo que vosotros ___ con mis amigos.",
+    "verb": "salir",
+    "english": "I doubt that you all go out with my friends.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "salgáis"
+  },
+  {
+    "sentence": "Es posible que tú ___ una película.",
+    "verb": "ver",
+    "english": "It is possible that you watch a movie.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "veas"
+  },
+  {
+    "sentence": "Puede que ella ___ una película.",
+    "verb": "ver",
+    "english": "It may be that she watch a movie.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "vea"
+  },
+  {
+    "sentence": "Es probable que nosotros ___ una película.",
+    "verb": "ver",
+    "english": "It is likely that we watch a movie.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "veamos"
+  },
+  {
+    "sentence": "No creo que vosotros ___ una película.",
+    "verb": "ver",
+    "english": "I don't think that you all watch a movie.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "veáis"
+  },
+  {
+    "sentence": "Dudo que ellos ___ una película.",
+    "verb": "ver",
+    "english": "I doubt that they watch a movie.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "vean"
+  },
+  {
+    "sentence": "Es posible que ella ___ una respuesta.",
+    "verb": "dar",
+    "english": "It is possible that she give an answer.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "dé"
+  },
+  {
+    "sentence": "Puede que nosotros ___ una respuesta.",
+    "verb": "dar",
+    "english": "It may be that we give an answer.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "demos"
+  },
+  {
+    "sentence": "Es probable que vosotros ___ una respuesta.",
+    "verb": "dar",
+    "english": "It is likely that you all give an answer.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "deis"
+  },
+  {
+    "sentence": "No creo que ellos ___ una respuesta.",
+    "verb": "dar",
+    "english": "I don't think that they give an answer.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "den"
+  },
+  {
+    "sentence": "Dudo que yo ___ una respuesta.",
+    "verb": "dar",
+    "english": "I doubt that I give an answer.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "dé"
+  },
+  {
+    "sentence": "Es posible que nosotros ___ la respuesta.",
+    "verb": "saber",
+    "english": "It is possible that we know the answer.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "sepamos"
+  },
+  {
+    "sentence": "Puede que vosotros ___ la respuesta.",
+    "verb": "saber",
+    "english": "It may be that you all know the answer.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "sepáis"
+  },
+  {
+    "sentence": "Es probable que ellos ___ la respuesta.",
+    "verb": "saber",
+    "english": "It is likely that they know the answer.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "sepan"
+  },
+  {
+    "sentence": "No creo que yo ___ la respuesta.",
+    "verb": "saber",
+    "english": "I don't think that I know the answer.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "sepa"
+  },
+  {
+    "sentence": "Dudo que tú ___ la respuesta.",
+    "verb": "saber",
+    "english": "I doubt that you know the answer.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "sepas"
+  },
+  {
+    "sentence": "Es posible que vosotros ___ comida.",
+    "verb": "traer",
+    "english": "It is possible that you all bring food.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "traigáis"
+  },
+  {
+    "sentence": "Puede que ellos ___ comida.",
+    "verb": "traer",
+    "english": "It may be that they bring food.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "traigan"
+  },
+  {
+    "sentence": "Es probable que yo ___ comida.",
+    "verb": "traer",
+    "english": "It is likely that I bring food.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "traiga"
+  },
+  {
+    "sentence": "No creo que tú ___ comida.",
+    "verb": "traer",
+    "english": "I don't think that you bring food.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "traigas"
+  },
+  {
+    "sentence": "Dudo que ella ___ comida.",
+    "verb": "traer",
+    "english": "I doubt that she bring food.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "traiga"
+  },
+  {
+    "sentence": "Es posible que ellos ___ ayuda.",
+    "verb": "pedir",
+    "english": "It is possible that they ask for help.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "pidan"
+  },
+  {
+    "sentence": "Puede que yo ___ ayuda.",
+    "verb": "pedir",
+    "english": "It may be that I ask for help.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "pida"
+  },
+  {
+    "sentence": "Es probable que tú ___ ayuda.",
+    "verb": "pedir",
+    "english": "It is likely that you ask for help.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "pidas"
+  },
+  {
+    "sentence": "No creo que ella ___ ayuda.",
+    "verb": "pedir",
+    "english": "I don't think that she ask for help.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "pida"
+  },
+  {
+    "sentence": "Dudo que nosotros ___ ayuda.",
+    "verb": "pedir",
+    "english": "I doubt that we ask for help.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "pidamos"
+  },
+  {
+    "sentence": "Es posible que yo ___ bien.",
+    "verb": "dormir",
+    "english": "It is possible that I sleep well.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "duerma"
+  },
+  {
+    "sentence": "Puede que tú ___ bien.",
+    "verb": "dormir",
+    "english": "It may be that you sleep well.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "duermas"
+  },
+  {
+    "sentence": "Es probable que ella ___ bien.",
+    "verb": "dormir",
+    "english": "It is likely that she sleep well.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "duerma"
+  },
+  {
+    "sentence": "No creo que nosotros ___ bien.",
+    "verb": "dormir",
+    "english": "I don't think that we sleep well.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "durmamos"
+  },
+  {
+    "sentence": "Dudo que vosotros ___ bien.",
+    "verb": "dormir",
+    "english": "I doubt that you all sleep well.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "durmáis"
+  },
+  {
+    "sentence": "Es posible que tú ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "It is possible that you play chess.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "juegues"
+  },
+  {
+    "sentence": "Puede que ella ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "It may be that she play chess.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "juegue"
+  },
+  {
+    "sentence": "Es probable que nosotros ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "It is likely that we play chess.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "juguemos"
+  },
+  {
+    "sentence": "No creo que vosotros ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "I don't think that you all play chess.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "juguéis"
+  },
+  {
+    "sentence": "Dudo que ellos ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "I doubt that they play chess.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "jueguen"
+  },
+  {
+    "sentence": "Es posible que ella ___ la explicación.",
+    "verb": "entender",
+    "english": "It is possible that she understand the explanation.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "entienda"
+  },
+  {
+    "sentence": "Puede que nosotros ___ la explicación.",
+    "verb": "entender",
+    "english": "It may be that we understand the explanation.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "entendamos"
+  },
+  {
+    "sentence": "Es probable que vosotros ___ la explicación.",
+    "verb": "entender",
+    "english": "It is likely that you all understand the explanation.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "entendáis"
+  },
+  {
+    "sentence": "No creo que ellos ___ la explicación.",
+    "verb": "entender",
+    "english": "I don't think that they understand the explanation.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "entiendan"
+  },
+  {
+    "sentence": "Dudo que yo ___ la explicación.",
+    "verb": "entender",
+    "english": "I doubt that I understand the explanation.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "entienda"
+  },
+  {
+    "sentence": "Es posible que nosotros ___ cartas.",
+    "verb": "escribir",
+    "english": "It is possible that we write letters.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "escribamos"
+  },
+  {
+    "sentence": "Puede que vosotros ___ cartas.",
+    "verb": "escribir",
+    "english": "It may be that you all write letters.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "escribáis"
+  },
+  {
+    "sentence": "Es probable que ellos ___ cartas.",
+    "verb": "escribir",
+    "english": "It is likely that they write letters.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "escriban"
+  },
+  {
+    "sentence": "No creo que yo ___ cartas.",
+    "verb": "escribir",
+    "english": "I don't think that I write letters.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "escriba"
+  },
+  {
+    "sentence": "Dudo que tú ___ cartas.",
+    "verb": "escribir",
+    "english": "I doubt that you write letters.",
+    "category": "subjunctive",
+    "type": "irregular",
+    "correct": "escribas"
+  }
+]
