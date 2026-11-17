@@ -1,0 +1,1602 @@
+[
+  {
+    "sentence": "Ayer, yo ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "Yesterday, I talked with my neighbors.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "hablé"
+  },
+  {
+    "sentence": "La semana pasada, tú ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "Last week, you talked with my neighbors.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "hablaste"
+  },
+  {
+    "sentence": "El lunes pasado, ella ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "Last Monday, she talked with my neighbors.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "habló"
+  },
+  {
+    "sentence": "Anoche, nosotros ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "Last night, we talked with my neighbors.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "hablamos"
+  },
+  {
+    "sentence": "Hace unos días, vosotros ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "A few days ago, you all talked with my neighbors.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "hablasteis"
+  },
+  {
+    "sentence": "Ayer, tú ___ español.",
+    "verb": "estudiar",
+    "english": "Yesterday, you studied Spanish.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "estudiaste"
+  },
+  {
+    "sentence": "La semana pasada, ella ___ español.",
+    "verb": "estudiar",
+    "english": "Last week, she studied Spanish.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "estudió"
+  },
+  {
+    "sentence": "El lunes pasado, nosotros ___ español.",
+    "verb": "estudiar",
+    "english": "Last Monday, we studied Spanish.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "estudiamos"
+  },
+  {
+    "sentence": "Anoche, vosotros ___ español.",
+    "verb": "estudiar",
+    "english": "Last night, you all studied Spanish.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "estudiasteis"
+  },
+  {
+    "sentence": "Hace unos días, ellos ___ español.",
+    "verb": "estudiar",
+    "english": "A few days ago, they studied Spanish.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "estudiaron"
+  },
+  {
+    "sentence": "Ayer, ella ___ desde casa.",
+    "verb": "trabajar",
+    "english": "Yesterday, she worked from home.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "trabajó"
+  },
+  {
+    "sentence": "La semana pasada, nosotros ___ desde casa.",
+    "verb": "trabajar",
+    "english": "Last week, we worked from home.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "trabajamos"
+  },
+  {
+    "sentence": "El lunes pasado, vosotros ___ desde casa.",
+    "verb": "trabajar",
+    "english": "Last Monday, you all worked from home.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "trabajasteis"
+  },
+  {
+    "sentence": "Anoche, ellos ___ desde casa.",
+    "verb": "trabajar",
+    "english": "Last night, they worked from home.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "trabajaron"
+  },
+  {
+    "sentence": "Hace unos días, yo ___ desde casa.",
+    "verb": "trabajar",
+    "english": "A few days ago, I worked from home.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "trabajé"
+  },
+  {
+    "sentence": "Ayer, nosotros ___ en tren.",
+    "verb": "viajar",
+    "english": "Yesterday, we traveled by train.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "viajamos"
+  },
+  {
+    "sentence": "La semana pasada, vosotros ___ en tren.",
+    "verb": "viajar",
+    "english": "Last week, you all traveled by train.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "viajasteis"
+  },
+  {
+    "sentence": "El lunes pasado, ellos ___ en tren.",
+    "verb": "viajar",
+    "english": "Last Monday, they traveled by train.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "viajaron"
+  },
+  {
+    "sentence": "Anoche, yo ___ en tren.",
+    "verb": "viajar",
+    "english": "Last night, I traveled by train.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "viajé"
+  },
+  {
+    "sentence": "Hace unos días, tú ___ en tren.",
+    "verb": "viajar",
+    "english": "A few days ago, you traveled by train.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "viajaste"
+  },
+  {
+    "sentence": "Ayer, vosotros ___ la cena.",
+    "verb": "cocinar",
+    "english": "Yesterday, you all cooked dinner.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "cocinasteis"
+  },
+  {
+    "sentence": "La semana pasada, ellos ___ la cena.",
+    "verb": "cocinar",
+    "english": "Last week, they cooked dinner.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "cocinaron"
+  },
+  {
+    "sentence": "El lunes pasado, yo ___ la cena.",
+    "verb": "cocinar",
+    "english": "Last Monday, I cooked dinner.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "cociné"
+  },
+  {
+    "sentence": "Anoche, tú ___ la cena.",
+    "verb": "cocinar",
+    "english": "Last night, you cooked dinner.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "cocinaste"
+  },
+  {
+    "sentence": "Hace unos días, ella ___ la cena.",
+    "verb": "cocinar",
+    "english": "A few days ago, she cooked dinner.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "cocinó"
+  },
+  {
+    "sentence": "Ayer, ellos ___ música.",
+    "verb": "escuchar",
+    "english": "Yesterday, they listened to music.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "escucharon"
+  },
+  {
+    "sentence": "La semana pasada, yo ___ música.",
+    "verb": "escuchar",
+    "english": "Last week, I listened to music.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "escuché"
+  },
+  {
+    "sentence": "El lunes pasado, tú ___ música.",
+    "verb": "escuchar",
+    "english": "Last Monday, you listened to music.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "escuchaste"
+  },
+  {
+    "sentence": "Anoche, ella ___ música.",
+    "verb": "escuchar",
+    "english": "Last night, she listened to music.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "escuchó"
+  },
+  {
+    "sentence": "Hace unos días, nosotros ___ música.",
+    "verb": "escuchar",
+    "english": "A few days ago, we listened to music.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "escuchamos"
+  },
+  {
+    "sentence": "Ayer, yo ___ el cielo.",
+    "verb": "mirar",
+    "english": "Yesterday, I looked at the sky.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "miré"
+  },
+  {
+    "sentence": "La semana pasada, tú ___ el cielo.",
+    "verb": "mirar",
+    "english": "Last week, you looked at the sky.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "miraste"
+  },
+  {
+    "sentence": "El lunes pasado, ella ___ el cielo.",
+    "verb": "mirar",
+    "english": "Last Monday, she looked at the sky.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "miró"
+  },
+  {
+    "sentence": "Anoche, nosotros ___ el cielo.",
+    "verb": "mirar",
+    "english": "Last night, we looked at the sky.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "miramos"
+  },
+  {
+    "sentence": "Hace unos días, vosotros ___ el cielo.",
+    "verb": "mirar",
+    "english": "A few days ago, you all looked at the sky.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "mirasteis"
+  },
+  {
+    "sentence": "Ayer, tú ___ pan.",
+    "verb": "comprar",
+    "english": "Yesterday, you bought bread.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "compraste"
+  },
+  {
+    "sentence": "La semana pasada, ella ___ pan.",
+    "verb": "comprar",
+    "english": "Last week, she bought bread.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "compró"
+  },
+  {
+    "sentence": "El lunes pasado, nosotros ___ pan.",
+    "verb": "comprar",
+    "english": "Last Monday, we bought bread.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "compramos"
+  },
+  {
+    "sentence": "Anoche, vosotros ___ pan.",
+    "verb": "comprar",
+    "english": "Last night, you all bought bread.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "comprasteis"
+  },
+  {
+    "sentence": "Hace unos días, ellos ___ pan.",
+    "verb": "comprar",
+    "english": "A few days ago, they bought bread.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "compraron"
+  },
+  {
+    "sentence": "Ayer, ella ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "Yesterday, she visited my grandparents.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "visitó"
+  },
+  {
+    "sentence": "La semana pasada, nosotros ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "Last week, we visited my grandparents.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "visitamos"
+  },
+  {
+    "sentence": "El lunes pasado, vosotros ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "Last Monday, you all visited my grandparents.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "visitasteis"
+  },
+  {
+    "sentence": "Anoche, ellos ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "Last night, they visited my grandparents.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "visitaron"
+  },
+  {
+    "sentence": "Hace unos días, yo ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "A few days ago, I visited my grandparents.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "visité"
+  },
+  {
+    "sentence": "Ayer, nosotros ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "Yesterday, we called my sister.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "llamamos"
+  },
+  {
+    "sentence": "La semana pasada, vosotros ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "Last week, you all called my sister.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "llamasteis"
+  },
+  {
+    "sentence": "El lunes pasado, ellos ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "Last Monday, they called my sister.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "llamaron"
+  },
+  {
+    "sentence": "Anoche, yo ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "Last night, I called my sister.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "llamé"
+  },
+  {
+    "sentence": "Hace unos días, tú ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "A few days ago, you called my sister.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "llamaste"
+  },
+  {
+    "sentence": "Ayer, vosotros ___ verduras.",
+    "verb": "comer",
+    "english": "Yesterday, you all ate vegetables.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "comisteis"
+  },
+  {
+    "sentence": "La semana pasada, ellos ___ verduras.",
+    "verb": "comer",
+    "english": "Last week, they ate vegetables.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "comieron"
+  },
+  {
+    "sentence": "El lunes pasado, yo ___ verduras.",
+    "verb": "comer",
+    "english": "Last Monday, I ate vegetables.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "comí"
+  },
+  {
+    "sentence": "Anoche, tú ___ verduras.",
+    "verb": "comer",
+    "english": "Last night, you ate vegetables.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "comiste"
+  },
+  {
+    "sentence": "Hace unos días, ella ___ verduras.",
+    "verb": "comer",
+    "english": "A few days ago, she ate vegetables.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "comió"
+  },
+  {
+    "sentence": "Ayer, ellos ___ agua.",
+    "verb": "beber",
+    "english": "Yesterday, they drank water.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "bebieron"
+  },
+  {
+    "sentence": "La semana pasada, yo ___ agua.",
+    "verb": "beber",
+    "english": "Last week, I drank water.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "bebí"
+  },
+  {
+    "sentence": "El lunes pasado, tú ___ agua.",
+    "verb": "beber",
+    "english": "Last Monday, you drank water.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "bebiste"
+  },
+  {
+    "sentence": "Anoche, ella ___ agua.",
+    "verb": "beber",
+    "english": "Last night, she drank water.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "bebió"
+  },
+  {
+    "sentence": "Hace unos días, nosotros ___ agua.",
+    "verb": "beber",
+    "english": "A few days ago, we drank water.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "bebimos"
+  },
+  {
+    "sentence": "Ayer, yo ___ francés.",
+    "verb": "aprender",
+    "english": "Yesterday, I learned French.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "aprendí"
+  },
+  {
+    "sentence": "La semana pasada, tú ___ francés.",
+    "verb": "aprender",
+    "english": "Last week, you learned French.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "aprendiste"
+  },
+  {
+    "sentence": "El lunes pasado, ella ___ francés.",
+    "verb": "aprender",
+    "english": "Last Monday, she learned French.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "aprendió"
+  },
+  {
+    "sentence": "Anoche, nosotros ___ francés.",
+    "verb": "aprender",
+    "english": "Last night, we learned French.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "aprendimos"
+  },
+  {
+    "sentence": "Hace unos días, vosotros ___ francés.",
+    "verb": "aprender",
+    "english": "A few days ago, you all learned French.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "aprendisteis"
+  },
+  {
+    "sentence": "Ayer, tú ___ a los mensajes.",
+    "verb": "responder",
+    "english": "Yesterday, you replied to messages.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "respondiste"
+  },
+  {
+    "sentence": "La semana pasada, ella ___ a los mensajes.",
+    "verb": "responder",
+    "english": "Last week, she replied to messages.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "respondió"
+  },
+  {
+    "sentence": "El lunes pasado, nosotros ___ a los mensajes.",
+    "verb": "responder",
+    "english": "Last Monday, we replied to messages.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "respondimos"
+  },
+  {
+    "sentence": "Anoche, vosotros ___ a los mensajes.",
+    "verb": "responder",
+    "english": "Last night, you all replied to messages.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "respondisteis"
+  },
+  {
+    "sentence": "Hace unos días, ellos ___ a los mensajes.",
+    "verb": "responder",
+    "english": "A few days ago, they replied to messages.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "respondieron"
+  },
+  {
+    "sentence": "Ayer, ella ___ por el parque.",
+    "verb": "correr",
+    "english": "Yesterday, she ran through the park.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "corrió"
+  },
+  {
+    "sentence": "La semana pasada, nosotros ___ por el parque.",
+    "verb": "correr",
+    "english": "Last week, we ran through the park.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "corrimos"
+  },
+  {
+    "sentence": "El lunes pasado, vosotros ___ por el parque.",
+    "verb": "correr",
+    "english": "Last Monday, you all ran through the park.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "corristeis"
+  },
+  {
+    "sentence": "Anoche, ellos ___ por el parque.",
+    "verb": "correr",
+    "english": "Last night, they ran through the park.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "corrieron"
+  },
+  {
+    "sentence": "Hace unos días, yo ___ por el parque.",
+    "verb": "correr",
+    "english": "A few days ago, I ran through the park.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "corrí"
+  },
+  {
+    "sentence": "Ayer, nosotros ___ libros usados.",
+    "verb": "vender",
+    "english": "Yesterday, we sold used books.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "vendimos"
+  },
+  {
+    "sentence": "La semana pasada, vosotros ___ libros usados.",
+    "verb": "vender",
+    "english": "Last week, you all sold used books.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "vendisteis"
+  },
+  {
+    "sentence": "El lunes pasado, ellos ___ libros usados.",
+    "verb": "vender",
+    "english": "Last Monday, they sold used books.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "vendieron"
+  },
+  {
+    "sentence": "Anoche, yo ___ libros usados.",
+    "verb": "vender",
+    "english": "Last night, I sold used books.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "vendí"
+  },
+  {
+    "sentence": "Hace unos días, tú ___ libros usados.",
+    "verb": "vender",
+    "english": "A few days ago, you sold used books.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "vendiste"
+  },
+  {
+    "sentence": "Ayer, vosotros ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "Yesterday, you all lived near downtown.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "vivisteis"
+  },
+  {
+    "sentence": "La semana pasada, ellos ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "Last week, they lived near downtown.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "vivieron"
+  },
+  {
+    "sentence": "El lunes pasado, yo ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "Last Monday, I lived near downtown.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "viví"
+  },
+  {
+    "sentence": "Anoche, tú ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "Last night, you lived near downtown.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "viviste"
+  },
+  {
+    "sentence": "Hace unos días, ella ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "A few days ago, she lived near downtown.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "vivió"
+  },
+  {
+    "sentence": "Ayer, ellos ___ visitas.",
+    "verb": "recibir",
+    "english": "Yesterday, they received visitors.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "recibieron"
+  },
+  {
+    "sentence": "La semana pasada, yo ___ visitas.",
+    "verb": "recibir",
+    "english": "Last week, I received visitors.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "recibí"
+  },
+  {
+    "sentence": "El lunes pasado, tú ___ visitas.",
+    "verb": "recibir",
+    "english": "Last Monday, you received visitors.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "recibiste"
+  },
+  {
+    "sentence": "Anoche, ella ___ visitas.",
+    "verb": "recibir",
+    "english": "Last night, she received visitors.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "recibió"
+  },
+  {
+    "sentence": "Hace unos días, nosotros ___ visitas.",
+    "verb": "recibir",
+    "english": "A few days ago, we received visitors.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "recibimos"
+  },
+  {
+    "sentence": "Ayer, yo ___ las escaleras.",
+    "verb": "subir",
+    "english": "Yesterday, I climbed the stairs.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "subí"
+  },
+  {
+    "sentence": "La semana pasada, tú ___ las escaleras.",
+    "verb": "subir",
+    "english": "Last week, you climbed the stairs.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "subiste"
+  },
+  {
+    "sentence": "El lunes pasado, ella ___ las escaleras.",
+    "verb": "subir",
+    "english": "Last Monday, she climbed the stairs.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "subió"
+  },
+  {
+    "sentence": "Anoche, nosotros ___ las escaleras.",
+    "verb": "subir",
+    "english": "Last night, we climbed the stairs.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "subimos"
+  },
+  {
+    "sentence": "Hace unos días, vosotros ___ las escaleras.",
+    "verb": "subir",
+    "english": "A few days ago, you all climbed the stairs.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "subisteis"
+  },
+  {
+    "sentence": "Ayer, tú ___ mis ideas.",
+    "verb": "compartir",
+    "english": "Yesterday, you shared my ideas.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "compartiste"
+  },
+  {
+    "sentence": "La semana pasada, ella ___ mis ideas.",
+    "verb": "compartir",
+    "english": "Last week, she shared my ideas.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "compartió"
+  },
+  {
+    "sentence": "El lunes pasado, nosotros ___ mis ideas.",
+    "verb": "compartir",
+    "english": "Last Monday, we shared my ideas.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "compartimos"
+  },
+  {
+    "sentence": "Anoche, vosotros ___ mis ideas.",
+    "verb": "compartir",
+    "english": "Last night, you all shared my ideas.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "compartisteis"
+  },
+  {
+    "sentence": "Hace unos días, ellos ___ mis ideas.",
+    "verb": "compartir",
+    "english": "A few days ago, they shared my ideas.",
+    "category": "preterite",
+    "type": "regular",
+    "correct": "compartieron"
+  },
+  {
+    "sentence": "Ayer, ella ___ amable.",
+    "verb": "ser",
+    "english": "Yesterday, she was kind.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "fue"
+  },
+  {
+    "sentence": "La semana pasada, nosotros ___ amable.",
+    "verb": "ser",
+    "english": "Last week, we were kind.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "fuimos"
+  },
+  {
+    "sentence": "El lunes pasado, vosotros ___ amable.",
+    "verb": "ser",
+    "english": "Last Monday, you all were kind.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "fuisteis"
+  },
+  {
+    "sentence": "Anoche, ellos ___ amable.",
+    "verb": "ser",
+    "english": "Last night, they were kind.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "fueron"
+  },
+  {
+    "sentence": "Hace unos días, yo ___ amable.",
+    "verb": "ser",
+    "english": "A few days ago, I was kind.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "fui"
+  },
+  {
+    "sentence": "Ayer, nosotros ___ en casa.",
+    "verb": "estar",
+    "english": "Yesterday, we were at home.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "estuvimos"
+  },
+  {
+    "sentence": "La semana pasada, vosotros ___ en casa.",
+    "verb": "estar",
+    "english": "Last week, you all were at home.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "estuvisteis"
+  },
+  {
+    "sentence": "El lunes pasado, ellos ___ en casa.",
+    "verb": "estar",
+    "english": "Last Monday, they were at home.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "estuvieron"
+  },
+  {
+    "sentence": "Anoche, yo ___ en casa.",
+    "verb": "estar",
+    "english": "Last night, I was at home.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "estuve"
+  },
+  {
+    "sentence": "Hace unos días, tú ___ en casa.",
+    "verb": "estar",
+    "english": "A few days ago, you were at home.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "estuviste"
+  },
+  {
+    "sentence": "Ayer, vosotros ___ al gimnasio.",
+    "verb": "ir",
+    "english": "Yesterday, you all went to the gym.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "fuisteis"
+  },
+  {
+    "sentence": "La semana pasada, ellos ___ al gimnasio.",
+    "verb": "ir",
+    "english": "Last week, they went to the gym.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "fueron"
+  },
+  {
+    "sentence": "El lunes pasado, yo ___ al gimnasio.",
+    "verb": "ir",
+    "english": "Last Monday, I went to the gym.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "fui"
+  },
+  {
+    "sentence": "Anoche, tú ___ al gimnasio.",
+    "verb": "ir",
+    "english": "Last night, you went to the gym.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "fuiste"
+  },
+  {
+    "sentence": "Hace unos días, ella ___ al gimnasio.",
+    "verb": "ir",
+    "english": "A few days ago, she went to the gym.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "fue"
+  },
+  {
+    "sentence": "Ayer, ellos ___ tiempo libre.",
+    "verb": "tener",
+    "english": "Yesterday, they had free time.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "tuvieron"
+  },
+  {
+    "sentence": "La semana pasada, yo ___ tiempo libre.",
+    "verb": "tener",
+    "english": "Last week, I had free time.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "tuve"
+  },
+  {
+    "sentence": "El lunes pasado, tú ___ tiempo libre.",
+    "verb": "tener",
+    "english": "Last Monday, you had free time.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "tuviste"
+  },
+  {
+    "sentence": "Anoche, ella ___ tiempo libre.",
+    "verb": "tener",
+    "english": "Last night, she had free time.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "tuvo"
+  },
+  {
+    "sentence": "Hace unos días, nosotros ___ tiempo libre.",
+    "verb": "tener",
+    "english": "A few days ago, we had free time.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "tuvimos"
+  },
+  {
+    "sentence": "Ayer, yo ___ ejercicio.",
+    "verb": "hacer",
+    "english": "Yesterday, I exercised.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "hice"
+  },
+  {
+    "sentence": "La semana pasada, tú ___ ejercicio.",
+    "verb": "hacer",
+    "english": "Last week, you exercised.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "hiciste"
+  },
+  {
+    "sentence": "El lunes pasado, ella ___ ejercicio.",
+    "verb": "hacer",
+    "english": "Last Monday, she exercised.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "hizo"
+  },
+  {
+    "sentence": "Anoche, nosotros ___ ejercicio.",
+    "verb": "hacer",
+    "english": "Last night, we exercised.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "hicimos"
+  },
+  {
+    "sentence": "Hace unos días, vosotros ___ ejercicio.",
+    "verb": "hacer",
+    "english": "A few days ago, you all exercised.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "hicisteis"
+  },
+  {
+    "sentence": "Ayer, tú ___ la verdad.",
+    "verb": "decir",
+    "english": "Yesterday, you told the truth.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "dijiste"
+  },
+  {
+    "sentence": "La semana pasada, ella ___ la verdad.",
+    "verb": "decir",
+    "english": "Last week, she told the truth.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "dijo"
+  },
+  {
+    "sentence": "El lunes pasado, nosotros ___ la verdad.",
+    "verb": "decir",
+    "english": "Last Monday, we told the truth.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "dijimos"
+  },
+  {
+    "sentence": "Anoche, vosotros ___ la verdad.",
+    "verb": "decir",
+    "english": "Last night, you all told the truth.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "dijisteis"
+  },
+  {
+    "sentence": "Hace unos días, ellos ___ la verdad.",
+    "verb": "decir",
+    "english": "A few days ago, they told the truth.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "dijeron"
+  },
+  {
+    "sentence": "Ayer, ella ___ ayudar.",
+    "verb": "poder",
+    "english": "Yesterday, she managed to help.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "pudo"
+  },
+  {
+    "sentence": "La semana pasada, nosotros ___ ayudar.",
+    "verb": "poder",
+    "english": "Last week, we managed to help.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "pudimos"
+  },
+  {
+    "sentence": "El lunes pasado, vosotros ___ ayudar.",
+    "verb": "poder",
+    "english": "Last Monday, you all managed to help.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "pudisteis"
+  },
+  {
+    "sentence": "Anoche, ellos ___ ayudar.",
+    "verb": "poder",
+    "english": "Last night, they managed to help.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "pudieron"
+  },
+  {
+    "sentence": "Hace unos días, yo ___ ayudar.",
+    "verb": "poder",
+    "english": "A few days ago, I managed to help.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "pude"
+  },
+  {
+    "sentence": "Ayer, nosotros ___ aprender.",
+    "verb": "querer",
+    "english": "Yesterday, we wanted to learn.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "quisimos"
+  },
+  {
+    "sentence": "La semana pasada, vosotros ___ aprender.",
+    "verb": "querer",
+    "english": "Last week, you all wanted to learn.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "quisisteis"
+  },
+  {
+    "sentence": "El lunes pasado, ellos ___ aprender.",
+    "verb": "querer",
+    "english": "Last Monday, they wanted to learn.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "quisieron"
+  },
+  {
+    "sentence": "Anoche, yo ___ aprender.",
+    "verb": "querer",
+    "english": "Last night, I wanted to learn.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "quise"
+  },
+  {
+    "sentence": "Hace unos días, tú ___ aprender.",
+    "verb": "querer",
+    "english": "A few days ago, you wanted to learn.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "quisiste"
+  },
+  {
+    "sentence": "Ayer, vosotros ___ a clase.",
+    "verb": "venir",
+    "english": "Yesterday, you all came to class.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "vinisteis"
+  },
+  {
+    "sentence": "La semana pasada, ellos ___ a clase.",
+    "verb": "venir",
+    "english": "Last week, they came to class.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "vinieron"
+  },
+  {
+    "sentence": "El lunes pasado, yo ___ a clase.",
+    "verb": "venir",
+    "english": "Last Monday, I came to class.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "vine"
+  },
+  {
+    "sentence": "Anoche, tú ___ a clase.",
+    "verb": "venir",
+    "english": "Last night, you came to class.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "viniste"
+  },
+  {
+    "sentence": "Hace unos días, ella ___ a clase.",
+    "verb": "venir",
+    "english": "A few days ago, she came to class.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "vino"
+  },
+  {
+    "sentence": "Ayer, ellos ___ la mesa.",
+    "verb": "poner",
+    "english": "Yesterday, they set the table.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "pusieron"
+  },
+  {
+    "sentence": "La semana pasada, yo ___ la mesa.",
+    "verb": "poner",
+    "english": "Last week, I set the table.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "puse"
+  },
+  {
+    "sentence": "El lunes pasado, tú ___ la mesa.",
+    "verb": "poner",
+    "english": "Last Monday, you set the table.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "pusiste"
+  },
+  {
+    "sentence": "Anoche, ella ___ la mesa.",
+    "verb": "poner",
+    "english": "Last night, she set the table.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "puso"
+  },
+  {
+    "sentence": "Hace unos días, nosotros ___ la mesa.",
+    "verb": "poner",
+    "english": "A few days ago, we set the table.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "pusimos"
+  },
+  {
+    "sentence": "Ayer, yo ___ con mis amigos.",
+    "verb": "salir",
+    "english": "Yesterday, I went out with my friends.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "salí"
+  },
+  {
+    "sentence": "La semana pasada, tú ___ con mis amigos.",
+    "verb": "salir",
+    "english": "Last week, you went out with my friends.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "saliste"
+  },
+  {
+    "sentence": "El lunes pasado, ella ___ con mis amigos.",
+    "verb": "salir",
+    "english": "Last Monday, she went out with my friends.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "salió"
+  },
+  {
+    "sentence": "Anoche, nosotros ___ con mis amigos.",
+    "verb": "salir",
+    "english": "Last night, we went out with my friends.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "salimos"
+  },
+  {
+    "sentence": "Hace unos días, vosotros ___ con mis amigos.",
+    "verb": "salir",
+    "english": "A few days ago, you all went out with my friends.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "salisteis"
+  },
+  {
+    "sentence": "Ayer, tú ___ una película.",
+    "verb": "ver",
+    "english": "Yesterday, you watched a movie.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "viste"
+  },
+  {
+    "sentence": "La semana pasada, ella ___ una película.",
+    "verb": "ver",
+    "english": "Last week, she watched a movie.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "vio"
+  },
+  {
+    "sentence": "El lunes pasado, nosotros ___ una película.",
+    "verb": "ver",
+    "english": "Last Monday, we watched a movie.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "vimos"
+  },
+  {
+    "sentence": "Anoche, vosotros ___ una película.",
+    "verb": "ver",
+    "english": "Last night, you all watched a movie.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "visteis"
+  },
+  {
+    "sentence": "Hace unos días, ellos ___ una película.",
+    "verb": "ver",
+    "english": "A few days ago, they watched a movie.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "vieron"
+  },
+  {
+    "sentence": "Ayer, ella ___ una respuesta.",
+    "verb": "dar",
+    "english": "Yesterday, she gave an answer.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "dio"
+  },
+  {
+    "sentence": "La semana pasada, nosotros ___ una respuesta.",
+    "verb": "dar",
+    "english": "Last week, we gave an answer.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "dimos"
+  },
+  {
+    "sentence": "El lunes pasado, vosotros ___ una respuesta.",
+    "verb": "dar",
+    "english": "Last Monday, you all gave an answer.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "disteis"
+  },
+  {
+    "sentence": "Anoche, ellos ___ una respuesta.",
+    "verb": "dar",
+    "english": "Last night, they gave an answer.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "dieron"
+  },
+  {
+    "sentence": "Hace unos días, yo ___ una respuesta.",
+    "verb": "dar",
+    "english": "A few days ago, I gave an answer.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "di"
+  },
+  {
+    "sentence": "Ayer, nosotros ___ la respuesta.",
+    "verb": "saber",
+    "english": "Yesterday, we knew the answer.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "supimos"
+  },
+  {
+    "sentence": "La semana pasada, vosotros ___ la respuesta.",
+    "verb": "saber",
+    "english": "Last week, you all knew the answer.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "supisteis"
+  },
+  {
+    "sentence": "El lunes pasado, ellos ___ la respuesta.",
+    "verb": "saber",
+    "english": "Last Monday, they knew the answer.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "supieron"
+  },
+  {
+    "sentence": "Anoche, yo ___ la respuesta.",
+    "verb": "saber",
+    "english": "Last night, I knew the answer.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "supe"
+  },
+  {
+    "sentence": "Hace unos días, tú ___ la respuesta.",
+    "verb": "saber",
+    "english": "A few days ago, you knew the answer.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "supiste"
+  },
+  {
+    "sentence": "Ayer, vosotros ___ comida.",
+    "verb": "traer",
+    "english": "Yesterday, you all brought food.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "trajisteis"
+  },
+  {
+    "sentence": "La semana pasada, ellos ___ comida.",
+    "verb": "traer",
+    "english": "Last week, they brought food.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "trajeron"
+  },
+  {
+    "sentence": "El lunes pasado, yo ___ comida.",
+    "verb": "traer",
+    "english": "Last Monday, I brought food.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "traje"
+  },
+  {
+    "sentence": "Anoche, tú ___ comida.",
+    "verb": "traer",
+    "english": "Last night, you brought food.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "trajiste"
+  },
+  {
+    "sentence": "Hace unos días, ella ___ comida.",
+    "verb": "traer",
+    "english": "A few days ago, she brought food.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "trajo"
+  },
+  {
+    "sentence": "Ayer, ellos ___ ayuda.",
+    "verb": "pedir",
+    "english": "Yesterday, they asked for help.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "pidieron"
+  },
+  {
+    "sentence": "La semana pasada, yo ___ ayuda.",
+    "verb": "pedir",
+    "english": "Last week, I asked for help.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "pedí"
+  },
+  {
+    "sentence": "El lunes pasado, tú ___ ayuda.",
+    "verb": "pedir",
+    "english": "Last Monday, you asked for help.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "pediste"
+  },
+  {
+    "sentence": "Anoche, ella ___ ayuda.",
+    "verb": "pedir",
+    "english": "Last night, she asked for help.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "pidió"
+  },
+  {
+    "sentence": "Hace unos días, nosotros ___ ayuda.",
+    "verb": "pedir",
+    "english": "A few days ago, we asked for help.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "pedimos"
+  },
+  {
+    "sentence": "Ayer, yo ___ bien.",
+    "verb": "dormir",
+    "english": "Yesterday, I slept well.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "dormí"
+  },
+  {
+    "sentence": "La semana pasada, tú ___ bien.",
+    "verb": "dormir",
+    "english": "Last week, you slept well.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "dormiste"
+  },
+  {
+    "sentence": "El lunes pasado, ella ___ bien.",
+    "verb": "dormir",
+    "english": "Last Monday, she slept well.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "durmió"
+  },
+  {
+    "sentence": "Anoche, nosotros ___ bien.",
+    "verb": "dormir",
+    "english": "Last night, we slept well.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "dormimos"
+  },
+  {
+    "sentence": "Hace unos días, vosotros ___ bien.",
+    "verb": "dormir",
+    "english": "A few days ago, you all slept well.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "dormisteis"
+  },
+  {
+    "sentence": "Ayer, tú ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "Yesterday, you played chess.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "jugaste"
+  },
+  {
+    "sentence": "La semana pasada, ella ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "Last week, she played chess.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "jugó"
+  },
+  {
+    "sentence": "El lunes pasado, nosotros ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "Last Monday, we played chess.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "jugamos"
+  },
+  {
+    "sentence": "Anoche, vosotros ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "Last night, you all played chess.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "jugasteis"
+  },
+  {
+    "sentence": "Hace unos días, ellos ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "A few days ago, they played chess.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "jugaron"
+  },
+  {
+    "sentence": "Ayer, ella ___ la explicación.",
+    "verb": "entender",
+    "english": "Yesterday, she understood the explanation.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "entendió"
+  },
+  {
+    "sentence": "La semana pasada, nosotros ___ la explicación.",
+    "verb": "entender",
+    "english": "Last week, we understood the explanation.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "entendimos"
+  },
+  {
+    "sentence": "El lunes pasado, vosotros ___ la explicación.",
+    "verb": "entender",
+    "english": "Last Monday, you all understood the explanation.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "entendisteis"
+  },
+  {
+    "sentence": "Anoche, ellos ___ la explicación.",
+    "verb": "entender",
+    "english": "Last night, they understood the explanation.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "entendieron"
+  },
+  {
+    "sentence": "Hace unos días, yo ___ la explicación.",
+    "verb": "entender",
+    "english": "A few days ago, I understood the explanation.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "entendí"
+  },
+  {
+    "sentence": "Ayer, nosotros ___ cartas.",
+    "verb": "escribir",
+    "english": "Yesterday, we wrote letters.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "escribimos"
+  },
+  {
+    "sentence": "La semana pasada, vosotros ___ cartas.",
+    "verb": "escribir",
+    "english": "Last week, you all wrote letters.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "escribisteis"
+  },
+  {
+    "sentence": "El lunes pasado, ellos ___ cartas.",
+    "verb": "escribir",
+    "english": "Last Monday, they wrote letters.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "escribieron"
+  },
+  {
+    "sentence": "Anoche, yo ___ cartas.",
+    "verb": "escribir",
+    "english": "Last night, I wrote letters.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "escribí"
+  },
+  {
+    "sentence": "Hace unos días, tú ___ cartas.",
+    "verb": "escribir",
+    "english": "A few days ago, you wrote letters.",
+    "category": "preterite",
+    "type": "irregular",
+    "correct": "escribiste"
+  }
+]
