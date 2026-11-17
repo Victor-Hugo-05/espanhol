@@ -221,47 +221,6 @@ body.home {
 
 
 
-/* ===== Flashcards ===== */
-.training-setup {
-  text-align: left;
-}
-
-.training-setup label {
-  display: block;
-  font-weight: bold;
-  color: #333;
-}
-
-.card-flash {
-  width: 320px;
-  height: 180px;
-
-  margin: 30px auto 20px;
-
-  background: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(10px);
-
-  border-radius: 20px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 28px;
-  font-weight: 600;
-  color: #222;
-
-  box-shadow:
-    0 20px 50px rgba(0,0,0,0.15),
-    inset 0 1px 0 rgba(255,255,255,0.5);
-
-  transition: transform 0.2s ease;
-}
-
-.card-flash:hover {
-  transform: translateY(-4px);
-}
-
 /* INPUT */
 input {
   width: 100%;
@@ -321,22 +280,6 @@ button {
   font-weight: bold;
 
   transition: all 0.2s ease;
-}
-
-.flashcards .start-btn,
-.flashcards .check-btn {
-  background: linear-gradient(135deg, #43cea2, #185a9d);
-  color: white;
-}
-
-.flashcards .next-btn {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
-}
-
-.flashcards button:disabled {
-  background: #ccc;
-  cursor: not-allowed;
 }
 
 /* FEEDBACK */
