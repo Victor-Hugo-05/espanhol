@@ -5,15 +5,21 @@
     "verbs-es-present-1.json",
     "verbs-es-present-2.json",
     "verbs-es-present-3.json",
-    "verbs-es-present-4.json"
+    "verbs-es-present-4.json",
+    "verbs-es-preterite.json",
+    "verbs-es-imperfect.json",
+    "verbs-es-perfect.json",
+    "verbs-es-subjunctive.json"
   ];
-  const EXPECTED_TOTAL = 200;
+  const EXPECTED_TOTAL = 1000;
+  const TENSES = ["present", "preterite", "imperfect", "perfect", "subjunctive"];
 
   const $ = id => document.getElementById(id);
   const setup = $("setup");
   const game = $("game");
   const regularVerbs = $("regularVerbs");
   const irregularVerbs = $("irregularVerbs");
+  const tenseChecks = Array.from(document.querySelectorAll('input[name="verbTense"]'));
   const questionCount = $("questionCount");
   const availableCount = $("availableCount");
   const startBtn = $("startVerbBtn");
@@ -62,9 +68,12 @@
   }
 
   function getPool() {
+    const selectedTenses = new Set(tenseChecks.filter(el => el.checked).map(el => el.value));
     return questions.filter(q =>
-      (q.type === "regular" && regularVerbs.checked) ||
-      (q.type === "irregular" && irregularVerbs.checked)
+      selectedTenses.has(q.category) && (
+        (q.type === "regular" && regularVerbs.checked) ||
+        (q.type === "irregular" && irregularVerbs.checked)
+      )
     );
   }
 
@@ -72,7 +81,7 @@
     const size = getPool().length;
     availableCount.textContent = size
       ? `${size} frases disponibles`
-      : "Selecciona al menos un tipo de verbo.";
+      : "Selecciona al menos un tiempo y un tipo de verbo.";
     questionCount.max = String(Math.max(size, 1));
     if (size && Number(questionCount.value) > size) questionCount.value = String(size);
     startBtn.disabled = size === 0;
@@ -90,7 +99,8 @@
         if (!Array.isArray(data)) throw new Error(`${file}: formato incorrecto`);
         for (const q of data) {
           if (
-            !q || q.category !== "present" ||
+            !q || !TENSES.includes(q.category) ||
+            (file.startsWith("verbs-es-present-") ? q.category !== "present" : q.category !== file.slice("verbs-es-".length, -".json".length)) ||
             !["regular", "irregular"].includes(q.type) ||
             !["sentence", "verb", "correct", "english"].every(key => typeof q[key] === "string" && q[key].trim()) ||
             (q.sentence.match(/___/g) || []).length !== 1
@@ -101,10 +111,20 @@
         return data;
       }));
 
-      questions = groups.flat().map((q, index) => ({ ...q, audioId: index + 1 }));
-      const unique = new Set(questions.map(q => q.sentence));
-      if (questions.length !== EXPECTED_TOTAL || unique.size !== EXPECTED_TOTAL) {
-        throw new Error(`Se esperaban ${EXPECTED_TOTAL} frases diferentes, pero hay ${questions.length} (${unique.size} únicas).`);
+      let presentAudioCounter = 0;
+      questions = groups.flat().map(q => ({
+        ...q,
+        audioPath: q.category === "present"
+          ? `audio/es-present/${String(++presentAudioCounter).padStart(4, "0")}.mp3`
+          : null
+      }));
+      const unique = new Set(questions.map(q => `${q.category}|${q.sentence}`));
+      const counts = Object.fromEntries(TENSES.map(tense => [
+        tense, questions.filter(q => q.category === tense).length
+      ]));
+      if (questions.length !== EXPECTED_TOTAL || unique.size !== EXPECTED_TOTAL ||
+          TENSES.some(tense => counts[tense] !== 200)) {
+        throw new Error(`Se esperaban 200 frases únicas por tiempo verbal. Resultado: ${JSON.stringify(counts)}.`);
       }
 
       loadStatus.textContent = "";
@@ -131,6 +151,7 @@
     recordedAudio.pause();
     recordedAudio.removeAttribute("src");
     recordedAudio.load();
+    if ("speechSynthesis" in window) window.speechSynthesis.cancel();
   }
 
   function speakCurrentSentence() {
@@ -138,17 +159,35 @@
     audioStatus.textContent = "";
     stopSpeech();
 
-    // Static Spanish-language recordings are hosted with the site,
-    // so students never need installed system voices or browser TTS.
-    recordedAudio.src = `audio/es-present/${String(current.audioId).padStart(4, "0")}.mp3`;
-    recordedAudio.load();
-    const playback = recordedAudio.play();
-    if (playback && typeof playback.catch === "function") {
-      playback.catch(error => {
-        if (error && error.name === "AbortError") return;
-        audioStatus.textContent = "No se ha podido reproducir el audio. Comprueba tu conexión e inténtalo de nuevo.";
-      });
+    if (current.audioPath) {
+      // Keep the existing Spanish recordings for the original 200 sentences.
+      recordedAudio.src = current.audioPath;
+      recordedAudio.load();
+      const playback = recordedAudio.play();
+      if (playback && typeof playback.catch === "function") {
+        playback.catch(error => {
+          if (error && error.name === "AbortError") return;
+          audioStatus.textContent = "No se ha podido reproducir el audio. Comprueba tu conexión e inténtalo de nuevo.";
+        });
+      }
+      return;
     }
+
+    // The new tenses use browser speech synthesis, explicitly in Spanish.
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+      audioStatus.textContent = "Tu navegador no permite reproducir esta frase.";
+      return;
+    }
+    const phrase = new SpeechSynthesisUtterance(completedSentence(current));
+    phrase.lang = "es-ES";
+    phrase.rate = 0.92;
+    const spanishVoice = window.speechSynthesis.getVoices()
+      .find(voice => /^es[-_]/i.test(voice.lang));
+    if (spanishVoice) phrase.voice = spanishVoice;
+    phrase.onerror = () => {
+      audioStatus.textContent = "No se ha podido reproducir la frase en español.";
+    };
+    window.speechSynthesis.speak(phrase);
   }
 
   function startGame() {
@@ -248,6 +287,7 @@
   startBtn.addEventListener("click", startGame);
   regularVerbs.addEventListener("change", updateAvailableCount);
   irregularVerbs.addEventListener("change", updateAvailableCount);
+  tenseChecks.forEach(el => el.addEventListener("change", updateAvailableCount));
   checkBtn.addEventListener("click", checkAnswer);
   nextBtn.addEventListener("click", showQuestion);
   restartBtn.addEventListener("click", () => {
