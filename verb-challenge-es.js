@@ -173,21 +173,58 @@
       return;
     }
 
-    // The new tenses use browser speech synthesis, explicitly in Spanish.
+    // Browser TTS must use an actual Spanish voice, never a Portuguese fallback.
     if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
       audioStatus.textContent = "Tu navegador no permite reproducir esta frase.";
       return;
     }
-    const phrase = new SpeechSynthesisUtterance(completedSentence(current));
-    phrase.lang = "es-ES";
-    phrase.rate = 0.92;
-    const spanishVoice = window.speechSynthesis.getVoices()
-      .find(voice => /^es[-_]/i.test(voice.lang));
-    if (spanishVoice) phrase.voice = spanishVoice;
-    phrase.onerror = () => {
-      audioStatus.textContent = "No se ha podido reproducir la frase en español.";
+
+    const synth = window.speechSynthesis;
+    const sentence = completedSentence(current);
+    const requestedQuestion = current;
+    const chooseSpanishVoice = () => {
+      const voices = synth.getVoices();
+      return voices.find(voice => /^es[-_]ES$/i.test(voice.lang))
+        || voices.find(voice => /^es(?:[-_]|$)/i.test(voice.lang));
     };
-    window.speechSynthesis.speak(phrase);
+    const playWithSpanishVoice = () => {
+      if (current !== requestedQuestion) return true;
+      const spanishVoice = chooseSpanishVoice();
+      if (!spanishVoice) return false;
+      const phrase = new SpeechSynthesisUtterance(sentence);
+      phrase.voice = spanishVoice;
+      phrase.lang = spanishVoice.lang;
+      phrase.rate = 0.92;
+      phrase.onerror = () => {
+        if (current === requestedQuestion) {
+          audioStatus.textContent = "No se ha podido reproducir la frase en español.";
+        }
+      };
+      audioStatus.textContent = "";
+      synth.speak(phrase);
+      return true;
+    };
+
+    if (playWithSpanishVoice()) return;
+    // Some browsers populate getVoices() asynchronously.
+    audioStatus.textContent = "Buscando una voz en español...";
+    let finished = false;
+    const onVoicesChanged = () => {
+      if (finished || current !== requestedQuestion) return;
+      if (playWithSpanishVoice()) {
+        finished = true;
+        synth.removeEventListener("voiceschanged", onVoicesChanged);
+      }
+    };
+    synth.addEventListener("voiceschanged", onVoicesChanged);
+    setTimeout(() => {
+      if (finished) return;
+      finished = true;
+      synth.removeEventListener("voiceschanged", onVoicesChanged);
+      if (current === requestedQuestion && !playWithSpanishVoice()) {
+        audioStatus.textContent = "No hay ninguna voz en español instalada en este navegador. Añade una voz en español en los ajustes de voz de tu dispositivo.";
+      }
+    }, 1500);
   }
 
   function startGame() {
