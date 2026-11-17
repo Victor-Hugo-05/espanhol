@@ -145,7 +145,7 @@
         $("unitTitle").textContent = "Unidade "+String(unit.id).padStart(2,"0")+" · "+unit.titulo;
         history.replaceState(null,"","#unidade-"+unit.id);
         showNext();
-        window.scrollTo({top:0,behavior:"instant"});
+        window.scrollTo({top:0,behavior:"auto"});
       }
       function showNext() {
         if (!game) return;
@@ -155,7 +155,7 @@
         const word=game.current;
         $("french").textContent=word.fr;
         const dup=game.unit.palavras.filter(x=>normalize(x.fr)===normalize(word.fr)).length>1;
-        $("clue").textContent=word.classe+" · "+(dup?"Começa com "+word.pt[0].toUpperCase()+" · ":"")+"Sem consultar a resposta";
+        $("clue").textContent=word.classe+" · "+(dup?"Dica para diferenciar traduções: "+word.pt[0].toUpperCase()+"…"+word.pt.slice(-1).toLowerCase()+" · ":"")+"Sem consultar a resposta";
         answer.value="";
         answer.disabled=false;
         check.disabled=false;
@@ -168,7 +168,7 @@
       }
       function progress() {
         $("progress").textContent=game.seen.size+" de 25 palavras vistas";
-        $("pending").textContent=(game.queue.length+1)+" pendente(s)";
+        $("pending").textContent=(game.queue.length+(game.answered?0:1))+" pendente(s)";
         $("progressFill").style.width=(game.seen.size/25*100)+"%";
       }
       function evaluate(event) {
