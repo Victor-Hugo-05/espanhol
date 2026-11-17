@@ -9,6 +9,9 @@ let showVerbHint = true;
 const setup = document.getElementById("setup");
 const game = document.getElementById("game");
 const categorySelect = document.getElementById("categorySelect");
+const regularCheckbox = document.getElementById("regularVerbs");
+const irregularCheckbox = document.getElementById("irregularVerbs");
+const availableCount = document.getElementById("availableCount");
 const questionCount = document.getElementById("questionCount");
 const startBtn = document.getElementById("startVerbBtn");
 const progress = document.getElementById("verbProgress");
@@ -46,8 +49,29 @@ const files = [
   "verbs-present-subjunctive.json",
   "verbs-imperfect-subjunctive.json",
   "verbs-conditional.json",
-  "verbs-imperative.json"
+  "verbs-imperative.json",
+  "irregular-verbs-1.json",
+  "irregular-verbs-2.json",
+  "irregular-verbs-3.json",
+  "irregular-verbs-4.json",
+  "irregular-verbs-5.json",
+  "irregular-verbs-6.json"
 ];
+
+const irregularFile = name => name.startsWith("irregular-verbs-");
+const irregularTenseMap = {presente:"present",preterito_perfeito:"preterite",imperfeito_subjuntivo:"imperfect_subjunctive",futuro_subjuntivo:"futuro_subjuntivo",futuro_presente:"futuro_presente",futuro_preterito:"future_preterite"};
+const knownIrregulars = new Set("ser estar ter haver ir vir fazer dizer trazer pôr poder querer saber dar ver ler crer prever rever ouvir pedir medir sentir mentir dormir cobrir descobrir abrir escrever descrever inscrever fazer satisfazer desfazer refazer manter obter conter deter entreter propor supor compor repor impor dispor expor sair cair atrair distrair construir destruir possuir conseguir seguir perseguir fugir valer caber perder ganhar conhecer reconhecer agradecer esquecer nascer crescer descer subir rir sorrir preferir ferir servir vestir repetir competir impedir despedir corrigir dirigir exigir atingir proteger eleger escolher beber comer".split(" "));
+function getPool() {
+  const category = categorySelect.value;
+  return questions.filter(q => (category === "all" || q.category === category) && (q.isIrregular ? irregularCheckbox.checked : regularCheckbox.checked));
+}
+function updateAvailableCount() {
+  const count = getPool().length;
+  availableCount.textContent = `${count} frases disponíveis`;
+  questionCount.max = Math.max(1,count);
+  startBtn.disabled = !count;
+}
+
 
 async function loadExercises() {
   startBtn.disabled = true;
@@ -72,7 +96,7 @@ async function loadExercises() {
         throw new Error(`${file}: o conteúdo não é uma lista de exercícios`);
       }
 
-      return { file, data };
+      return { file, data: data.map(q => ({...q, category: irregularFile(file) ? (irregularTenseMap[q.tense] || q.tense) : q.category, isIrregular: irregularFile(file) || knownIrregulars.has((q.verb || "").toLowerCase()) || (Array.isArray(q.verbs) && q.verbs.some(v => knownIrregulars.has(v.toLowerCase()))), tenseLabel: q.tenseLabel || ""})) };
     })
   );
 
@@ -93,7 +117,7 @@ async function loadExercises() {
   questions = loadedGroups.flat();
 
   if (questions.length > 0) {
-    startBtn.disabled = false;
+    updateAvailableCount();
 
     if (failedFiles.length === 0) {
       loadStatus.textContent = "";
@@ -174,8 +198,8 @@ function updateVerbHintVisibility() {
 }
 
 function startGame() {
+  const pool = getPool();
   const category = categorySelect.value;
-  const pool = category === "all" ? questions : questions.filter(q => q.category === category);
 
   if (!pool.length) {
     loadStatus.textContent = `❌ Não há exercícios disponíveis para a categoria selecionada (${category}).`;
@@ -219,6 +243,7 @@ function showQuestion() {
   english.textContent = current.category === "imperative"
     ? `${current.english} · Forma pedida: ${current.person}`
     : current.english;
+  if (current.tenseLabel) english.textContent += ` · ${current.tenseLabel}`;
   portuguese.textContent = current.sentence;
 
   const doubleQuestion = isDoubleVerbQuestion(current);
@@ -282,6 +307,7 @@ function checkAnswer() {
   nextBtn.style.display = "block";
 }
 
+[categorySelect, regularCheckbox, irregularCheckbox].forEach(el => el.addEventListener("change", updateAvailableCount));
 startBtn.addEventListener("click", startGame);
 checkBtn.addEventListener("click", checkAnswer);
 pronounceBtn.addEventListener("click", speakCurrentSentence);
