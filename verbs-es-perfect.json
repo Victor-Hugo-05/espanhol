@@ -1,0 +1,1602 @@
+[
+  {
+    "sentence": "Hoy, yo ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "Today, I have talked with my neighbors.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he hablado"
+  },
+  {
+    "sentence": "Esta semana, tú ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "This week, you have talked with my neighbors.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has hablado"
+  },
+  {
+    "sentence": "Este mes, ella ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "This month, she has talked with my neighbors.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha hablado"
+  },
+  {
+    "sentence": "Últimamente, nosotros ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "Lately, we have talked with my neighbors.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos hablado"
+  },
+  {
+    "sentence": "Este año, vosotros ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "This year, you all have talked with my neighbors.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis hablado"
+  },
+  {
+    "sentence": "Hoy, tú ___ español.",
+    "verb": "estudiar",
+    "english": "Today, you have studied Spanish.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has estudiado"
+  },
+  {
+    "sentence": "Esta semana, ella ___ español.",
+    "verb": "estudiar",
+    "english": "This week, she has studied Spanish.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha estudiado"
+  },
+  {
+    "sentence": "Este mes, nosotros ___ español.",
+    "verb": "estudiar",
+    "english": "This month, we have studied Spanish.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos estudiado"
+  },
+  {
+    "sentence": "Últimamente, vosotros ___ español.",
+    "verb": "estudiar",
+    "english": "Lately, you all have studied Spanish.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis estudiado"
+  },
+  {
+    "sentence": "Este año, ellos ___ español.",
+    "verb": "estudiar",
+    "english": "This year, they have studied Spanish.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han estudiado"
+  },
+  {
+    "sentence": "Hoy, ella ___ desde casa.",
+    "verb": "trabajar",
+    "english": "Today, she has worked from home.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha trabajado"
+  },
+  {
+    "sentence": "Esta semana, nosotros ___ desde casa.",
+    "verb": "trabajar",
+    "english": "This week, we have worked from home.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos trabajado"
+  },
+  {
+    "sentence": "Este mes, vosotros ___ desde casa.",
+    "verb": "trabajar",
+    "english": "This month, you all have worked from home.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis trabajado"
+  },
+  {
+    "sentence": "Últimamente, ellos ___ desde casa.",
+    "verb": "trabajar",
+    "english": "Lately, they have worked from home.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han trabajado"
+  },
+  {
+    "sentence": "Este año, yo ___ desde casa.",
+    "verb": "trabajar",
+    "english": "This year, I have worked from home.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he trabajado"
+  },
+  {
+    "sentence": "Hoy, nosotros ___ en tren.",
+    "verb": "viajar",
+    "english": "Today, we have traveled by train.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos viajado"
+  },
+  {
+    "sentence": "Esta semana, vosotros ___ en tren.",
+    "verb": "viajar",
+    "english": "This week, you all have traveled by train.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis viajado"
+  },
+  {
+    "sentence": "Este mes, ellos ___ en tren.",
+    "verb": "viajar",
+    "english": "This month, they have traveled by train.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han viajado"
+  },
+  {
+    "sentence": "Últimamente, yo ___ en tren.",
+    "verb": "viajar",
+    "english": "Lately, I have traveled by train.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he viajado"
+  },
+  {
+    "sentence": "Este año, tú ___ en tren.",
+    "verb": "viajar",
+    "english": "This year, you have traveled by train.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has viajado"
+  },
+  {
+    "sentence": "Hoy, vosotros ___ la cena.",
+    "verb": "cocinar",
+    "english": "Today, you all have cooked dinner.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis cocinado"
+  },
+  {
+    "sentence": "Esta semana, ellos ___ la cena.",
+    "verb": "cocinar",
+    "english": "This week, they have cooked dinner.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han cocinado"
+  },
+  {
+    "sentence": "Este mes, yo ___ la cena.",
+    "verb": "cocinar",
+    "english": "This month, I have cooked dinner.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he cocinado"
+  },
+  {
+    "sentence": "Últimamente, tú ___ la cena.",
+    "verb": "cocinar",
+    "english": "Lately, you have cooked dinner.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has cocinado"
+  },
+  {
+    "sentence": "Este año, ella ___ la cena.",
+    "verb": "cocinar",
+    "english": "This year, she has cooked dinner.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha cocinado"
+  },
+  {
+    "sentence": "Hoy, ellos ___ música.",
+    "verb": "escuchar",
+    "english": "Today, they have listened to music.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han escuchado"
+  },
+  {
+    "sentence": "Esta semana, yo ___ música.",
+    "verb": "escuchar",
+    "english": "This week, I have listened to music.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he escuchado"
+  },
+  {
+    "sentence": "Este mes, tú ___ música.",
+    "verb": "escuchar",
+    "english": "This month, you have listened to music.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has escuchado"
+  },
+  {
+    "sentence": "Últimamente, ella ___ música.",
+    "verb": "escuchar",
+    "english": "Lately, she has listened to music.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha escuchado"
+  },
+  {
+    "sentence": "Este año, nosotros ___ música.",
+    "verb": "escuchar",
+    "english": "This year, we have listened to music.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos escuchado"
+  },
+  {
+    "sentence": "Hoy, yo ___ el cielo.",
+    "verb": "mirar",
+    "english": "Today, I have looked at the sky.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he mirado"
+  },
+  {
+    "sentence": "Esta semana, tú ___ el cielo.",
+    "verb": "mirar",
+    "english": "This week, you have looked at the sky.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has mirado"
+  },
+  {
+    "sentence": "Este mes, ella ___ el cielo.",
+    "verb": "mirar",
+    "english": "This month, she has looked at the sky.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha mirado"
+  },
+  {
+    "sentence": "Últimamente, nosotros ___ el cielo.",
+    "verb": "mirar",
+    "english": "Lately, we have looked at the sky.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos mirado"
+  },
+  {
+    "sentence": "Este año, vosotros ___ el cielo.",
+    "verb": "mirar",
+    "english": "This year, you all have looked at the sky.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis mirado"
+  },
+  {
+    "sentence": "Hoy, tú ___ pan.",
+    "verb": "comprar",
+    "english": "Today, you have bought bread.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has comprado"
+  },
+  {
+    "sentence": "Esta semana, ella ___ pan.",
+    "verb": "comprar",
+    "english": "This week, she has bought bread.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha comprado"
+  },
+  {
+    "sentence": "Este mes, nosotros ___ pan.",
+    "verb": "comprar",
+    "english": "This month, we have bought bread.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos comprado"
+  },
+  {
+    "sentence": "Últimamente, vosotros ___ pan.",
+    "verb": "comprar",
+    "english": "Lately, you all have bought bread.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis comprado"
+  },
+  {
+    "sentence": "Este año, ellos ___ pan.",
+    "verb": "comprar",
+    "english": "This year, they have bought bread.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han comprado"
+  },
+  {
+    "sentence": "Hoy, ella ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "Today, she has visited my grandparents.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha visitado"
+  },
+  {
+    "sentence": "Esta semana, nosotros ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "This week, we have visited my grandparents.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos visitado"
+  },
+  {
+    "sentence": "Este mes, vosotros ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "This month, you all have visited my grandparents.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis visitado"
+  },
+  {
+    "sentence": "Últimamente, ellos ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "Lately, they have visited my grandparents.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han visitado"
+  },
+  {
+    "sentence": "Este año, yo ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "This year, I have visited my grandparents.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he visitado"
+  },
+  {
+    "sentence": "Hoy, nosotros ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "Today, we have called my sister.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos llamado"
+  },
+  {
+    "sentence": "Esta semana, vosotros ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "This week, you all have called my sister.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis llamado"
+  },
+  {
+    "sentence": "Este mes, ellos ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "This month, they have called my sister.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han llamado"
+  },
+  {
+    "sentence": "Últimamente, yo ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "Lately, I have called my sister.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he llamado"
+  },
+  {
+    "sentence": "Este año, tú ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "This year, you have called my sister.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has llamado"
+  },
+  {
+    "sentence": "Hoy, vosotros ___ verduras.",
+    "verb": "comer",
+    "english": "Today, you all have eaten vegetables.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis comido"
+  },
+  {
+    "sentence": "Esta semana, ellos ___ verduras.",
+    "verb": "comer",
+    "english": "This week, they have eaten vegetables.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han comido"
+  },
+  {
+    "sentence": "Este mes, yo ___ verduras.",
+    "verb": "comer",
+    "english": "This month, I have eaten vegetables.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he comido"
+  },
+  {
+    "sentence": "Últimamente, tú ___ verduras.",
+    "verb": "comer",
+    "english": "Lately, you have eaten vegetables.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has comido"
+  },
+  {
+    "sentence": "Este año, ella ___ verduras.",
+    "verb": "comer",
+    "english": "This year, she has eaten vegetables.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha comido"
+  },
+  {
+    "sentence": "Hoy, ellos ___ agua.",
+    "verb": "beber",
+    "english": "Today, they have drunk water.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han bebido"
+  },
+  {
+    "sentence": "Esta semana, yo ___ agua.",
+    "verb": "beber",
+    "english": "This week, I have drunk water.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he bebido"
+  },
+  {
+    "sentence": "Este mes, tú ___ agua.",
+    "verb": "beber",
+    "english": "This month, you have drunk water.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has bebido"
+  },
+  {
+    "sentence": "Últimamente, ella ___ agua.",
+    "verb": "beber",
+    "english": "Lately, she has drunk water.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha bebido"
+  },
+  {
+    "sentence": "Este año, nosotros ___ agua.",
+    "verb": "beber",
+    "english": "This year, we have drunk water.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos bebido"
+  },
+  {
+    "sentence": "Hoy, yo ___ francés.",
+    "verb": "aprender",
+    "english": "Today, I have learned French.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he aprendido"
+  },
+  {
+    "sentence": "Esta semana, tú ___ francés.",
+    "verb": "aprender",
+    "english": "This week, you have learned French.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has aprendido"
+  },
+  {
+    "sentence": "Este mes, ella ___ francés.",
+    "verb": "aprender",
+    "english": "This month, she has learned French.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha aprendido"
+  },
+  {
+    "sentence": "Últimamente, nosotros ___ francés.",
+    "verb": "aprender",
+    "english": "Lately, we have learned French.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos aprendido"
+  },
+  {
+    "sentence": "Este año, vosotros ___ francés.",
+    "verb": "aprender",
+    "english": "This year, you all have learned French.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis aprendido"
+  },
+  {
+    "sentence": "Hoy, tú ___ a los mensajes.",
+    "verb": "responder",
+    "english": "Today, you have replied to messages.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has respondido"
+  },
+  {
+    "sentence": "Esta semana, ella ___ a los mensajes.",
+    "verb": "responder",
+    "english": "This week, she has replied to messages.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha respondido"
+  },
+  {
+    "sentence": "Este mes, nosotros ___ a los mensajes.",
+    "verb": "responder",
+    "english": "This month, we have replied to messages.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos respondido"
+  },
+  {
+    "sentence": "Últimamente, vosotros ___ a los mensajes.",
+    "verb": "responder",
+    "english": "Lately, you all have replied to messages.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis respondido"
+  },
+  {
+    "sentence": "Este año, ellos ___ a los mensajes.",
+    "verb": "responder",
+    "english": "This year, they have replied to messages.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han respondido"
+  },
+  {
+    "sentence": "Hoy, ella ___ por el parque.",
+    "verb": "correr",
+    "english": "Today, she has run through the park.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha corrido"
+  },
+  {
+    "sentence": "Esta semana, nosotros ___ por el parque.",
+    "verb": "correr",
+    "english": "This week, we have run through the park.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos corrido"
+  },
+  {
+    "sentence": "Este mes, vosotros ___ por el parque.",
+    "verb": "correr",
+    "english": "This month, you all have run through the park.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis corrido"
+  },
+  {
+    "sentence": "Últimamente, ellos ___ por el parque.",
+    "verb": "correr",
+    "english": "Lately, they have run through the park.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han corrido"
+  },
+  {
+    "sentence": "Este año, yo ___ por el parque.",
+    "verb": "correr",
+    "english": "This year, I have run through the park.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he corrido"
+  },
+  {
+    "sentence": "Hoy, nosotros ___ libros usados.",
+    "verb": "vender",
+    "english": "Today, we have sold used books.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos vendido"
+  },
+  {
+    "sentence": "Esta semana, vosotros ___ libros usados.",
+    "verb": "vender",
+    "english": "This week, you all have sold used books.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis vendido"
+  },
+  {
+    "sentence": "Este mes, ellos ___ libros usados.",
+    "verb": "vender",
+    "english": "This month, they have sold used books.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han vendido"
+  },
+  {
+    "sentence": "Últimamente, yo ___ libros usados.",
+    "verb": "vender",
+    "english": "Lately, I have sold used books.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he vendido"
+  },
+  {
+    "sentence": "Este año, tú ___ libros usados.",
+    "verb": "vender",
+    "english": "This year, you have sold used books.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has vendido"
+  },
+  {
+    "sentence": "Hoy, vosotros ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "Today, you all have lived near downtown.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis vivido"
+  },
+  {
+    "sentence": "Esta semana, ellos ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "This week, they have lived near downtown.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han vivido"
+  },
+  {
+    "sentence": "Este mes, yo ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "This month, I have lived near downtown.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he vivido"
+  },
+  {
+    "sentence": "Últimamente, tú ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "Lately, you have lived near downtown.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has vivido"
+  },
+  {
+    "sentence": "Este año, ella ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "This year, she has lived near downtown.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha vivido"
+  },
+  {
+    "sentence": "Hoy, ellos ___ visitas.",
+    "verb": "recibir",
+    "english": "Today, they have received visitors.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han recibido"
+  },
+  {
+    "sentence": "Esta semana, yo ___ visitas.",
+    "verb": "recibir",
+    "english": "This week, I have received visitors.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he recibido"
+  },
+  {
+    "sentence": "Este mes, tú ___ visitas.",
+    "verb": "recibir",
+    "english": "This month, you have received visitors.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has recibido"
+  },
+  {
+    "sentence": "Últimamente, ella ___ visitas.",
+    "verb": "recibir",
+    "english": "Lately, she has received visitors.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha recibido"
+  },
+  {
+    "sentence": "Este año, nosotros ___ visitas.",
+    "verb": "recibir",
+    "english": "This year, we have received visitors.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos recibido"
+  },
+  {
+    "sentence": "Hoy, yo ___ las escaleras.",
+    "verb": "subir",
+    "english": "Today, I have climbed the stairs.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "he subido"
+  },
+  {
+    "sentence": "Esta semana, tú ___ las escaleras.",
+    "verb": "subir",
+    "english": "This week, you have climbed the stairs.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has subido"
+  },
+  {
+    "sentence": "Este mes, ella ___ las escaleras.",
+    "verb": "subir",
+    "english": "This month, she has climbed the stairs.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha subido"
+  },
+  {
+    "sentence": "Últimamente, nosotros ___ las escaleras.",
+    "verb": "subir",
+    "english": "Lately, we have climbed the stairs.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos subido"
+  },
+  {
+    "sentence": "Este año, vosotros ___ las escaleras.",
+    "verb": "subir",
+    "english": "This year, you all have climbed the stairs.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis subido"
+  },
+  {
+    "sentence": "Hoy, tú ___ mis ideas.",
+    "verb": "compartir",
+    "english": "Today, you have shared my ideas.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "has compartido"
+  },
+  {
+    "sentence": "Esta semana, ella ___ mis ideas.",
+    "verb": "compartir",
+    "english": "This week, she has shared my ideas.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "ha compartido"
+  },
+  {
+    "sentence": "Este mes, nosotros ___ mis ideas.",
+    "verb": "compartir",
+    "english": "This month, we have shared my ideas.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "hemos compartido"
+  },
+  {
+    "sentence": "Últimamente, vosotros ___ mis ideas.",
+    "verb": "compartir",
+    "english": "Lately, you all have shared my ideas.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "habéis compartido"
+  },
+  {
+    "sentence": "Este año, ellos ___ mis ideas.",
+    "verb": "compartir",
+    "english": "This year, they have shared my ideas.",
+    "category": "perfect",
+    "type": "regular",
+    "correct": "han compartido"
+  },
+  {
+    "sentence": "Hoy, ella ___ amable.",
+    "verb": "ser",
+    "english": "Today, she has been kind.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha sido"
+  },
+  {
+    "sentence": "Esta semana, nosotros ___ amable.",
+    "verb": "ser",
+    "english": "This week, we have been kind.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos sido"
+  },
+  {
+    "sentence": "Este mes, vosotros ___ amable.",
+    "verb": "ser",
+    "english": "This month, you all have been kind.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis sido"
+  },
+  {
+    "sentence": "Últimamente, ellos ___ amable.",
+    "verb": "ser",
+    "english": "Lately, they have been kind.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han sido"
+  },
+  {
+    "sentence": "Este año, yo ___ amable.",
+    "verb": "ser",
+    "english": "This year, I have been kind.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he sido"
+  },
+  {
+    "sentence": "Hoy, nosotros ___ en casa.",
+    "verb": "estar",
+    "english": "Today, we have been at home.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos estado"
+  },
+  {
+    "sentence": "Esta semana, vosotros ___ en casa.",
+    "verb": "estar",
+    "english": "This week, you all have been at home.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis estado"
+  },
+  {
+    "sentence": "Este mes, ellos ___ en casa.",
+    "verb": "estar",
+    "english": "This month, they have been at home.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han estado"
+  },
+  {
+    "sentence": "Últimamente, yo ___ en casa.",
+    "verb": "estar",
+    "english": "Lately, I have been at home.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he estado"
+  },
+  {
+    "sentence": "Este año, tú ___ en casa.",
+    "verb": "estar",
+    "english": "This year, you have been at home.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has estado"
+  },
+  {
+    "sentence": "Hoy, vosotros ___ al gimnasio.",
+    "verb": "ir",
+    "english": "Today, you all have gone to the gym.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis ido"
+  },
+  {
+    "sentence": "Esta semana, ellos ___ al gimnasio.",
+    "verb": "ir",
+    "english": "This week, they have gone to the gym.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han ido"
+  },
+  {
+    "sentence": "Este mes, yo ___ al gimnasio.",
+    "verb": "ir",
+    "english": "This month, I have gone to the gym.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he ido"
+  },
+  {
+    "sentence": "Últimamente, tú ___ al gimnasio.",
+    "verb": "ir",
+    "english": "Lately, you have gone to the gym.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has ido"
+  },
+  {
+    "sentence": "Este año, ella ___ al gimnasio.",
+    "verb": "ir",
+    "english": "This year, she has gone to the gym.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha ido"
+  },
+  {
+    "sentence": "Hoy, ellos ___ tiempo libre.",
+    "verb": "tener",
+    "english": "Today, they have had free time.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han tenido"
+  },
+  {
+    "sentence": "Esta semana, yo ___ tiempo libre.",
+    "verb": "tener",
+    "english": "This week, I have had free time.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he tenido"
+  },
+  {
+    "sentence": "Este mes, tú ___ tiempo libre.",
+    "verb": "tener",
+    "english": "This month, you have had free time.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has tenido"
+  },
+  {
+    "sentence": "Últimamente, ella ___ tiempo libre.",
+    "verb": "tener",
+    "english": "Lately, she has had free time.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha tenido"
+  },
+  {
+    "sentence": "Este año, nosotros ___ tiempo libre.",
+    "verb": "tener",
+    "english": "This year, we have had free time.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos tenido"
+  },
+  {
+    "sentence": "Hoy, yo ___ ejercicio.",
+    "verb": "hacer",
+    "english": "Today, I have exercised.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he hecho"
+  },
+  {
+    "sentence": "Esta semana, tú ___ ejercicio.",
+    "verb": "hacer",
+    "english": "This week, you have exercised.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has hecho"
+  },
+  {
+    "sentence": "Este mes, ella ___ ejercicio.",
+    "verb": "hacer",
+    "english": "This month, she has exercised.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha hecho"
+  },
+  {
+    "sentence": "Últimamente, nosotros ___ ejercicio.",
+    "verb": "hacer",
+    "english": "Lately, we have exercised.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos hecho"
+  },
+  {
+    "sentence": "Este año, vosotros ___ ejercicio.",
+    "verb": "hacer",
+    "english": "This year, you all have exercised.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis hecho"
+  },
+  {
+    "sentence": "Hoy, tú ___ la verdad.",
+    "verb": "decir",
+    "english": "Today, you have told the truth.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has dicho"
+  },
+  {
+    "sentence": "Esta semana, ella ___ la verdad.",
+    "verb": "decir",
+    "english": "This week, she has told the truth.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha dicho"
+  },
+  {
+    "sentence": "Este mes, nosotros ___ la verdad.",
+    "verb": "decir",
+    "english": "This month, we have told the truth.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos dicho"
+  },
+  {
+    "sentence": "Últimamente, vosotros ___ la verdad.",
+    "verb": "decir",
+    "english": "Lately, you all have told the truth.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis dicho"
+  },
+  {
+    "sentence": "Este año, ellos ___ la verdad.",
+    "verb": "decir",
+    "english": "This year, they have told the truth.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han dicho"
+  },
+  {
+    "sentence": "Hoy, ella ___ ayudar.",
+    "verb": "poder",
+    "english": "Today, she has been able to help.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha podido"
+  },
+  {
+    "sentence": "Esta semana, nosotros ___ ayudar.",
+    "verb": "poder",
+    "english": "This week, we have been able to help.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos podido"
+  },
+  {
+    "sentence": "Este mes, vosotros ___ ayudar.",
+    "verb": "poder",
+    "english": "This month, you all have been able to help.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis podido"
+  },
+  {
+    "sentence": "Últimamente, ellos ___ ayudar.",
+    "verb": "poder",
+    "english": "Lately, they have been able to help.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han podido"
+  },
+  {
+    "sentence": "Este año, yo ___ ayudar.",
+    "verb": "poder",
+    "english": "This year, I have been able to help.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he podido"
+  },
+  {
+    "sentence": "Hoy, nosotros ___ aprender.",
+    "verb": "querer",
+    "english": "Today, we have wanted to learn.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos querido"
+  },
+  {
+    "sentence": "Esta semana, vosotros ___ aprender.",
+    "verb": "querer",
+    "english": "This week, you all have wanted to learn.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis querido"
+  },
+  {
+    "sentence": "Este mes, ellos ___ aprender.",
+    "verb": "querer",
+    "english": "This month, they have wanted to learn.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han querido"
+  },
+  {
+    "sentence": "Últimamente, yo ___ aprender.",
+    "verb": "querer",
+    "english": "Lately, I have wanted to learn.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he querido"
+  },
+  {
+    "sentence": "Este año, tú ___ aprender.",
+    "verb": "querer",
+    "english": "This year, you have wanted to learn.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has querido"
+  },
+  {
+    "sentence": "Hoy, vosotros ___ a clase.",
+    "verb": "venir",
+    "english": "Today, you all have come to class.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis venido"
+  },
+  {
+    "sentence": "Esta semana, ellos ___ a clase.",
+    "verb": "venir",
+    "english": "This week, they have come to class.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han venido"
+  },
+  {
+    "sentence": "Este mes, yo ___ a clase.",
+    "verb": "venir",
+    "english": "This month, I have come to class.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he venido"
+  },
+  {
+    "sentence": "Últimamente, tú ___ a clase.",
+    "verb": "venir",
+    "english": "Lately, you have come to class.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has venido"
+  },
+  {
+    "sentence": "Este año, ella ___ a clase.",
+    "verb": "venir",
+    "english": "This year, she has come to class.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha venido"
+  },
+  {
+    "sentence": "Hoy, ellos ___ la mesa.",
+    "verb": "poner",
+    "english": "Today, they have set the table.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han puesto"
+  },
+  {
+    "sentence": "Esta semana, yo ___ la mesa.",
+    "verb": "poner",
+    "english": "This week, I have set the table.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he puesto"
+  },
+  {
+    "sentence": "Este mes, tú ___ la mesa.",
+    "verb": "poner",
+    "english": "This month, you have set the table.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has puesto"
+  },
+  {
+    "sentence": "Últimamente, ella ___ la mesa.",
+    "verb": "poner",
+    "english": "Lately, she has set the table.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha puesto"
+  },
+  {
+    "sentence": "Este año, nosotros ___ la mesa.",
+    "verb": "poner",
+    "english": "This year, we have set the table.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos puesto"
+  },
+  {
+    "sentence": "Hoy, yo ___ con mis amigos.",
+    "verb": "salir",
+    "english": "Today, I have gone out with my friends.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he salido"
+  },
+  {
+    "sentence": "Esta semana, tú ___ con mis amigos.",
+    "verb": "salir",
+    "english": "This week, you have gone out with my friends.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has salido"
+  },
+  {
+    "sentence": "Este mes, ella ___ con mis amigos.",
+    "verb": "salir",
+    "english": "This month, she has gone out with my friends.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha salido"
+  },
+  {
+    "sentence": "Últimamente, nosotros ___ con mis amigos.",
+    "verb": "salir",
+    "english": "Lately, we have gone out with my friends.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos salido"
+  },
+  {
+    "sentence": "Este año, vosotros ___ con mis amigos.",
+    "verb": "salir",
+    "english": "This year, you all have gone out with my friends.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis salido"
+  },
+  {
+    "sentence": "Hoy, tú ___ una película.",
+    "verb": "ver",
+    "english": "Today, you have watched a movie.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has visto"
+  },
+  {
+    "sentence": "Esta semana, ella ___ una película.",
+    "verb": "ver",
+    "english": "This week, she has watched a movie.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha visto"
+  },
+  {
+    "sentence": "Este mes, nosotros ___ una película.",
+    "verb": "ver",
+    "english": "This month, we have watched a movie.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos visto"
+  },
+  {
+    "sentence": "Últimamente, vosotros ___ una película.",
+    "verb": "ver",
+    "english": "Lately, you all have watched a movie.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis visto"
+  },
+  {
+    "sentence": "Este año, ellos ___ una película.",
+    "verb": "ver",
+    "english": "This year, they have watched a movie.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han visto"
+  },
+  {
+    "sentence": "Hoy, ella ___ una respuesta.",
+    "verb": "dar",
+    "english": "Today, she has given an answer.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha dado"
+  },
+  {
+    "sentence": "Esta semana, nosotros ___ una respuesta.",
+    "verb": "dar",
+    "english": "This week, we have given an answer.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos dado"
+  },
+  {
+    "sentence": "Este mes, vosotros ___ una respuesta.",
+    "verb": "dar",
+    "english": "This month, you all have given an answer.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis dado"
+  },
+  {
+    "sentence": "Últimamente, ellos ___ una respuesta.",
+    "verb": "dar",
+    "english": "Lately, they have given an answer.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han dado"
+  },
+  {
+    "sentence": "Este año, yo ___ una respuesta.",
+    "verb": "dar",
+    "english": "This year, I have given an answer.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he dado"
+  },
+  {
+    "sentence": "Hoy, nosotros ___ la respuesta.",
+    "verb": "saber",
+    "english": "Today, we have known the answer.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos sabido"
+  },
+  {
+    "sentence": "Esta semana, vosotros ___ la respuesta.",
+    "verb": "saber",
+    "english": "This week, you all have known the answer.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis sabido"
+  },
+  {
+    "sentence": "Este mes, ellos ___ la respuesta.",
+    "verb": "saber",
+    "english": "This month, they have known the answer.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han sabido"
+  },
+  {
+    "sentence": "Últimamente, yo ___ la respuesta.",
+    "verb": "saber",
+    "english": "Lately, I have known the answer.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he sabido"
+  },
+  {
+    "sentence": "Este año, tú ___ la respuesta.",
+    "verb": "saber",
+    "english": "This year, you have known the answer.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has sabido"
+  },
+  {
+    "sentence": "Hoy, vosotros ___ comida.",
+    "verb": "traer",
+    "english": "Today, you all have brought food.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis traido"
+  },
+  {
+    "sentence": "Esta semana, ellos ___ comida.",
+    "verb": "traer",
+    "english": "This week, they have brought food.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han traido"
+  },
+  {
+    "sentence": "Este mes, yo ___ comida.",
+    "verb": "traer",
+    "english": "This month, I have brought food.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he traido"
+  },
+  {
+    "sentence": "Últimamente, tú ___ comida.",
+    "verb": "traer",
+    "english": "Lately, you have brought food.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has traido"
+  },
+  {
+    "sentence": "Este año, ella ___ comida.",
+    "verb": "traer",
+    "english": "This year, she has brought food.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha traido"
+  },
+  {
+    "sentence": "Hoy, ellos ___ ayuda.",
+    "verb": "pedir",
+    "english": "Today, they have asked for help.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han pedido"
+  },
+  {
+    "sentence": "Esta semana, yo ___ ayuda.",
+    "verb": "pedir",
+    "english": "This week, I have asked for help.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he pedido"
+  },
+  {
+    "sentence": "Este mes, tú ___ ayuda.",
+    "verb": "pedir",
+    "english": "This month, you have asked for help.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has pedido"
+  },
+  {
+    "sentence": "Últimamente, ella ___ ayuda.",
+    "verb": "pedir",
+    "english": "Lately, she has asked for help.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha pedido"
+  },
+  {
+    "sentence": "Este año, nosotros ___ ayuda.",
+    "verb": "pedir",
+    "english": "This year, we have asked for help.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos pedido"
+  },
+  {
+    "sentence": "Hoy, yo ___ bien.",
+    "verb": "dormir",
+    "english": "Today, I have slept well.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he dormido"
+  },
+  {
+    "sentence": "Esta semana, tú ___ bien.",
+    "verb": "dormir",
+    "english": "This week, you have slept well.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has dormido"
+  },
+  {
+    "sentence": "Este mes, ella ___ bien.",
+    "verb": "dormir",
+    "english": "This month, she has slept well.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha dormido"
+  },
+  {
+    "sentence": "Últimamente, nosotros ___ bien.",
+    "verb": "dormir",
+    "english": "Lately, we have slept well.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos dormido"
+  },
+  {
+    "sentence": "Este año, vosotros ___ bien.",
+    "verb": "dormir",
+    "english": "This year, you all have slept well.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis dormido"
+  },
+  {
+    "sentence": "Hoy, tú ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "Today, you have played chess.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has jugado"
+  },
+  {
+    "sentence": "Esta semana, ella ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "This week, she has played chess.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha jugado"
+  },
+  {
+    "sentence": "Este mes, nosotros ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "This month, we have played chess.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos jugado"
+  },
+  {
+    "sentence": "Últimamente, vosotros ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "Lately, you all have played chess.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis jugado"
+  },
+  {
+    "sentence": "Este año, ellos ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "This year, they have played chess.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han jugado"
+  },
+  {
+    "sentence": "Hoy, ella ___ la explicación.",
+    "verb": "entender",
+    "english": "Today, she has understood the explanation.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "ha entendido"
+  },
+  {
+    "sentence": "Esta semana, nosotros ___ la explicación.",
+    "verb": "entender",
+    "english": "This week, we have understood the explanation.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos entendido"
+  },
+  {
+    "sentence": "Este mes, vosotros ___ la explicación.",
+    "verb": "entender",
+    "english": "This month, you all have understood the explanation.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis entendido"
+  },
+  {
+    "sentence": "Últimamente, ellos ___ la explicación.",
+    "verb": "entender",
+    "english": "Lately, they have understood the explanation.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han entendido"
+  },
+  {
+    "sentence": "Este año, yo ___ la explicación.",
+    "verb": "entender",
+    "english": "This year, I have understood the explanation.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he entendido"
+  },
+  {
+    "sentence": "Hoy, nosotros ___ cartas.",
+    "verb": "escribir",
+    "english": "Today, we have written letters.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "hemos escrito"
+  },
+  {
+    "sentence": "Esta semana, vosotros ___ cartas.",
+    "verb": "escribir",
+    "english": "This week, you all have written letters.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "habéis escrito"
+  },
+  {
+    "sentence": "Este mes, ellos ___ cartas.",
+    "verb": "escribir",
+    "english": "This month, they have written letters.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "han escrito"
+  },
+  {
+    "sentence": "Últimamente, yo ___ cartas.",
+    "verb": "escribir",
+    "english": "Lately, I have written letters.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "he escrito"
+  },
+  {
+    "sentence": "Este año, tú ___ cartas.",
+    "verb": "escribir",
+    "english": "This year, you have written letters.",
+    "category": "perfect",
+    "type": "irregular",
+    "correct": "has escrito"
+  }
+]
