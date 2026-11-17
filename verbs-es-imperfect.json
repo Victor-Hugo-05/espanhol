@@ -1,0 +1,1602 @@
+[
+  {
+    "sentence": "Antes, yo ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "In the past, I used to talk with my neighbors.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "hablaba"
+  },
+  {
+    "sentence": "En aquella época, tú ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "Back then, you used to talk with my neighbors.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "hablabas"
+  },
+  {
+    "sentence": "Hace unos años, ella ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "Years ago, she used to talk with my neighbors.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "hablaba"
+  },
+  {
+    "sentence": "Por aquel entonces, nosotros ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "At that time, we used to talk with my neighbors.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "hablábamos"
+  },
+  {
+    "sentence": "En el pasado, vosotros ___ con mis vecinos.",
+    "verb": "hablar",
+    "english": "In earlier times, you all used to talk with my neighbors.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "hablabais"
+  },
+  {
+    "sentence": "Antes, tú ___ español.",
+    "verb": "estudiar",
+    "english": "In the past, you used to study Spanish.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "estudiabas"
+  },
+  {
+    "sentence": "En aquella época, ella ___ español.",
+    "verb": "estudiar",
+    "english": "Back then, she used to study Spanish.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "estudiaba"
+  },
+  {
+    "sentence": "Hace unos años, nosotros ___ español.",
+    "verb": "estudiar",
+    "english": "Years ago, we used to study Spanish.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "estudiábamos"
+  },
+  {
+    "sentence": "Por aquel entonces, vosotros ___ español.",
+    "verb": "estudiar",
+    "english": "At that time, you all used to study Spanish.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "estudiabais"
+  },
+  {
+    "sentence": "En el pasado, ellos ___ español.",
+    "verb": "estudiar",
+    "english": "In earlier times, they used to study Spanish.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "estudiaban"
+  },
+  {
+    "sentence": "Antes, ella ___ desde casa.",
+    "verb": "trabajar",
+    "english": "In the past, she used to work from home.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "trabajaba"
+  },
+  {
+    "sentence": "En aquella época, nosotros ___ desde casa.",
+    "verb": "trabajar",
+    "english": "Back then, we used to work from home.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "trabajábamos"
+  },
+  {
+    "sentence": "Hace unos años, vosotros ___ desde casa.",
+    "verb": "trabajar",
+    "english": "Years ago, you all used to work from home.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "trabajabais"
+  },
+  {
+    "sentence": "Por aquel entonces, ellos ___ desde casa.",
+    "verb": "trabajar",
+    "english": "At that time, they used to work from home.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "trabajaban"
+  },
+  {
+    "sentence": "En el pasado, yo ___ desde casa.",
+    "verb": "trabajar",
+    "english": "In earlier times, I used to work from home.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "trabajaba"
+  },
+  {
+    "sentence": "Antes, nosotros ___ en tren.",
+    "verb": "viajar",
+    "english": "In the past, we used to travel by train.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "viajábamos"
+  },
+  {
+    "sentence": "En aquella época, vosotros ___ en tren.",
+    "verb": "viajar",
+    "english": "Back then, you all used to travel by train.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "viajabais"
+  },
+  {
+    "sentence": "Hace unos años, ellos ___ en tren.",
+    "verb": "viajar",
+    "english": "Years ago, they used to travel by train.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "viajaban"
+  },
+  {
+    "sentence": "Por aquel entonces, yo ___ en tren.",
+    "verb": "viajar",
+    "english": "At that time, I used to travel by train.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "viajaba"
+  },
+  {
+    "sentence": "En el pasado, tú ___ en tren.",
+    "verb": "viajar",
+    "english": "In earlier times, you used to travel by train.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "viajabas"
+  },
+  {
+    "sentence": "Antes, vosotros ___ la cena.",
+    "verb": "cocinar",
+    "english": "In the past, you all used to cook dinner.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "cocinabais"
+  },
+  {
+    "sentence": "En aquella época, ellos ___ la cena.",
+    "verb": "cocinar",
+    "english": "Back then, they used to cook dinner.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "cocinaban"
+  },
+  {
+    "sentence": "Hace unos años, yo ___ la cena.",
+    "verb": "cocinar",
+    "english": "Years ago, I used to cook dinner.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "cocinaba"
+  },
+  {
+    "sentence": "Por aquel entonces, tú ___ la cena.",
+    "verb": "cocinar",
+    "english": "At that time, you used to cook dinner.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "cocinabas"
+  },
+  {
+    "sentence": "En el pasado, ella ___ la cena.",
+    "verb": "cocinar",
+    "english": "In earlier times, she used to cook dinner.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "cocinaba"
+  },
+  {
+    "sentence": "Antes, ellos ___ música.",
+    "verb": "escuchar",
+    "english": "In the past, they used to listen to music.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "escuchaban"
+  },
+  {
+    "sentence": "En aquella época, yo ___ música.",
+    "verb": "escuchar",
+    "english": "Back then, I used to listen to music.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "escuchaba"
+  },
+  {
+    "sentence": "Hace unos años, tú ___ música.",
+    "verb": "escuchar",
+    "english": "Years ago, you used to listen to music.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "escuchabas"
+  },
+  {
+    "sentence": "Por aquel entonces, ella ___ música.",
+    "verb": "escuchar",
+    "english": "At that time, she used to listen to music.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "escuchaba"
+  },
+  {
+    "sentence": "En el pasado, nosotros ___ música.",
+    "verb": "escuchar",
+    "english": "In earlier times, we used to listen to music.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "escuchábamos"
+  },
+  {
+    "sentence": "Antes, yo ___ el cielo.",
+    "verb": "mirar",
+    "english": "In the past, I used to look at the sky.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "miraba"
+  },
+  {
+    "sentence": "En aquella época, tú ___ el cielo.",
+    "verb": "mirar",
+    "english": "Back then, you used to look at the sky.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "mirabas"
+  },
+  {
+    "sentence": "Hace unos años, ella ___ el cielo.",
+    "verb": "mirar",
+    "english": "Years ago, she used to look at the sky.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "miraba"
+  },
+  {
+    "sentence": "Por aquel entonces, nosotros ___ el cielo.",
+    "verb": "mirar",
+    "english": "At that time, we used to look at the sky.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "mirábamos"
+  },
+  {
+    "sentence": "En el pasado, vosotros ___ el cielo.",
+    "verb": "mirar",
+    "english": "In earlier times, you all used to look at the sky.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "mirabais"
+  },
+  {
+    "sentence": "Antes, tú ___ pan.",
+    "verb": "comprar",
+    "english": "In the past, you used to buy bread.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "comprabas"
+  },
+  {
+    "sentence": "En aquella época, ella ___ pan.",
+    "verb": "comprar",
+    "english": "Back then, she used to buy bread.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "compraba"
+  },
+  {
+    "sentence": "Hace unos años, nosotros ___ pan.",
+    "verb": "comprar",
+    "english": "Years ago, we used to buy bread.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "comprábamos"
+  },
+  {
+    "sentence": "Por aquel entonces, vosotros ___ pan.",
+    "verb": "comprar",
+    "english": "At that time, you all used to buy bread.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "comprabais"
+  },
+  {
+    "sentence": "En el pasado, ellos ___ pan.",
+    "verb": "comprar",
+    "english": "In earlier times, they used to buy bread.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "compraban"
+  },
+  {
+    "sentence": "Antes, ella ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "In the past, she used to visit my grandparents.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "visitaba"
+  },
+  {
+    "sentence": "En aquella época, nosotros ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "Back then, we used to visit my grandparents.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "visitábamos"
+  },
+  {
+    "sentence": "Hace unos años, vosotros ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "Years ago, you all used to visit my grandparents.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "visitabais"
+  },
+  {
+    "sentence": "Por aquel entonces, ellos ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "At that time, they used to visit my grandparents.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "visitaban"
+  },
+  {
+    "sentence": "En el pasado, yo ___ a mis abuelos.",
+    "verb": "visitar",
+    "english": "In earlier times, I used to visit my grandparents.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "visitaba"
+  },
+  {
+    "sentence": "Antes, nosotros ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "In the past, we used to call my sister.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "llamábamos"
+  },
+  {
+    "sentence": "En aquella época, vosotros ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "Back then, you all used to call my sister.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "llamabais"
+  },
+  {
+    "sentence": "Hace unos años, ellos ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "Years ago, they used to call my sister.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "llamaban"
+  },
+  {
+    "sentence": "Por aquel entonces, yo ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "At that time, I used to call my sister.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "llamaba"
+  },
+  {
+    "sentence": "En el pasado, tú ___ a mi hermana.",
+    "verb": "llamar",
+    "english": "In earlier times, you used to call my sister.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "llamabas"
+  },
+  {
+    "sentence": "Antes, vosotros ___ verduras.",
+    "verb": "comer",
+    "english": "In the past, you all used to eat vegetables.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "comíais"
+  },
+  {
+    "sentence": "En aquella época, ellos ___ verduras.",
+    "verb": "comer",
+    "english": "Back then, they used to eat vegetables.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "comían"
+  },
+  {
+    "sentence": "Hace unos años, yo ___ verduras.",
+    "verb": "comer",
+    "english": "Years ago, I used to eat vegetables.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "comía"
+  },
+  {
+    "sentence": "Por aquel entonces, tú ___ verduras.",
+    "verb": "comer",
+    "english": "At that time, you used to eat vegetables.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "comías"
+  },
+  {
+    "sentence": "En el pasado, ella ___ verduras.",
+    "verb": "comer",
+    "english": "In earlier times, she used to eat vegetables.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "comía"
+  },
+  {
+    "sentence": "Antes, ellos ___ agua.",
+    "verb": "beber",
+    "english": "In the past, they used to drink water.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "bebían"
+  },
+  {
+    "sentence": "En aquella época, yo ___ agua.",
+    "verb": "beber",
+    "english": "Back then, I used to drink water.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "bebía"
+  },
+  {
+    "sentence": "Hace unos años, tú ___ agua.",
+    "verb": "beber",
+    "english": "Years ago, you used to drink water.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "bebías"
+  },
+  {
+    "sentence": "Por aquel entonces, ella ___ agua.",
+    "verb": "beber",
+    "english": "At that time, she used to drink water.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "bebía"
+  },
+  {
+    "sentence": "En el pasado, nosotros ___ agua.",
+    "verb": "beber",
+    "english": "In earlier times, we used to drink water.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "bebíamos"
+  },
+  {
+    "sentence": "Antes, yo ___ francés.",
+    "verb": "aprender",
+    "english": "In the past, I used to learn French.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "aprendía"
+  },
+  {
+    "sentence": "En aquella época, tú ___ francés.",
+    "verb": "aprender",
+    "english": "Back then, you used to learn French.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "aprendías"
+  },
+  {
+    "sentence": "Hace unos años, ella ___ francés.",
+    "verb": "aprender",
+    "english": "Years ago, she used to learn French.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "aprendía"
+  },
+  {
+    "sentence": "Por aquel entonces, nosotros ___ francés.",
+    "verb": "aprender",
+    "english": "At that time, we used to learn French.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "aprendíamos"
+  },
+  {
+    "sentence": "En el pasado, vosotros ___ francés.",
+    "verb": "aprender",
+    "english": "In earlier times, you all used to learn French.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "aprendíais"
+  },
+  {
+    "sentence": "Antes, tú ___ a los mensajes.",
+    "verb": "responder",
+    "english": "In the past, you used to reply to messages.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "respondías"
+  },
+  {
+    "sentence": "En aquella época, ella ___ a los mensajes.",
+    "verb": "responder",
+    "english": "Back then, she used to reply to messages.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "respondía"
+  },
+  {
+    "sentence": "Hace unos años, nosotros ___ a los mensajes.",
+    "verb": "responder",
+    "english": "Years ago, we used to reply to messages.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "respondíamos"
+  },
+  {
+    "sentence": "Por aquel entonces, vosotros ___ a los mensajes.",
+    "verb": "responder",
+    "english": "At that time, you all used to reply to messages.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "respondíais"
+  },
+  {
+    "sentence": "En el pasado, ellos ___ a los mensajes.",
+    "verb": "responder",
+    "english": "In earlier times, they used to reply to messages.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "respondían"
+  },
+  {
+    "sentence": "Antes, ella ___ por el parque.",
+    "verb": "correr",
+    "english": "In the past, she used to run through the park.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "corría"
+  },
+  {
+    "sentence": "En aquella época, nosotros ___ por el parque.",
+    "verb": "correr",
+    "english": "Back then, we used to run through the park.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "corríamos"
+  },
+  {
+    "sentence": "Hace unos años, vosotros ___ por el parque.",
+    "verb": "correr",
+    "english": "Years ago, you all used to run through the park.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "corríais"
+  },
+  {
+    "sentence": "Por aquel entonces, ellos ___ por el parque.",
+    "verb": "correr",
+    "english": "At that time, they used to run through the park.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "corrían"
+  },
+  {
+    "sentence": "En el pasado, yo ___ por el parque.",
+    "verb": "correr",
+    "english": "In earlier times, I used to run through the park.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "corría"
+  },
+  {
+    "sentence": "Antes, nosotros ___ libros usados.",
+    "verb": "vender",
+    "english": "In the past, we used to sell used books.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "vendíamos"
+  },
+  {
+    "sentence": "En aquella época, vosotros ___ libros usados.",
+    "verb": "vender",
+    "english": "Back then, you all used to sell used books.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "vendíais"
+  },
+  {
+    "sentence": "Hace unos años, ellos ___ libros usados.",
+    "verb": "vender",
+    "english": "Years ago, they used to sell used books.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "vendían"
+  },
+  {
+    "sentence": "Por aquel entonces, yo ___ libros usados.",
+    "verb": "vender",
+    "english": "At that time, I used to sell used books.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "vendía"
+  },
+  {
+    "sentence": "En el pasado, tú ___ libros usados.",
+    "verb": "vender",
+    "english": "In earlier times, you used to sell used books.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "vendías"
+  },
+  {
+    "sentence": "Antes, vosotros ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "In the past, you all used to live near downtown.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "vivíais"
+  },
+  {
+    "sentence": "En aquella época, ellos ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "Back then, they used to live near downtown.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "vivían"
+  },
+  {
+    "sentence": "Hace unos años, yo ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "Years ago, I used to live near downtown.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "vivía"
+  },
+  {
+    "sentence": "Por aquel entonces, tú ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "At that time, you used to live near downtown.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "vivías"
+  },
+  {
+    "sentence": "En el pasado, ella ___ cerca del centro.",
+    "verb": "vivir",
+    "english": "In earlier times, she used to live near downtown.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "vivía"
+  },
+  {
+    "sentence": "Antes, ellos ___ visitas.",
+    "verb": "recibir",
+    "english": "In the past, they used to receive visitors.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "recibían"
+  },
+  {
+    "sentence": "En aquella época, yo ___ visitas.",
+    "verb": "recibir",
+    "english": "Back then, I used to receive visitors.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "recibía"
+  },
+  {
+    "sentence": "Hace unos años, tú ___ visitas.",
+    "verb": "recibir",
+    "english": "Years ago, you used to receive visitors.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "recibías"
+  },
+  {
+    "sentence": "Por aquel entonces, ella ___ visitas.",
+    "verb": "recibir",
+    "english": "At that time, she used to receive visitors.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "recibía"
+  },
+  {
+    "sentence": "En el pasado, nosotros ___ visitas.",
+    "verb": "recibir",
+    "english": "In earlier times, we used to receive visitors.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "recibíamos"
+  },
+  {
+    "sentence": "Antes, yo ___ las escaleras.",
+    "verb": "subir",
+    "english": "In the past, I used to climb the stairs.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "subía"
+  },
+  {
+    "sentence": "En aquella época, tú ___ las escaleras.",
+    "verb": "subir",
+    "english": "Back then, you used to climb the stairs.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "subías"
+  },
+  {
+    "sentence": "Hace unos años, ella ___ las escaleras.",
+    "verb": "subir",
+    "english": "Years ago, she used to climb the stairs.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "subía"
+  },
+  {
+    "sentence": "Por aquel entonces, nosotros ___ las escaleras.",
+    "verb": "subir",
+    "english": "At that time, we used to climb the stairs.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "subíamos"
+  },
+  {
+    "sentence": "En el pasado, vosotros ___ las escaleras.",
+    "verb": "subir",
+    "english": "In earlier times, you all used to climb the stairs.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "subíais"
+  },
+  {
+    "sentence": "Antes, tú ___ mis ideas.",
+    "verb": "compartir",
+    "english": "In the past, you used to share my ideas.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "compartías"
+  },
+  {
+    "sentence": "En aquella época, ella ___ mis ideas.",
+    "verb": "compartir",
+    "english": "Back then, she used to share my ideas.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "compartía"
+  },
+  {
+    "sentence": "Hace unos años, nosotros ___ mis ideas.",
+    "verb": "compartir",
+    "english": "Years ago, we used to share my ideas.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "compartíamos"
+  },
+  {
+    "sentence": "Por aquel entonces, vosotros ___ mis ideas.",
+    "verb": "compartir",
+    "english": "At that time, you all used to share my ideas.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "compartíais"
+  },
+  {
+    "sentence": "En el pasado, ellos ___ mis ideas.",
+    "verb": "compartir",
+    "english": "In earlier times, they used to share my ideas.",
+    "category": "imperfect",
+    "type": "regular",
+    "correct": "compartían"
+  },
+  {
+    "sentence": "Antes, ella ___ amable.",
+    "verb": "ser",
+    "english": "In the past, she used to be kind.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "era"
+  },
+  {
+    "sentence": "En aquella época, nosotros ___ amable.",
+    "verb": "ser",
+    "english": "Back then, we used to be kind.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "éramos"
+  },
+  {
+    "sentence": "Hace unos años, vosotros ___ amable.",
+    "verb": "ser",
+    "english": "Years ago, you all used to be kind.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "erais"
+  },
+  {
+    "sentence": "Por aquel entonces, ellos ___ amable.",
+    "verb": "ser",
+    "english": "At that time, they used to be kind.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "eran"
+  },
+  {
+    "sentence": "En el pasado, yo ___ amable.",
+    "verb": "ser",
+    "english": "In earlier times, I used to be kind.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "era"
+  },
+  {
+    "sentence": "Antes, nosotros ___ en casa.",
+    "verb": "estar",
+    "english": "In the past, we used to be at home.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "estábamos"
+  },
+  {
+    "sentence": "En aquella época, vosotros ___ en casa.",
+    "verb": "estar",
+    "english": "Back then, you all used to be at home.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "estabais"
+  },
+  {
+    "sentence": "Hace unos años, ellos ___ en casa.",
+    "verb": "estar",
+    "english": "Years ago, they used to be at home.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "estaban"
+  },
+  {
+    "sentence": "Por aquel entonces, yo ___ en casa.",
+    "verb": "estar",
+    "english": "At that time, I used to be at home.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "estaba"
+  },
+  {
+    "sentence": "En el pasado, tú ___ en casa.",
+    "verb": "estar",
+    "english": "In earlier times, you used to be at home.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "estabas"
+  },
+  {
+    "sentence": "Antes, vosotros ___ al gimnasio.",
+    "verb": "ir",
+    "english": "In the past, you all used to go to the gym.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "ibais"
+  },
+  {
+    "sentence": "En aquella época, ellos ___ al gimnasio.",
+    "verb": "ir",
+    "english": "Back then, they used to go to the gym.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "iban"
+  },
+  {
+    "sentence": "Hace unos años, yo ___ al gimnasio.",
+    "verb": "ir",
+    "english": "Years ago, I used to go to the gym.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "iba"
+  },
+  {
+    "sentence": "Por aquel entonces, tú ___ al gimnasio.",
+    "verb": "ir",
+    "english": "At that time, you used to go to the gym.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "ibas"
+  },
+  {
+    "sentence": "En el pasado, ella ___ al gimnasio.",
+    "verb": "ir",
+    "english": "In earlier times, she used to go to the gym.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "iba"
+  },
+  {
+    "sentence": "Antes, ellos ___ tiempo libre.",
+    "verb": "tener",
+    "english": "In the past, they used to have free time.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "tenían"
+  },
+  {
+    "sentence": "En aquella época, yo ___ tiempo libre.",
+    "verb": "tener",
+    "english": "Back then, I used to have free time.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "tenía"
+  },
+  {
+    "sentence": "Hace unos años, tú ___ tiempo libre.",
+    "verb": "tener",
+    "english": "Years ago, you used to have free time.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "tenías"
+  },
+  {
+    "sentence": "Por aquel entonces, ella ___ tiempo libre.",
+    "verb": "tener",
+    "english": "At that time, she used to have free time.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "tenía"
+  },
+  {
+    "sentence": "En el pasado, nosotros ___ tiempo libre.",
+    "verb": "tener",
+    "english": "In earlier times, we used to have free time.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "teníamos"
+  },
+  {
+    "sentence": "Antes, yo ___ ejercicio.",
+    "verb": "hacer",
+    "english": "In the past, I used to exercise.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "hacía"
+  },
+  {
+    "sentence": "En aquella época, tú ___ ejercicio.",
+    "verb": "hacer",
+    "english": "Back then, you used to exercise.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "hacías"
+  },
+  {
+    "sentence": "Hace unos años, ella ___ ejercicio.",
+    "verb": "hacer",
+    "english": "Years ago, she used to exercise.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "hacía"
+  },
+  {
+    "sentence": "Por aquel entonces, nosotros ___ ejercicio.",
+    "verb": "hacer",
+    "english": "At that time, we used to exercise.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "hacíamos"
+  },
+  {
+    "sentence": "En el pasado, vosotros ___ ejercicio.",
+    "verb": "hacer",
+    "english": "In earlier times, you all used to exercise.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "hacíais"
+  },
+  {
+    "sentence": "Antes, tú ___ la verdad.",
+    "verb": "decir",
+    "english": "In the past, you used to tell the truth.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "decías"
+  },
+  {
+    "sentence": "En aquella época, ella ___ la verdad.",
+    "verb": "decir",
+    "english": "Back then, she used to tell the truth.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "decía"
+  },
+  {
+    "sentence": "Hace unos años, nosotros ___ la verdad.",
+    "verb": "decir",
+    "english": "Years ago, we used to tell the truth.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "decíamos"
+  },
+  {
+    "sentence": "Por aquel entonces, vosotros ___ la verdad.",
+    "verb": "decir",
+    "english": "At that time, you all used to tell the truth.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "decíais"
+  },
+  {
+    "sentence": "En el pasado, ellos ___ la verdad.",
+    "verb": "decir",
+    "english": "In earlier times, they used to tell the truth.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "decían"
+  },
+  {
+    "sentence": "Antes, ella ___ ayudar.",
+    "verb": "poder",
+    "english": "In the past, she used to be able to help.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "podía"
+  },
+  {
+    "sentence": "En aquella época, nosotros ___ ayudar.",
+    "verb": "poder",
+    "english": "Back then, we used to be able to help.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "podíamos"
+  },
+  {
+    "sentence": "Hace unos años, vosotros ___ ayudar.",
+    "verb": "poder",
+    "english": "Years ago, you all used to be able to help.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "podíais"
+  },
+  {
+    "sentence": "Por aquel entonces, ellos ___ ayudar.",
+    "verb": "poder",
+    "english": "At that time, they used to be able to help.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "podían"
+  },
+  {
+    "sentence": "En el pasado, yo ___ ayudar.",
+    "verb": "poder",
+    "english": "In earlier times, I used to be able to help.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "podía"
+  },
+  {
+    "sentence": "Antes, nosotros ___ aprender.",
+    "verb": "querer",
+    "english": "In the past, we used to want to learn.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "queríamos"
+  },
+  {
+    "sentence": "En aquella época, vosotros ___ aprender.",
+    "verb": "querer",
+    "english": "Back then, you all used to want to learn.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "queríais"
+  },
+  {
+    "sentence": "Hace unos años, ellos ___ aprender.",
+    "verb": "querer",
+    "english": "Years ago, they used to want to learn.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "querían"
+  },
+  {
+    "sentence": "Por aquel entonces, yo ___ aprender.",
+    "verb": "querer",
+    "english": "At that time, I used to want to learn.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "quería"
+  },
+  {
+    "sentence": "En el pasado, tú ___ aprender.",
+    "verb": "querer",
+    "english": "In earlier times, you used to want to learn.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "querías"
+  },
+  {
+    "sentence": "Antes, vosotros ___ a clase.",
+    "verb": "venir",
+    "english": "In the past, you all used to come to class.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "veníais"
+  },
+  {
+    "sentence": "En aquella época, ellos ___ a clase.",
+    "verb": "venir",
+    "english": "Back then, they used to come to class.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "venían"
+  },
+  {
+    "sentence": "Hace unos años, yo ___ a clase.",
+    "verb": "venir",
+    "english": "Years ago, I used to come to class.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "venía"
+  },
+  {
+    "sentence": "Por aquel entonces, tú ___ a clase.",
+    "verb": "venir",
+    "english": "At that time, you used to come to class.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "venías"
+  },
+  {
+    "sentence": "En el pasado, ella ___ a clase.",
+    "verb": "venir",
+    "english": "In earlier times, she used to come to class.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "venía"
+  },
+  {
+    "sentence": "Antes, ellos ___ la mesa.",
+    "verb": "poner",
+    "english": "In the past, they used to set the table.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "ponían"
+  },
+  {
+    "sentence": "En aquella época, yo ___ la mesa.",
+    "verb": "poner",
+    "english": "Back then, I used to set the table.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "ponía"
+  },
+  {
+    "sentence": "Hace unos años, tú ___ la mesa.",
+    "verb": "poner",
+    "english": "Years ago, you used to set the table.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "ponías"
+  },
+  {
+    "sentence": "Por aquel entonces, ella ___ la mesa.",
+    "verb": "poner",
+    "english": "At that time, she used to set the table.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "ponía"
+  },
+  {
+    "sentence": "En el pasado, nosotros ___ la mesa.",
+    "verb": "poner",
+    "english": "In earlier times, we used to set the table.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "poníamos"
+  },
+  {
+    "sentence": "Antes, yo ___ con mis amigos.",
+    "verb": "salir",
+    "english": "In the past, I used to go out with my friends.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "salía"
+  },
+  {
+    "sentence": "En aquella época, tú ___ con mis amigos.",
+    "verb": "salir",
+    "english": "Back then, you used to go out with my friends.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "salías"
+  },
+  {
+    "sentence": "Hace unos años, ella ___ con mis amigos.",
+    "verb": "salir",
+    "english": "Years ago, she used to go out with my friends.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "salía"
+  },
+  {
+    "sentence": "Por aquel entonces, nosotros ___ con mis amigos.",
+    "verb": "salir",
+    "english": "At that time, we used to go out with my friends.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "salíamos"
+  },
+  {
+    "sentence": "En el pasado, vosotros ___ con mis amigos.",
+    "verb": "salir",
+    "english": "In earlier times, you all used to go out with my friends.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "salíais"
+  },
+  {
+    "sentence": "Antes, tú ___ una película.",
+    "verb": "ver",
+    "english": "In the past, you used to watch a movie.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "veías"
+  },
+  {
+    "sentence": "En aquella época, ella ___ una película.",
+    "verb": "ver",
+    "english": "Back then, she used to watch a movie.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "veía"
+  },
+  {
+    "sentence": "Hace unos años, nosotros ___ una película.",
+    "verb": "ver",
+    "english": "Years ago, we used to watch a movie.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "veíamos"
+  },
+  {
+    "sentence": "Por aquel entonces, vosotros ___ una película.",
+    "verb": "ver",
+    "english": "At that time, you all used to watch a movie.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "veíais"
+  },
+  {
+    "sentence": "En el pasado, ellos ___ una película.",
+    "verb": "ver",
+    "english": "In earlier times, they used to watch a movie.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "veían"
+  },
+  {
+    "sentence": "Antes, ella ___ una respuesta.",
+    "verb": "dar",
+    "english": "In the past, she used to give an answer.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "daba"
+  },
+  {
+    "sentence": "En aquella época, nosotros ___ una respuesta.",
+    "verb": "dar",
+    "english": "Back then, we used to give an answer.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "dábamos"
+  },
+  {
+    "sentence": "Hace unos años, vosotros ___ una respuesta.",
+    "verb": "dar",
+    "english": "Years ago, you all used to give an answer.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "dabais"
+  },
+  {
+    "sentence": "Por aquel entonces, ellos ___ una respuesta.",
+    "verb": "dar",
+    "english": "At that time, they used to give an answer.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "daban"
+  },
+  {
+    "sentence": "En el pasado, yo ___ una respuesta.",
+    "verb": "dar",
+    "english": "In earlier times, I used to give an answer.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "daba"
+  },
+  {
+    "sentence": "Antes, nosotros ___ la respuesta.",
+    "verb": "saber",
+    "english": "In the past, we used to know the answer.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "sabíamos"
+  },
+  {
+    "sentence": "En aquella época, vosotros ___ la respuesta.",
+    "verb": "saber",
+    "english": "Back then, you all used to know the answer.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "sabíais"
+  },
+  {
+    "sentence": "Hace unos años, ellos ___ la respuesta.",
+    "verb": "saber",
+    "english": "Years ago, they used to know the answer.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "sabían"
+  },
+  {
+    "sentence": "Por aquel entonces, yo ___ la respuesta.",
+    "verb": "saber",
+    "english": "At that time, I used to know the answer.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "sabía"
+  },
+  {
+    "sentence": "En el pasado, tú ___ la respuesta.",
+    "verb": "saber",
+    "english": "In earlier times, you used to know the answer.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "sabías"
+  },
+  {
+    "sentence": "Antes, vosotros ___ comida.",
+    "verb": "traer",
+    "english": "In the past, you all used to bring food.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "traíais"
+  },
+  {
+    "sentence": "En aquella época, ellos ___ comida.",
+    "verb": "traer",
+    "english": "Back then, they used to bring food.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "traían"
+  },
+  {
+    "sentence": "Hace unos años, yo ___ comida.",
+    "verb": "traer",
+    "english": "Years ago, I used to bring food.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "traía"
+  },
+  {
+    "sentence": "Por aquel entonces, tú ___ comida.",
+    "verb": "traer",
+    "english": "At that time, you used to bring food.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "traías"
+  },
+  {
+    "sentence": "En el pasado, ella ___ comida.",
+    "verb": "traer",
+    "english": "In earlier times, she used to bring food.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "traía"
+  },
+  {
+    "sentence": "Antes, ellos ___ ayuda.",
+    "verb": "pedir",
+    "english": "In the past, they used to ask for help.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "pedían"
+  },
+  {
+    "sentence": "En aquella época, yo ___ ayuda.",
+    "verb": "pedir",
+    "english": "Back then, I used to ask for help.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "pedía"
+  },
+  {
+    "sentence": "Hace unos años, tú ___ ayuda.",
+    "verb": "pedir",
+    "english": "Years ago, you used to ask for help.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "pedías"
+  },
+  {
+    "sentence": "Por aquel entonces, ella ___ ayuda.",
+    "verb": "pedir",
+    "english": "At that time, she used to ask for help.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "pedía"
+  },
+  {
+    "sentence": "En el pasado, nosotros ___ ayuda.",
+    "verb": "pedir",
+    "english": "In earlier times, we used to ask for help.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "pedíamos"
+  },
+  {
+    "sentence": "Antes, yo ___ bien.",
+    "verb": "dormir",
+    "english": "In the past, I used to sleep well.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "dormía"
+  },
+  {
+    "sentence": "En aquella época, tú ___ bien.",
+    "verb": "dormir",
+    "english": "Back then, you used to sleep well.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "dormías"
+  },
+  {
+    "sentence": "Hace unos años, ella ___ bien.",
+    "verb": "dormir",
+    "english": "Years ago, she used to sleep well.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "dormía"
+  },
+  {
+    "sentence": "Por aquel entonces, nosotros ___ bien.",
+    "verb": "dormir",
+    "english": "At that time, we used to sleep well.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "dormíamos"
+  },
+  {
+    "sentence": "En el pasado, vosotros ___ bien.",
+    "verb": "dormir",
+    "english": "In earlier times, you all used to sleep well.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "dormíais"
+  },
+  {
+    "sentence": "Antes, tú ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "In the past, you used to play chess.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "jugabas"
+  },
+  {
+    "sentence": "En aquella época, ella ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "Back then, she used to play chess.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "jugaba"
+  },
+  {
+    "sentence": "Hace unos años, nosotros ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "Years ago, we used to play chess.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "jugábamos"
+  },
+  {
+    "sentence": "Por aquel entonces, vosotros ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "At that time, you all used to play chess.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "jugabais"
+  },
+  {
+    "sentence": "En el pasado, ellos ___ al ajedrez.",
+    "verb": "jugar",
+    "english": "In earlier times, they used to play chess.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "jugaban"
+  },
+  {
+    "sentence": "Antes, ella ___ la explicación.",
+    "verb": "entender",
+    "english": "In the past, she used to understand the explanation.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "entendía"
+  },
+  {
+    "sentence": "En aquella época, nosotros ___ la explicación.",
+    "verb": "entender",
+    "english": "Back then, we used to understand the explanation.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "entendíamos"
+  },
+  {
+    "sentence": "Hace unos años, vosotros ___ la explicación.",
+    "verb": "entender",
+    "english": "Years ago, you all used to understand the explanation.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "entendíais"
+  },
+  {
+    "sentence": "Por aquel entonces, ellos ___ la explicación.",
+    "verb": "entender",
+    "english": "At that time, they used to understand the explanation.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "entendían"
+  },
+  {
+    "sentence": "En el pasado, yo ___ la explicación.",
+    "verb": "entender",
+    "english": "In earlier times, I used to understand the explanation.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "entendía"
+  },
+  {
+    "sentence": "Antes, nosotros ___ cartas.",
+    "verb": "escribir",
+    "english": "In the past, we used to write letters.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "escribíamos"
+  },
+  {
+    "sentence": "En aquella época, vosotros ___ cartas.",
+    "verb": "escribir",
+    "english": "Back then, you all used to write letters.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "escribíais"
+  },
+  {
+    "sentence": "Hace unos años, ellos ___ cartas.",
+    "verb": "escribir",
+    "english": "Years ago, they used to write letters.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "escribían"
+  },
+  {
+    "sentence": "Por aquel entonces, yo ___ cartas.",
+    "verb": "escribir",
+    "english": "At that time, I used to write letters.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "escribía"
+  },
+  {
+    "sentence": "En el pasado, tú ___ cartas.",
+    "verb": "escribir",
+    "english": "In earlier times, you used to write letters.",
+    "category": "imperfect",
+    "type": "irregular",
+    "correct": "escribías"
+  }
+]
