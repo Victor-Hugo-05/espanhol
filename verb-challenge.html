@@ -3,28 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portuguese Verb Challenge</title>
+  <title>Verb Challenge | Português</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="verb-challenge.css">
-  <link rel="stylesheet" href="verb-challenge-es.css?v=20261117">
+  <link rel="stylesheet" href="verb-challenge-es.css?v=20261117-3">
 </head>
 <body class="verb-challenge">
-  <div class="container verb-container">
+  <main class="container verb-container">
     <a class="back-link" href="index.html">← Voltar ao início</a>
     <h1>🇧🇷 Verb Challenge</h1>
+    <p class="verb-subtitle">Português · Verbos regulares e irregulares</p>
 
-    <button id="verbVisibilityBtn" type="button">Ocultar verbo em português</button>
-
-    <div id="setup" class="verb-setup">
+    <section id="setup" class="verb-setup" aria-label="Configurar o jogo">
+      <p>Complete cada frase com a conjugação correta. Os acentos também contam!</p>
       <fieldset class="verb-checks">
         <legend>Quais verbos você quer praticar?</legend>
-        <label class="verb-check-option"><input id="regularVerbs" type="checkbox" checked> <span>Verbos regulares</span></label>
-        <label class="verb-check-option"><input id="irregularVerbs" type="checkbox" checked> <span>Verbos irregulares</span></label>
+        <label class="verb-check-option" for="regularVerbs">
+          <input type="checkbox" id="regularVerbs" checked>
+          <span>Verbos regulares</span>
+        </label>
+        <label class="verb-check-option" for="irregularVerbs">
+          <input type="checkbox" id="irregularVerbs" checked>
+          <span>Verbos irregulares</span>
+        </label>
       </fieldset>
-      <label for="categorySelect">Qual tempo verbal você quer praticar?</label>
+
+      <label for="categorySelect">Tempo verbal</label>
       <select id="categorySelect">
-        <option value="all">Todas as categorias</option>
-        <option value="present">Presente</option>
+        <option value="all">Todos os tempos verbais</option>
+        <option value="present">Presente do indicativo</option>
         <option value="preterite">Pretérito perfeito</option>
         <option value="gerund">Gerúndio</option>
         <option value="participle">Particípio passado</option>
@@ -39,33 +46,34 @@
       </select>
 
       <label for="questionCount">Número de perguntas</label>
-      <input id="questionCount" type="number" min="1" max="950" value="20">
-
+      <input id="questionCount" type="number" min="1" max="950" value="20" inputmode="numeric">
       <div id="availableCount" class="available-count" aria-live="polite"></div>
-      <button id="startVerbBtn" type="button">Começar</button>
-    </div>
+      <button id="startVerbBtn" type="button" disabled>Começar</button>
+      <div id="verbLoadStatus" class="load-status" role="status" aria-live="polite">Carregando exercícios...</div>
+    </section>
 
-    <div id="game" class="verb-game" style="display:none;">
+    <section id="game" class="verb-game" style="display:none;" aria-label="Exercício de conjugação">
       <div class="verb-topbar">
         <span id="verbProgress">1 / 20</span>
-        <span id="verbScore">Score: 0</span>
+        <span id="verbScore">Acertos: 0</span>
       </div>
-
+      <button id="verbVisibilityBtn" class="toggle-hint" type="button" aria-pressed="true">Ocultar infinitivo</button>
       <div class="verb-question-card">
         <div id="englishSentence" class="verb-english"></div>
         <div id="portugueseSentence" class="verb-portuguese"></div>
+        <div id="tenseHint" class="verb-english" style="margin-top:12px; margin-bottom:0;"></div>
         <div id="verbHint" class="verb-hint"></div>
       </div>
-
-      <input id="verbAnswer" type="text" placeholder="Type the Portuguese form..." autocomplete="off">
-      <input id="verbAnswer2" type="text" placeholder="Type the second Portuguese form..." autocomplete="off" style="display:none;">
-      <button id="checkVerbBtn" type="button">✔ Check</button>
-      <div id="verbFeedback" class="verb-feedback"></div>
-      <button id="pronounceVerbBtn" class="verb-pronounce-btn" type="button" style="display:none;" aria-label="Ouvir frase em português">🔊 Ouvir frase</button>
-      <button id="nextVerbBtn" type="button" style="display:none;">➡ Next</button>
-    </div>
-  </div>
-
-  <script src="verb-challenge.js?v=20261117-2"></script>
+      <label class="answer-label" for="verbAnswer">Sua resposta</label>
+      <input id="verbAnswer" type="text" placeholder="Digite a forma conjugada..." autocomplete="off" autocapitalize="none" spellcheck="false">
+      <input id="verbAnswer2" type="text" placeholder="Segunda forma verbal..." autocomplete="off" autocapitalize="none" spellcheck="false" style="display:none;">
+      <button id="checkVerbBtn" type="button">✓ Verificar</button>
+      <div id="verbFeedback" class="verb-feedback" role="status" aria-live="polite"></div>
+      <button id="pronounceVerbBtn" class="verb-pronounce-btn" type="button" style="display:none;">🔊 Ouvir frase</button>
+      <button id="nextVerbBtn" type="button" style="display:none;">Próxima →</button>
+      <button id="restartVerbBtn" type="button" style="display:none;">Voltar aos filtros</button>
+    </section>
+  </main>
+  <script src="verb-challenge.js?v=20261117-3" defer></script>
 </body>
 </html>
