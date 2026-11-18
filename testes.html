@@ -54,6 +54,10 @@
     .complete h2 { font-size:29px; }
     .complete p { font-size: 17px; line-height: 1.7; color: #5e617a; }
     @media (max-width: 540px) { .panel{padding:18px} .units{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px} .unit{padding:11px;min-height:120px} .page{width: min(100% - 20px,960px);padding-top:12px} .buttons{flex-direction:column} }
+    .language-tabs { display:flex; gap:10px; flex-wrap:wrap; margin:15px 0 22px; }
+    .language-tab { display:inline-flex; align-items:center; padding:12px 19px; border:1px solid #d7d4f3; border-radius:13px; color:#5654a5; font-weight:750; background:#f8f7ff; text-decoration:none; }
+    .language-tab:hover,.language-tab:focus-visible {background:#eeecff;outline:2px solid #d7d4f3;}
+    .language-tab[aria-current="page"] {background:#625fca;border-color:#625fca;color:#fff;}
   </style>
 </head>
 <body>
@@ -61,6 +65,10 @@
     <a class="back" href="index.html">← Voltar ao início</a>
     <section id="unitSelection" class="panel">
       <h1 class="title">🧪 Testes</h1>
+      <nav class="language-tabs" aria-label="Escolha o idioma do teste">
+        <a class="language-tab" href="testes.html" aria-current="page">🇧🇷 Português</a>
+        <a class="language-tab" href="testes-alemao.html">🇩🇪 Alemão</a>
+      </nav>
       <p class="subtitle">Vocabulário português–francês para a vida no Brasil. Estude uma unidade de cada vez: leia a palavra em francês e escreva a tradução em português.</p>
       <div class="summary">40 unidades · 25 palavras por unidade · 1.000 palavras no total · substantivos, verbos, adjetivos e advérbios</div>
       <div id="unitGrid" class="units" aria-label="Escolher unidade"></div>
