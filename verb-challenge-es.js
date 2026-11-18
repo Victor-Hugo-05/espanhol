@@ -111,12 +111,10 @@
         return data;
       }));
 
-      let presentAudioCounter = 0;
+      const audioCounters = Object.fromEntries(TENSES.map(tense => [tense, 0]));
       questions = groups.flat().map(q => ({
         ...q,
-        audioPath: q.category === "present"
-          ? `audio/es-present/${String(++presentAudioCounter).padStart(4, "0")}.mp3`
-          : null
+        audioPath: `audio/es-${q.category}/${String(++audioCounters[q.category]).padStart(4, "0")}.mp3`
       }));
       const unique = new Set(questions.map(q => `${q.category}|${q.sentence}`));
       const counts = Object.fromEntries(TENSES.map(tense => [
