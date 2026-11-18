@@ -1,0 +1,56 @@
+name: Generate Spanish verb challenge audio
+
+on:
+  push:
+    paths:
+      - .github/workflows/spanish-verb-audio.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  create-audio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install Spanish speech generator
+        run: pip install 'gTTS==2.5.4'
+      - name: Generate Spanish MP3s for 4 missing verb tenses
+        run: |
+          python - <<'PYCODE'
+          import json, pathlib, time
+          from gtts import gTTS
+          for tense in ('preterite', 'imperfect', 'perfect', 'subjunctive'):
+              questions = json.loads(pathlib.Path(f'verbs-es-{tense}.json').read_text(encoding='utf-8'))
+              target = pathlib.Path('audio') / f'es-{tense}'
+              target.mkdir(parents=True, exist_ok=True)
+              for i, item in enumerate(questions, 1):
+                  destination = target / f'{i:04d}.mp3'
+                  if destination.exists() and destination.stat().st_size > 300:
+                      continue
+                  sentence = item['sentence'].replace('___', item['correct'])
+                  for attempt in range(5):
+                      try:
+                          gTTS(sentence, lang='es', tld='es').save(str(destination))
+                          break
+                      except Exception:
+                          if attempt == 4:
+                              raise
+                          time.sleep(3 * (attempt + 1))
+                  print(f'{tense} {i}/{len(questions)}', flush=True)
+                  time.sleep(0.1)
+          PYCODE
+      - name: Publish generated audio
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add audio/es-preterite audio/es-imperfect audio/es-perfect audio/es-subjunctive
+          if ! git diff --cached --quiet; then
+            git commit -m 'Add Spanish audio recordings for all verb tenses'
+            git push
+          fi
