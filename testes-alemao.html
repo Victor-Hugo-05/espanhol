@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#635bc4">
+  <title>Testes · Vocabulário Alemão–Português</title>
+  <style>
+    :root { font-family: Arial, Helvetica, sans-serif; color: #22233f; background: #eeeefa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 30% 0%, #d9e5ff, #eee8ff 55%, #f5f8ff); }
+    .page { width: min(960px, calc(100% - 32px)); margin: 0 auto; padding: 24px 0 64px; }
+    .back { display: inline-block; color: #514eaf; text-decoration: none; font-weight: 700; padding: 9px 0; }
+    .back:hover { text-decoration: underline; }
+    .panel { background: white; border: 1px solid #e5e4fc; border-radius: 23px; padding: 26px; box-shadow: 0 18px 60px rgba(77,75,136,.11); }
+    .title { font-size: clamp(28px, 5vw, 38px); margin: 12px 0 8px; letter-spacing: -.7px; }
+    .subtitle { color: #686b80; margin: 0 0 22px; line-height: 1.55; }
+    .summary { background: #f0f1ff; color: #4c4c90; border-radius: 12px; padding: 12px 15px; font-size: 14px; margin-bottom: 22px; }
+    .units { display: grid; grid-template-columns: repeat(auto-fill, minmax(165px, 1fr)); gap: 12px; }
+    .unit { border: 1px solid #dddff5; border-radius: 15px; background: #fff; padding: 14px; min-height: 126px; text-align: left; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; transition: transform .15s, box-shadow .15s, border-color .15s; }
+    .unit:hover, .unit:focus-visible { transform: translateY(-2px); border-color: #766bde; box-shadow: 0 7px 18px #514eaf20; outline: none; }
+    .unit-header { display:flex; justify-content:space-between; gap: 6px; color: #6d61c9; font-size: 13px; font-weight: 700; }
+    .unit-name { margin: 8px 0; font-weight: 700; font-size: 15px; line-height: 1.3; }
+    .unit-sub { color: #83869c; font-size: 12px; }
+    .unit-done { font-size: 12px; color: #22855b; }
+    .hidden { display:none !important; }
+    .exercise { width: min(630px, 100%); margin: 0 auto; }
+    .exercise-title { font-size: clamp(23px, 5vw, 31px); margin: 12px 0 6px; }
+    .secondary { color: #747789; font-size: 14px; }
+    .progress-top { display:flex; justify-content:space-between; gap: 12px; color: #676a82; font-weight: 700; font-size: 13px; margin: 24px 0 10px; flex-wrap:wrap; }
+    .progress-track { background: #e9e9f6; height: 10px; border-radius: 9px; overflow: hidden; margin-bottom: 24px; }
+    .progress-fill { background: linear-gradient(90deg, #64c5a0, #6362d7); height: 100%; width: 0; transition: width .2s; }
+    .flash { min-height: 190px; border-radius: 20px; background: linear-gradient(135deg, #f5f3ff, #e9f3ff); border: 1px solid #dedcf6; display:flex; flex-direction:column; align-items:center; justify-content:center; padding: 24px; text-align:center; }
+    .lang { color: #6862ac; font-size: 13px; text-transform: uppercase; letter-spacing: 1.3px; font-weight: 700; }
+    .french { font-size: clamp(26px, 6vw, 40px); overflow-wrap: anywhere; font-weight: 750; margin: 16px 0 10px; color: #292854; }
+    .clue { font-size: 12px; color: #72738c; }
+    label { display:block; margin-top: 22px; margin-bottom: 7px; font-weight: 700; font-size: 14px; }
+    input[type=text] { width:100%; border: 1.5px solid #c9c9e9; background:#fff; padding: 15px 16px; border-radius: 12px; font-size: 18px; outline:none; }
+    input[type=text]:focus { border-color:#6961d6; box-shadow: 0 0 0 3px #7874de24; }
+    input[type=text]:disabled { background:#f7f8fc; }
+    .buttons { display:flex; gap:10px; margin-top: 12px; flex-wrap: wrap; }
+    button.primary, button.outline { font-family:inherit; font-size: 15px; border-radius: 12px; padding: 14px 19px; cursor:pointer; font-weight: 700; }
+    button.primary { color: white; border: 0; background: #625fca; flex: 1; }
+    button.primary:hover { background:#4b46ad; }
+    button.outline { color:#605baf; background:white; border:1px solid #d5d2ed; }
+    button.outline:hover { background:#f3f2ff; }
+    button:disabled { opacity: .55; cursor:default; }
+    .feedback { min-height: 48px; margin-top: 16px; padding: 12px 15px; border-radius: 12px; line-height: 1.45; }
+    .feedback:empty { padding:0; }
+    .feedback.ok { color:#176244; background:#e8f8ed; }
+    .feedback.no { color:#9a3b3b; background:#fff0ef; }
+    .complete { text-align:center; padding: 40px 10px; }
+    .complete .emoji { font-size:48px; }
+    .complete h2 { font-size:29px; }
+    .complete p { font-size: 17px; line-height: 1.7; color: #5e617a; }
+    @media (max-width: 540px) { .panel{padding:18px} .units{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px} .unit{padding:11px;min-height:120px} .page{width: min(100% - 20px,960px);padding-top:12px} .buttons{flex-direction:column} }
+    .language-tabs { display:flex; gap:10px; flex-wrap:wrap; margin:15px 0 22px; }
+    .language-tab { display:inline-flex; align-items:center; padding:12px 19px; border:1px solid #d7d4f3; border-radius:13px; color:#5654a5; font-weight:750; background:#f8f7ff; text-decoration:none; }
+    .language-tab:hover,.language-tab:focus-visible {background:#eeecff;outline:2px solid #d7d4f3;}
+    .language-tab[aria-current="page"] {background:#625fca;border-color:#625fca;color:#fff;}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">← Voltar ao início</a>
+    <section id="unitSelection" class="panel">
+      <h1 class="title">🧪 Testes</h1>
+      <nav class="language-tabs" aria-label="Escolha o idioma do teste">
+        <a class="language-tab" href="testes.html">🇧🇷 Português</a>
+        <a class="language-tab" href="testes-alemao.html" aria-current="page">🇩🇪 Alemão</a>
+      </nav>
+      <p class="subtitle">Vocabulário alemão–português. Estude uma unidade de cada vez: leia a tradução em português e escreva a palavra em alemão.</p>
+      <div class="summary">120 unidades · 25 palavras por unidade · 3.000 palavras no total · substantivos, verbos, adjetivos e advérbios</div>
+      <div id="unitGrid" class="units" aria-label="Escolher unidade"></div>
+    </section>
+    <section id="exercise" class="panel exercise hidden" aria-live="off">
+      <button id="backUnits" type="button" class="outline">← Todas as unidades</button>
+      <h1 id="unitTitle" class="exercise-title"></h1>
+      <div class="secondary">Escreva a palavra em alemão. Aceitamos ä/ae, ö/oe, ü/ue e ß/ss; o artigo dos substantivos é opcional.</div>
+      <div class="progress-top"><span id="progress">0 de 25 palavras vistas</span><span id="pending"></span></div>
+      <div class="progress-track" aria-hidden="true"><div id="progressFill" class="progress-fill"></div></div>
+      <div id="questionArea">
+        <div class="flash">
+          <span class="lang">🇧🇷 Português</span>
+          <div id="french" class="french"></div>
+          <span id="clue" class="clue"></span>
+        </div>
+        <form id="answerForm" autocomplete="off">
+          <label for="answer">🇩🇪 Sua resposta em alemão</label>
+          <input type="text" id="answer" name="answer" autocapitalize="none" autocomplete="off" spellcheck="false" placeholder="Digite a palavra em alemão..." required>
+          <div class="buttons">
+            <button id="check" type="submit" class="primary">✓ Conferir</button>
+            <button id="next" type="button" class="primary hidden">Próxima →</button>
+          </div>
+        </form>
+        <div id="feedback" role="status" aria-live="polite" class="feedback"></div>
+      </div>
+      <div id="completion" class="complete hidden"></div>
+    </section>
+  </main>
+  <script src="testes-vocab-alemao-data.js"></script>
+  <script>
+    (function () {
+      "use strict";
+      const units = window.GERMAN_VOCAB_UNITS || [];
+      const $ = (id) => document.getElementById(id);
+      const selection = $("unitSelection"), exercise = $("exercise"), grid = $("unitGrid");
+      const answer = $("answer"), feedback = $("feedback"), next = $("next"), check = $("check");
+      let game = null;
+      function normalize(word) {
+        return String(word || "").normalize("NFC").toLocaleLowerCase("pt-BR").replace(/\s+/g, " ").trim();
+      }
+      function normalizeGerman(word) {
+        return String(word || "").normalize("NFC").toLocaleLowerCase("de-DE").trim().replace(/ß/g,"ss").replace(/ä/g,"ae").replace(/ö/g,"oe").replace(/ü/g,"ue").replace(/\s+/g," ");
+      }
+      function shuffle(input) {
+        const a = input.slice();
+        for (let i=a.length-1;i>0;i--) {
+          const j=Math.floor(Math.random()*(i+1));
+          [a[i],a[j]]=[a[j],a[i]];
+        }
+        return a;
+      }
+      function saved(id) {
+        try { return JSON.parse(localStorage.getItem("dept-testes-v1-"+id) || "null"); }
+        catch (_) { return null; }
+      }
+      function renderUnits() {
+        grid.replaceChildren();
+        units.forEach(unit => {
+          const b = document.createElement("button");
+          b.type="button"; b.className="unit";
+          const stat=saved(unit.id);
+          b.innerHTML = '<div class="unit-header"><span>Unidade '+String(unit.id).padStart(2,"0")+'</span><span>25 palavras</span></div>'
+            +'<div class="unit-name"></div><div class="unit-sub"></div>';
+          b.querySelector(".unit-name").textContent=unit.titulo;
+          b.querySelector(".unit-sub").textContent=stat ? "✓ Concluída · melhor: "+stat.best+"/25" : "Começar treino →";
+          if (stat) b.querySelector(".unit-sub").classList.add("unit-done");
+          b.addEventListener("click",()=>start(unit));
+          grid.appendChild(b);
+        });
+      }
+      function showSelection() {
+        game=null;
+        exercise.classList.add("hidden");
+        selection.classList.remove("hidden");
+        renderUnits();
+        history.replaceState(null, "", location.pathname);
+      }
+      function start(unit) {
+        game={unit, queue:shuffle(unit.palavras), current:null, seen:new Set(), firstRight:0, attempts:0, answered:false};
+        selection.classList.add("hidden");
+        exercise.classList.remove("hidden");
+        $("questionArea").classList.remove("hidden");
+        $("completion").classList.add("hidden");
+        $("unitTitle").textContent = "Unidade "+String(unit.id).padStart(2,"0")+" · "+unit.titulo;
+        history.replaceState(null,"","#unidade-"+unit.id);
+        showNext();
+        window.scrollTo({top:0,behavior:"auto"});
+      }
+      function showNext() {
+        if (!game) return;
+        if (!game.queue.length) { finish(); return; }
+        game.current=game.queue.shift();
+        game.answered=false;
+        const word=game.current;
+        $("french").textContent=word.pt;
+        const dup=game.unit.palavras.filter(x=>normalize(x.pt)===normalize(word.pt)).length>1;
+        $("clue").textContent=word.classe+" · "+(word.nivel||"Alemão")+(dup?" · Dica: começa com "+word.de[0].toUpperCase():"")+" · Sem consultar a resposta";
+        answer.value="";
+        answer.disabled=false;
+        check.disabled=false;
+        check.classList.remove("hidden");
+        next.classList.add("hidden");
+        feedback.textContent="";
+        feedback.className="feedback";
+        progress();
+        answer.focus();
+      }
+      function progress() {
+        $("progress").textContent=game.seen.size+" de 25 palavras vistas";
+        $("pending").textContent=(game.queue.length+(game.answered?0:1))+" pendente(s)";
+        $("progressFill").style.width=(game.seen.size/25*100)+"%";
+      }
+      function evaluate(event) {
+        event.preventDefault();
+        if (!game || game.answered) return;
+        const written=normalize(answer.value);
+        if (!written) { answer.focus(); return; }
+        const word=game.current;
+        const first=!game.seen.has(word);
+        game.seen.add(word);
+        game.attempts++;
+        const german=normalizeGerman(written);
+        const good=german===normalizeGerman(word.de)||Boolean(word.artigo&&german===normalizeGerman(word.artigo+" "+word.de));
+        if(good && first) game.firstRight++;
+        if(!good) game.queue.push(word);
+        const solution=(word.artigo?word.artigo+" ":"")+word.de+(word.plural?" · plural: "+word.plural:"");
+        feedback.textContent=good ? "✅ Correto! "+solution : "❌ Resposta correta: "+solution+". Esta palavra vai reaparecer no fim do treino.";
+        feedback.className="feedback "+(good?"ok":"no");
+        game.answered=true;
+        answer.disabled=true;
+        check.classList.add("hidden");
+        next.classList.remove("hidden");
+        next.textContent=game.queue.length?"Próxima →":"Ver resultado →";
+        progress();
+        next.focus();
+      }
+      function finish() {
+        $("questionArea").classList.add("hidden");
+        const completion=$("completion");
+        completion.classList.remove("hidden");
+        completion.replaceChildren();
+        const icon=document.createElement("div");icon.className="emoji";icon.textContent="🎉";
+        const title=document.createElement("h2");title.textContent="Unidade concluída!";
+        const stats=document.createElement("p");
+        stats.textContent="Você acertou "+game.firstRight+" de 25 na primeira tentativa e treinou até acertar todas. Total de tentativas: "+game.attempts+".";
+        const again=document.createElement("button");again.className="primary";again.textContent="Refazer esta unidade";
+        again.addEventListener("click",()=>start(game.unit));
+        completion.append(icon,title,stats,again);
+        try {
+          const old=saved(game.unit.id);
+          localStorage.setItem("dept-testes-v1-"+game.unit.id,JSON.stringify({best:Math.max(old?.best||0,game.firstRight),last:game.firstRight,completedAt:Date.now()}));
+        } catch(_){}
+      }
+      $("answerForm").addEventListener("submit",evaluate);
+      next.addEventListener("click",showNext);
+      $("backUnits").addEventListener("click",showSelection);
+      document.addEventListener("keydown",e=>{
+        if(e.key==="Enter"&&game&&game.answered&&!$("questionArea").classList.contains("hidden")) {
+          e.preventDefault();showNext();
+        }
+      });
+      if(!units.length) {
+        grid.textContent="Não foi possível carregar as palavras. Atualize a página.";
+      } else {
+        renderUnits();
+        const match=location.hash.match(/^#unidade-(\d+)$/);
+        if(match) {
+          const unit=units.find(x=>x.id===Number(match[1]));
+          if(unit)start(unit);
+        }
+      }
+    }());
+  </script>
+</body>
+</html>
