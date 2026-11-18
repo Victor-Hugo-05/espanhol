@@ -13,7 +13,7 @@
       gap: 7px; text-decoration: none; font: 700 15px Arial, sans-serif; color: #424079;
       background: rgba(255,255,255,.86); border: 1px solid rgba(255,255,255,.82);
       box-shadow: 0 12px 26px rgba(0,0,0,.12); transition: transform .2s, box-shadow .2s;
-      align-self: center;
+      position: fixed; top: 20px; right: 20px; z-index: 10;
     }
     .tests-mini:hover, .tests-mini:focus-visible {
       transform: translateY(-4px); box-shadow: 0 16px 28px rgba(0,0,0,.18);
@@ -23,6 +23,10 @@
   </style>
 </head>
 <body class="home">
+  <a class="tests-mini" href="testes.html" aria-label="Testes de vocabulário francês-português">
+    <span class="tests-mini-icon" aria-hidden="true">🧪</span>
+    <span>Testes</span>
+  </a>
   <div class="home-container">
     <section class="home-section" aria-labelledby="spanishTitle">
       <h1 id="spanishTitle">🇪🇸 Español</h1>
@@ -49,10 +53,6 @@
           <h2>Expressões com “por”</h2>
           <p>Por que, por isso, por acaso...</p>
         </div>
-        <a class="tests-mini" href="testes.html" aria-label="Testes de vocabulário francês-português">
-          <span class="tests-mini-icon" aria-hidden="true">🧪</span>
-          <span>Testes</span>
-        </a>
       </div>
     </section>
 
