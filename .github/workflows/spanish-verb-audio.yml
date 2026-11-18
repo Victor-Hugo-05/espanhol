@@ -52,5 +52,6 @@ jobs:
           git add audio/es-preterite audio/es-imperfect audio/es-perfect audio/es-subjunctive
           if ! git diff --cached --quiet; then
             git commit -m 'Add Spanish audio recordings for all verb tenses'
+            git pull --rebase
             git push
           fi
