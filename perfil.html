@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meu perfil · Language Practice</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font:16px Arial,sans-serif;color:#292854;background:radial-gradient(circle at 30% 0%,#d9e5ff,#eee8ff 55%,#f5f8ff)}main{width:min(720px,calc(100% - 32px));margin:28px auto}a{color:#514eaf;font-weight:700}section{background:white;border:1px solid #e5e4fc;border-radius:23px;padding:24px;margin-top:18px;box-shadow:0 18px 60px #4d4b881c}h1{margin-top:0}p{line-height:1.55}label{display:block;font-weight:700;margin:14px 0 6px}input{width:100%;padding:12px;border:1px solid #c9c9e9;border-radius:10px;font:inherit}button{font:700 15px Arial;padding:12px 16px;border:0;border-radius:11px;background:#625fca;color:white;cursor:pointer;margin:8px 8px 0 0}button.secondary{color:#514eaf;background:#eeecff}button:disabled{opacity:.5;cursor:default}#status{white-space:pre-wrap;overflow-wrap:anywhere;min-height:24px;color:#55547a}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}.stat{background:#f0f1ff;padding:16px;border-radius:14px}.stat strong{font-size:26px;display:block;margin:8px 0}progress{width:100%;accent-color:#625fca}[hidden]{display:none!important}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.2/dist/umd/supabase.js"></script>
+<script src="profiles-client.js"></script>
+</head>
+<body><main>
+<a href="index.html">← Voltar ao início</a>
+<section>
+<h1>👤 Meu perfil</h1>
+<p id="status" role="status" aria-live="polite">Carregando…</p>
+<div id="guest" hidden>
+<p>Crie sua conta para guardar o progresso dos testes de português e alemão em diferentes dispositivos.</p>
+<form id="authForm">
+<label for="email">E-mail</label><input id="email" type="email" required autocomplete="email">
+<label for="password">Senha</label><input id="password" type="password" required autocomplete="current-password">
+<button type="submit" id="login">Entrar</button>
+<button type="button" class="secondary" id="signup">Criar conta</button>
+</form>
+<button type="button" class="secondary" id="resend">Reenviar confirmação</button>
+<button type="button" class="secondary" id="reset">Esqueci a senha</button>
+<p>Você também pode usar o site sem conta. Resultados antigos de visitante permanecem neste navegador e não são associados automaticamente a nenhuma conta.</p>
+</div>
+<div id="member" hidden>
+<p id="account"></p>
+<form id="nameForm"><label for="displayName">Nome de exibição</label><input id="displayName" maxlength="60" required autocomplete="nickname"><button>Salvar nome</button></form>
+<button id="logout" class="secondary">Sair da conta</button>
+</div>
+<form id="recovery" hidden><label for="newPassword">Nova senha (mínimo 8 caracteres)</label><input id="newPassword" type="password" minlength="8" required autocomplete="new-password"><button>Atualizar senha</button></form>
+</section>
+<section id="dashboard" hidden><h2>Meu progresso</h2><p id="progressStatus" role="status"></p><div class="stats">
+<div class="stat">🇧🇷 Português<strong id="pt">—</strong><progress id="ptBar" max="40" value="0"></progress><p id="ptScore"></p><a href="testes.html">Praticar português</a></div>
+<div class="stat">🇩🇪 Alemão<strong id="de">—</strong><progress id="deBar" max="120" value="0"></progress><p id="deScore"></p><a href="testes-alemao.html">Praticar alemão</a></div>
+</div></section>
+</main><script>
+(async function(){
+"use strict";
+const $=id=>document.getElementById(id), api=window.LanguageProfiles, client=api?.client;
+const status=message=>{$("status").textContent=message};
+const redirect="https://victor-hugo-05.github.io/espanhol/perfil.html";
+let recoveryMode=false, busy=false;
+function setBusy(value){busy=value;document.querySelectorAll("button").forEach(b=>b.disabled=value);}
+async function action(work){if(busy)return;setBusy(true);try{await work();}catch(e){status(e.message||"Não foi possível concluir a operação.");}finally{setBusy(false);}}
+async function render(){
+ const user=api.user;
+ $("guest").hidden=!!user||recoveryMode;
+ $("member").hidden=!user||recoveryMode;
+ $("dashboard").hidden=!user||recoveryMode;
+ $("recovery").hidden=!recoveryMode;
+ if(!user||recoveryMode)return;
+ $("account").textContent=user.email;
+ $("displayName").value=user.user_metadata?.display_name||"";
+ $("progressStatus").textContent="Carregando progresso…";
+ for(const lang of ["pt","de"]){$(lang).textContent="—";$(lang+"Bar").value=0;$(lang+"Score").textContent="";}
+ try{
+ const results=await Promise.all([api.load("pt"),api.load("de")]);
+ if(api.user?.id!==user.id)return;
+ ["pt","de"].forEach((lang,i)=>{const entries=Object.values(results[i]||{}),n=entries.length,max=i===0?40:120;$(lang).textContent=n+" / "+max+" unidades";$(lang+"Bar").value=n;$(lang+"Score").textContent=n?"Média dos melhores resultados: "+Math.round(entries.reduce((sum,row)=>sum+row.best,0)/n/25*100)+"%":"Nenhuma unidade concluída ainda.";});
+ $("progressStatus").textContent="";
+ }catch(e){$("progressStatus").textContent="Não foi possível carregar o progresso. Atualize a página.";}
+}
+if(!client){status("Serviço de contas indisponível. Tente atualizar a página.");return;}
+await api.ready;
+if(api.error){status("Não foi possível acessar as contas. Tente atualizar a página.");return;}
+const params=new URLSearchParams(location.hash.slice(1));recoveryMode=params.get("type")==="recovery";
+client.auth.onAuthStateChange((event)=>{if(event==="PASSWORD_RECOVERY")recoveryMode=true;if(["SIGNED_IN","SIGNED_OUT","PASSWORD_RECOVERY","USER_UPDATED"].includes(event))setTimeout(render,0);});
+status(params.get("error_description")|| (recoveryMode?"Escolha uma nova senha.":""));
+await render();
+function credentials(){return {email:$("email").value.trim(),password:$("password").value};}
+$("authForm").addEventListener("submit",e=>{e.preventDefault();action(async()=>{const {error}=await client.auth.signInWithPassword(credentials());if(error)throw error;status("Login realizado.");$("password").value="";await render();});});
+$("signup").onclick=()=>action(async()=>{if(!$("email").reportValidity())return;if($("password").value.length<8){status("Escolha uma senha com pelo menos 8 caracteres.");return;}const {data,error}=await client.auth.signUp({...credentials(),options:{emailRedirectTo:redirect}});if(error)throw error;$("password").value="";status(data.session?"Conta criada.":"Confira seu e-mail para confirmar a conta. Depois, entre com sua senha.");await render();});
+$("resend").onclick=()=>action(async()=>{if(!$("email").reportValidity())return;const {error}=await client.auth.resend({type:"signup",email:$("email").value.trim(),options:{emailRedirectTo:redirect}});if(error)throw error;status("Se houver uma conta pendente, confira sua caixa de entrada.");});
+$("reset").onclick=()=>action(async()=>{if(!$("email").reportValidity())return;const {error}=await client.auth.resetPasswordForEmail($("email").value.trim(),{redirectTo:redirect});if(error)throw error;status("Se a conta existir, confira seu e-mail.");});
+$("nameForm").addEventListener("submit",e=>{e.preventDefault();action(async()=>{const name=$("displayName").value.trim();if(!name){status("Digite um nome.");return;}const {error}=await client.auth.updateUser({data:{display_name:name}});if(error)throw error;status("Nome salvo.");});});
+$("logout").onclick=()=>action(async()=>{const {error}=await client.auth.signOut({scope:"local"});if(error)throw error;status("Você saiu da conta.");await render();});
+$("recovery").addEventListener("submit",e=>{e.preventDefault();action(async()=>{const {error}=await client.auth.updateUser({password:$("newPassword").value});if(error)throw error;recoveryMode=false;$("newPassword").value="";history.replaceState(null,"",location.pathname);status("Senha atualizada.");await render();});});
+})();
+</script></body></html>
