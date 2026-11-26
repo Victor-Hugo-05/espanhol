@@ -5,10 +5,12 @@
 <title>Meu perfil · Language Practice</title>
 <style>
 *{box-sizing:border-box}body{margin:0;min-height:100vh;font:16px Arial,sans-serif;color:#292854;background:radial-gradient(circle at 30% 0%,#d9e5ff,#eee8ff 55%,#f5f8ff)}main{width:min(720px,calc(100% - 32px));margin:28px auto}a{color:#514eaf;font-weight:700}section{background:white;border:1px solid #e5e4fc;border-radius:23px;padding:24px;margin-top:18px;box-shadow:0 18px 60px #4d4b881c}h1{margin-top:0}p{line-height:1.55}label{display:block;font-weight:700;margin:14px 0 6px}input{width:100%;padding:12px;border:1px solid #c9c9e9;border-radius:10px;font:inherit}button{font:700 15px Arial;padding:12px 16px;border:0;border-radius:11px;background:#625fca;color:white;cursor:pointer;margin:8px 8px 0 0}button.secondary{color:#514eaf;background:#eeecff}button:disabled{opacity:.5;cursor:default}#status{white-space:pre-wrap;overflow-wrap:anywhere;min-height:24px;color:#55547a}.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px}.stat{background:#f0f1ff;padding:16px;border-radius:14px}.stat strong{font-size:26px;display:block;margin:8px 0}progress{width:100%;accent-color:#625fca}[hidden]{display:none!important}
+ .rank-hero{display:flex;align-items:center;gap:18px;background:#0b1528;color:#f8fafc;padding:18px;border-radius:16px}.rank-hero h3{font-size:24px;margin:0 0 6px}.rank-hero p{margin:5px 0;font-size:14px}.rank-badge{position:relative;width:96px;height:96px;flex-shrink:0;border-radius:12px;background:#0b1528 url("patentes.webp") no-repeat;background-size:300% 200%;margin-bottom:13px}.rank-locked{background-image:none;display:grid;place-items:center;font-size:36px;color:#ddd}.rank-gems{position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);white-space:nowrap;display:flex;gap:3px;padding:3px 7px;background:#0b1528;border:1px solid #53617a;border-radius:9px;color:#596781;font-size:12px}.rank-gems .lit{color:#ffe09a;text-shadow:0 0 6px #ffcf65}.rank-summary{color:#55547a;font-size:14px}.rank-ladder{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}.rank-tier{display:flex;flex-direction:column;align-items:center;text-align:center;font-size:12px;gap:5px}.rank-tier .rank-badge{width:64px;height:64px}.rank-tier.rank-future{opacity:.42}.rank-tier.rank-future .rank-badge{filter:grayscale(.45)}@media(max-width:520px){.rank-ladder{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:16px}.rank-hero{gap:12px;padding:12px}.rank-hero h3{font-size:20px}.rank-hero .rank-badge{width:80px;height:80px}}
 </style>
 <script>window.profileAuthHash = location.hash;</script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.2/dist/umd/supabase.js"></script>
 <script src="profiles-client.js?v=20261126-vocab2"></script>
+<script src="vocab-ranks.js?v=1"></script>
 </head>
 <body><main>
 <a href="index.html">← Voltar ao início</a>
@@ -35,7 +37,7 @@
 <form id="recovery" hidden><label for="newPassword">Nova senha (mínimo 8 caracteres)</label><input id="newPassword" type="password" minlength="8" required autocomplete="new-password"><button>Atualizar senha</button></form>
 </section>
 <section id="vocabAdmin" hidden><h2>Administração</h2><p>Corrija palavras e traduções dos exercícios.</p><a href="editar-vocabulario.html">✏️ Editar vocabulário</a></section>
-<section id="dashboard" hidden><h2>Meu progresso</h2><p id="progressStatus" role="status"></p><div class="stats">
+<section id="dashboard" hidden><h2>Meu progresso</h2><p id="progressStatus" role="status"></p><h3>Patentes</h3><div id="rankPanel" aria-live="polite"></div><p>Uma fila corresponde a cinco unidades consecutivas (125/125 na melhor tentativa de cada unidade). A ordem não importa.</p><div class="stats">
 <div class="stat">🇧🇷 Português<strong id="pt">—</strong><progress id="ptBar" max="40" value="0"></progress><p id="ptScore"></p><a href="testes.html">Praticar português</a></div>
 <div class="stat">🇩🇪 Alemão<strong id="de">—</strong><progress id="deBar" max="120" value="0"></progress><p id="deScore"></p><a href="testes-alemao.html">Praticar alemão</a></div>
 </div></section>
@@ -59,13 +61,15 @@ async function render(){
  $("account").textContent=user.email;
  $("displayName").value=user.user_metadata?.display_name||"";
  $("progressStatus").textContent="Carregando progresso…";
+ $("rankPanel").textContent="Carregando patente…";
  for(const lang of ["pt","de"]){$(lang).textContent="—";$(lang+"Bar").value=0;$(lang+"Score").textContent="";}
  try{
  const results=await Promise.all([api.load("pt"),api.load("de")]);
  if(api.user?.id!==user.id)return;
  ["pt","de"].forEach((lang,i)=>{const entries=Object.values(results[i]||{}),n=entries.length,max=i===0?40:120;$(lang).textContent=n+" / "+max+" unidades";$(lang+"Bar").value=n;$(lang+"Score").textContent=n?"Média dos melhores resultados: "+Math.round(entries.reduce((sum,row)=>sum+row.best,0)/n/25*100)+"%":"Nenhuma unidade concluída ainda.";});
+ if(window.LanguageRanks){window.LanguageRanks.render($("rankPanel"),results[0],results[1]);}else{$("rankPanel").textContent="Patentes indisponíveis. Atualize a página.";} 
  $("progressStatus").textContent="";
- }catch(e){$("progressStatus").textContent="Não foi possível carregar o progresso. Atualize a página.";}
+ }catch(e){$("rankPanel").textContent="Não foi possível calcular a patente."; $("progressStatus").textContent="Não foi possível carregar o progresso. Atualize a página.";}
 }
 if(!client){status("Serviço de contas indisponível. Tente atualizar a página.");return;}
 await api.ready;
