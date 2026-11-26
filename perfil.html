@@ -10,7 +10,7 @@
 <script>window.profileAuthHash = location.hash;</script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.2/dist/umd/supabase.js"></script>
 <script src="profiles-client.js?v=20261126-vocab2"></script>
-<script src="vocab-ranks.js?v=1"></script>
+<script src="vocab-ranks-v2.js?v=1"></script>
 </head>
 <body><main>
 <a href="index.html">← Voltar ao início</a>
@@ -32,12 +32,12 @@
 <div id="member" hidden>
 <p id="account"></p>
 <form id="nameForm"><label for="displayName">Nome de exibição</label><input id="displayName" maxlength="60" required autocomplete="nickname"><button>Salvar nome</button></form>
-<button id="logout" class="secondary">Sair da conta</button>
+<form id="rankingPrivacy"><h3>Privacidade do ranking</h3><label><input style="width:auto" type="checkbox" id="rankOptOut"> Não participar dos rankings</label><label><input style="width:auto" type="checkbox" id="rankShowName"> Exibir meu nome de perfil em vez de um pseudônimo</label><button>Salvar preferências</button></form><button id="logout" class="secondary">Sair da conta</button>
 </div>
 <form id="recovery" hidden><label for="newPassword">Nova senha (mínimo 8 caracteres)</label><input id="newPassword" type="password" minlength="8" required autocomplete="new-password"><button>Atualizar senha</button></form>
 </section>
 <section id="vocabAdmin" hidden><h2>Administração</h2><p>Corrija palavras e traduções dos exercícios.</p><a href="editar-vocabulario.html">✏️ Editar vocabulário</a></section>
-<section id="dashboard" hidden><h2>Meu progresso</h2><p id="progressStatus" role="status"></p><h3>Patentes</h3><div id="rankPanel" aria-live="polite"></div><p>Uma fila corresponde a cinco unidades consecutivas (125/125 na melhor tentativa de cada unidade). A ordem não importa.</p><div class="stats">
+<section id="dashboard" hidden><h2>Meu progresso</h2><p id="progressStatus" role="status"></p><h3>Patentes</h3><h4>🇧🇷 Português</h4><div id="rankPanel" aria-live="polite"></div><h4>🇩🇪 Alemão</h4><div id="rankPanelDe" aria-live="polite"></div><p>Uma fila corresponde a cinco unidades consecutivas (125/125 na melhor tentativa de cada unidade). A ordem não importa.</p><div class="stats">
 <div class="stat">🇧🇷 Português<strong id="pt">—</strong><progress id="ptBar" max="40" value="0"></progress><p id="ptScore"></p><a href="testes.html">Praticar português</a></div>
 <div class="stat">🇩🇪 Alemão<strong id="de">—</strong><progress id="deBar" max="120" value="0"></progress><p id="deScore"></p><a href="testes-alemao.html">Praticar alemão</a></div>
 </div></section>
@@ -59,17 +59,17 @@ async function render(){
  $("recovery").hidden=!recoveryMode;
  if(!user||recoveryMode)return;
  $("account").textContent=user.email;
- $("displayName").value=user.user_metadata?.display_name||"";
+ $("displayName").value=user.user_metadata?.display_name||"";$("rankOptOut").checked=user.user_metadata?.leaderboard_opt_out===true;$("rankShowName").checked=user.user_metadata?.leaderboard_show_name===true;
  $("progressStatus").textContent="Carregando progresso…";
- $("rankPanel").textContent="Carregando patente…";
+ $("rankPanel").textContent="Carregando patente…";$("rankPanelDe").textContent="Carregando patente…";
  for(const lang of ["pt","de"]){$(lang).textContent="—";$(lang+"Bar").value=0;$(lang+"Score").textContent="";}
  try{
  const results=await Promise.all([api.load("pt"),api.load("de")]);
  if(api.user?.id!==user.id)return;
  ["pt","de"].forEach((lang,i)=>{const entries=Object.values(results[i]||{}),n=entries.length,max=i===0?40:120;$(lang).textContent=n+" / "+max+" unidades";$(lang+"Bar").value=n;$(lang+"Score").textContent=n?"Média dos melhores resultados: "+Math.round(entries.reduce((sum,row)=>sum+row.best,0)/n/25*100)+"%":"Nenhuma unidade concluída ainda.";});
- if(window.LanguageRanks){window.LanguageRanks.render($("rankPanel"),results[0],results[1]);}else{$("rankPanel").textContent="Patentes indisponíveis. Atualize a página.";} 
+ if(window.LanguageRanks){window.LanguageRanks.render($("rankPanel"),results[0],"pt");window.LanguageRanks.render($("rankPanelDe"),results[1],"de");}else{$("rankPanel").textContent="Patentes indisponíveis. Atualize a página.";} 
  $("progressStatus").textContent="";
- }catch(e){$("rankPanel").textContent="Não foi possível calcular a patente."; $("progressStatus").textContent="Não foi possível carregar o progresso. Atualize a página.";}
+ }catch(e){$("rankPanel").textContent="Não foi possível calcular a patente.";$("rankPanelDe").textContent="Não foi possível calcular a patente."; $("progressStatus").textContent="Não foi possível carregar o progresso. Atualize a página.";}
 }
 if(!client){status("Serviço de contas indisponível. Tente atualizar a página.");return;}
 await api.ready;
@@ -84,6 +84,7 @@ $("signup").onclick=()=>action(async()=>{if(!$("email").reportValidity())return;
 $("resend").onclick=()=>action(async()=>{if(!$("email").reportValidity())return;const {error}=await client.auth.resend({type:"signup",email:$("email").value.trim(),options:{emailRedirectTo:redirect}});if(error)throw error;status("Se houver uma conta pendente, confira sua caixa de entrada.");});
 $("reset").onclick=()=>action(async()=>{if(!$("email").reportValidity())return;const {error}=await client.auth.resetPasswordForEmail($("email").value.trim(),{redirectTo:redirect});if(error)throw error;status("Se a conta existir, confira seu e-mail.");});
 $("nameForm").addEventListener("submit",e=>{e.preventDefault();action(async()=>{const name=$("displayName").value.trim();if(!name){status("Digite um nome.");return;}const {error}=await client.auth.updateUser({data:{display_name:name}});if(error)throw error;status("Nome salvo.");});});
+$("rankingPrivacy").addEventListener("submit",e=>{e.preventDefault();action(async()=>{const {error}=await client.auth.updateUser({data:{leaderboard_opt_out:$("rankOptOut").checked,leaderboard_show_name:$("rankShowName").checked}});if(error)throw error;status("Preferências salvas.");});});
 $("logout").onclick=()=>action(async()=>{const {error}=await client.auth.signOut({scope:"local"});if(error)throw error;status("Você saiu da conta.");await render();});
 $("recovery").addEventListener("submit",e=>{e.preventDefault();action(async()=>{const {error}=await client.auth.updateUser({password:$("newPassword").value});if(error)throw error;recoveryMode=false;$("newPassword").value="";history.replaceState(null,"",location.pathname);status("Senha atualizada.");await render();});});
 })();
