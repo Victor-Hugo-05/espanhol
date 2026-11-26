@@ -75,16 +75,16 @@
     .vocab-rank .rank-ladder{display:none}
     .rank-note{color:#686b80;font-size:12px;margin:6px 0 0}
     @media(max-width:540px){.vocab-rank{padding:10px}.rank-hero{padding:10px;gap:10px}.rank-hero h3{font-size:19px}.rank-badge{width:72px;height:72px}.rank-hero p{font-size:12px}}
-  </style>
+  .ranking-details{margin-top:14px;border-top:1px solid #e5e4fc;padding-top:12px}.ranking-details summary{cursor:pointer;font-weight:bold;color:#514eaf}.leaderboard-scroll{overflow:auto}.leaderboard-table{width:100%;border-collapse:collapse;font-size:13px;margin-top:8px}.leaderboard-table th,.leaderboard-table td{padding:9px;text-align:left;border-bottom:1px solid #eee;white-space:nowrap}.leaderboard-me{background:#e8e5ff;font-weight:bold}</style>
 </head>
 <body>
   <main class="page">
     <a class="back" href="index.html">← Voltar ao início</a>
     <p id="profileProgressStatus" role="status" style="color:#514eaf;margin:8px 0">Carregando progresso… <a href="perfil.html">Meu perfil</a></p>
     <section class="vocab-rank" aria-labelledby="eloTitle">
-      <h2 id="eloTitle">🏆 Meu elo</h2>
+      <h2 id="eloTitle">🏆 Meu elo · Alemão</h2>
       <div id="vocabRankPanel" aria-live="polite">Carregando patente…</div>
-      <p class="rank-note" id="vocabRankNote"></p>
+      <p class="rank-note" id="vocabRankNote"></p><details class="ranking-details" open><summary>Ranking · Alemão</summary><p class="rank-note">Filas gabaritadas, depois soma dos melhores acertos e unidades perfeitas. <a href="perfil.html">Privacidade do ranking</a></p><div id="languageLeaderboard" aria-live="polite">Carregando…</div></details>
     </section>
     <section id="unitSelection" class="panel">
       <h1 class="title">🧪 Testes</h1>
@@ -123,7 +123,7 @@
   </main>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.2/dist/umd/supabase.js"></script>
   <script src="profiles-client.js?v=20261126-vocab2"></script>
-  <script src="vocab-ranks.js?v=1"></script>
+  <script src="vocab-ranks-v2.js?v=1"></script>
   <script src="testes-vocab-alemao-data.js"></script>
   <script>
     (function () {
@@ -135,37 +135,16 @@
       let game = null;
       const profile = window.LanguageProfiles;
       let accountId = null, accountMode = false, cloudStats = {};
-      let otherRankStats=null, rankAccountReady=false;
-      function localRankStats(prefix,total){
-        const result={};
-        for(let id=1;id<=total;id++){
-          try{const item=JSON.parse(localStorage.getItem(prefix+id)||"null");if(item)result[id]=item;}catch(_){}
-        }
-        return result;
-      }
+      let rankAccountReady=false;
+      function localRankStats(prefix,total){const result={};for(let id=1;id<=total;id++){try{const item=JSON.parse(localStorage.getItem(prefix+id)||"null");if(item)result[id]=item;}catch(_){}}return result;}
       function renderRank(){
         const panel=$("vocabRankPanel"),note=$("vocabRankNote"),ranks=window.LanguageRanks;
         if(!ranks){panel.textContent="Patentes indisponíveis. Atualize a página.";return;}
-        if(accountMode){
-          if(!rankAccountReady||otherRankStats===null){panel.textContent="Não foi possível carregar o elo da conta.";note.textContent="Recarregue a página para tentar novamente.";return;}
-          if(profile.user?.id!==accountId)return;
-          ranks.render(panel,otherRankStats,cloudStats);
-          note.textContent="Patente global · cada fila de 5 unidades gabaritadas vale uma divisão.";
-        }else{
-          ranks.render(panel,localRankStats("ptfr-testes-v1-",40),localRankStats("dept-testes-v1-",120));
-          note.textContent="Modo visitante · elo deste navegador. Entre na sua conta para ver o elo sincronizado.";
-        }
+        if(accountMode&&(!rankAccountReady||profile.user?.id!==accountId)){panel.textContent="Não foi possível carregar o elo da conta.";return;}
+        ranks.render(panel,accountMode?cloudStats:localRankStats("dept-testes-v1-",120),"de");
+        note.textContent=accountMode?"Elo exclusivo deste idioma.":"Modo visitante · elo deste navegador.";
       }
-      async function loadOtherRank(){
-        if(!accountMode){renderRank();return;}
-        try{
-          const result=await profile.load("pt");
-          if(profile.user?.id!==accountId)return;
-          if(!result)throw new Error("Conta indisponível");
-          otherRankStats=result;
-        }catch(e){otherRankStats=null;console.warn("Falha ao carregar elo global:",e);}
-        renderRank();
-      }
+      function refreshLeaderboard(){window.LanguageRanks?.leaderboard($("languageLeaderboard"),profile,"de");}
       const status = (message) => { $("profileProgressStatus").firstChild.textContent = message+" "; };
       function normalize(word) {
         return String(word || "").normalize("NFC").toLocaleLowerCase("pt-BR").replace(/\s+/g, " ").trim();
@@ -288,7 +267,7 @@
               await profile.save("de",unitId,score,gameAccount);
               const old=cloudStats[unitId];cloudStats[unitId]={best:Math.max(old?.best||0,score),last:score,completedAt:Date.now()};
               note.textContent="Progresso salvo no seu perfil.";
-              if(rankAccountReady)renderRank();
+              if(rankAccountReady)renderRank(); refreshLeaderboard();
               if(!selection.classList.contains("hidden"))renderUnits();
             }catch(e){note.textContent="Não foi possível salvar. Verifique a conexão e tente novamente.";const retry=document.createElement("button");retry.className="outline";retry.textContent="Tentar salvar novamente";retry.onclick=()=>{retry.remove();save();};note.append(document.createElement("br"),retry);}
           };
@@ -314,7 +293,7 @@
           if(accountMode){cloudStats=await profile.load("de")||{};rankAccountReady=true;status("Progresso vinculado à sua conta.");}
           else status("Modo visitante · progresso neste navegador.");
         }catch(e){status(accountMode?"Progresso da conta indisponível. Você pode tentar salvar novas conclusões.":"Contas indisponíveis · modo visitante.");}
-        loadOtherRank();
+        renderRank(); refreshLeaderboard();
         if(profile?.client)profile.client.auth.onAuthStateChange((_event,session)=>{if((session?.user.id||null)!==accountId)setTimeout(()=>location.reload(),0);});
         try {
           if(typeof profile?.vocabulary!=="function") throw new Error("Cliente de vocabulário não carregado");
