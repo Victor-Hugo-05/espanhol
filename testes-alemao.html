@@ -105,7 +105,7 @@
   <script>
     (function () {
       "use strict";
-      const units = window.GERMAN_VOCAB_UNITS || [];
+      let units = window.GERMAN_VOCAB_UNITS || [];
       const $ = (id) => document.getElementById(id);
       const selection = $("unitSelection"), exercise = $("exercise"), grid = $("unitGrid");
       const answer = $("answer"), feedback = $("feedback"), next = $("next"), check = $("check");
@@ -257,6 +257,7 @@
           else status("Modo visitante · progresso neste navegador.");
         }catch(e){status(accountMode?"Progresso da conta indisponível. Você pode tentar salvar novas conclusões.":"Contas indisponíveis · modo visitante.");}
         if(profile?.client)profile.client.auth.onAuthStateChange((_event,session)=>{if((session?.user.id||null)!==accountId)setTimeout(()=>location.reload(),0);});
+        try { units=await profile.vocabulary("de",units); } catch(e) { status("Não foi possível carregar as correções mais recentes. Atualize a página."); grid.textContent="Vocabulário indisponível. Tente novamente."; return; }
       if(!units.length) {
         grid.textContent="Não foi possível carregar as palavras. Atualize a página.";
       } else {
