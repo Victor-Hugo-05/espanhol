@@ -21,12 +21,13 @@
       outline: 3px solid rgba(255,255,255,.65);
     }
     .tests-mini-icon { font-size: 28px; line-height: 1; }
-    .profile-mini { right: 132px; }
-    @media(max-width:600px){ .tests-mini{position:static;width:auto;height:auto;min-width:100px;padding:12px;flex-direction:row;} .quick-links{display:flex;justify-content:center;gap:12px;padding:14px;} }
+    .profile-mini { right: 132px; } .lessons-mini { right:244px; }
+    @media(max-width:600px){ .tests-mini{position:static;width:auto;height:auto;min-width:100px;padding:12px;flex-direction:row;} .quick-links{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;padding:14px;} }
   </style>
 </head>
 <body class="home">
   <nav class="quick-links" aria-label="Atalhos">
+  <a class="tests-mini lessons-mini" href="aulas.html"><span class="tests-mini-icon" aria-hidden="true">📅</span><span>Marcar aulas</span></a>
   <a class="tests-mini profile-mini" href="perfil.html" aria-label="Meu perfil"><span class="tests-mini-icon" aria-hidden="true">👤</span><span>Meu perfil</span></a>
   <a class="tests-mini" href="testes.html" aria-label="Testes de vocabulário francês-português">
     <span class="tests-mini-icon" aria-hidden="true">🧪</span>
