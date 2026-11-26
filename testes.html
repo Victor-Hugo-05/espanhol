@@ -63,6 +63,7 @@
 <body>
   <main class="page">
     <a class="back" href="index.html">← Voltar ao início</a>
+    <p id="profileProgressStatus" role="status" style="color:#514eaf;margin:8px 0">Carregando progresso… <a href="perfil.html">Meu perfil</a></p>
     <section id="unitSelection" class="panel">
       <h1 class="title">🧪 Testes</h1>
       <nav class="language-tabs" aria-label="Escolha o idioma do teste">
@@ -98,6 +99,8 @@
       <div id="completion" class="complete hidden"></div>
     </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.2/dist/umd/supabase.js"></script>
+  <script src="profiles-client.js"></script>
   <script src="testes-vocab-data.js"></script>
   <script>
     (function () {
@@ -107,6 +110,9 @@
       const selection = $("unitSelection"), exercise = $("exercise"), grid = $("unitGrid");
       const answer = $("answer"), feedback = $("feedback"), next = $("next"), check = $("check");
       let game = null;
+      const profile = window.LanguageProfiles;
+      let accountId = null, accountMode = false, cloudStats = {};
+      const status = (message) => { $("profileProgressStatus").firstChild.textContent = message+" "; };
       function normalize(word) {
         return String(word || "").normalize("NFC").toLocaleLowerCase("pt-BR").replace(/\s+/g, " ").trim();
       }
@@ -119,6 +125,7 @@
         return a;
       }
       function saved(id) {
+        if (accountMode) return cloudStats[id] || null;
         try { return JSON.parse(localStorage.getItem("ptfr-testes-v1-"+id) || "null"); }
         catch (_) { return null; }
       }
@@ -145,7 +152,7 @@
         history.replaceState(null, "", location.pathname);
       }
       function start(unit) {
-        game={unit, queue:shuffle(unit.palavras), current:null, seen:new Set(), firstRight:0, attempts:0, answered:false};
+        game={unit, accountId, accountMode, queue:shuffle(unit.palavras), current:null, seen:new Set(), firstRight:0, attempts:0, answered:false};
         selection.classList.add("hidden");
         exercise.classList.remove("hidden");
         $("questionArea").classList.remove("hidden");
@@ -213,10 +220,20 @@
         const again=document.createElement("button");again.className="primary";again.textContent="Refazer esta unidade";
         again.addEventListener("click",()=>start(game.unit));
         completion.append(icon,title,stats,again);
-        try {
-          const old=saved(game.unit.id);
-          localStorage.setItem("ptfr-testes-v1-"+game.unit.id,JSON.stringify({best:Math.max(old?.best||0,game.firstRight),last:game.firstRight,completedAt:Date.now()}));
-        } catch(_){}
+        const unitId=game.unit.id, score=game.firstRight;
+        if(game.accountMode) {
+          const note=document.createElement("p");note.setAttribute("role","status");note.textContent="Salvando no perfil…";completion.append(note);
+          const save=async()=>{
+            try{
+              await profile.save("pt",unitId,score,gameAccount);
+              const old=cloudStats[unitId];cloudStats[unitId]={best:Math.max(old?.best||0,score),last:score,completedAt:Date.now()};
+              note.textContent="Progresso salvo no seu perfil.";
+            }catch(e){note.textContent="Não foi possível salvar. Verifique a conexão e tente novamente.";const retry=document.createElement("button");retry.className="outline";retry.textContent="Tentar salvar novamente";retry.onclick=()=>{retry.remove();save();};note.append(document.createElement("br"),retry);}
+          };
+          const gameAccount=game.accountId;save();
+        } else {
+          try {const old=saved(unitId);localStorage.setItem("ptfr-testes-v1-"+unitId,JSON.stringify({best:Math.max(old?.best||0,score),last:score,completedAt:Date.now()}));} catch(_){}
+        }
       }
       $("answerForm").addEventListener("submit",evaluate);
       next.addEventListener("click",showNext);
@@ -226,6 +243,15 @@
           e.preventDefault();showNext();
         }
       });
+      (async function init(){
+        try {
+          await profile?.ready;
+          if(!profile || profile.error) throw new Error("Indisponível");
+          accountId=profile.user?.id||null;accountMode=!!accountId;
+          if(accountMode){cloudStats=await profile.load("pt")||{};status("Progresso vinculado à sua conta.");}
+          else status("Modo visitante · progresso neste navegador.");
+        }catch(e){status(accountMode?"Progresso da conta indisponível. Você pode tentar salvar novas conclusões.":"Contas indisponíveis · modo visitante.");}
+        if(profile?.client)profile.client.auth.onAuthStateChange((_event,session)=>{if((session?.user.id||null)!==accountId)setTimeout(()=>location.reload(),0);});
       if(!units.length) {
         grid.textContent="Não foi possível carregar as palavras. Atualize a página.";
       } else {
@@ -236,6 +262,7 @@
           if(unit)start(unit);
         }
       }
+      })();
     }());
   </script>
 </body>
