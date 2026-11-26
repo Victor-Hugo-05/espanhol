@@ -34,5 +34,14 @@
     const {error: failure} = await client.rpc("save_vocab_progress",{p_language:language,p_unit_id:unitId,p_score:score});
     if (failure) throw failure;
   }
-  window.LanguageProfiles = {client,ready,load,save,get user(){return session?.user || null;},get error(){return error;}};
+  const editorId = "d224477e-a2bc-4872-af4b-bc0d735921e4";
+  async function vocabulary(language, base) {
+    await ready;
+    if (!client) throw new Error("Serviço indisponível");
+    const {data,error:failure}=await client.from("vocab_unit_edits").select("unit_id,title,words").eq("language",language);
+    if(failure) throw failure;
+    const edits=new Map(data.map(row=>[row.unit_id,row]));
+    return base.map(unit=>{const edit=edits.get(unit.id);return edit?{...unit,titulo:edit.title,palavras:edit.words}:unit;});
+  }
+  window.LanguageProfiles = {vocabulary,get isEditor(){return session?.user.id===editorId;},client,ready,load,save,get user(){return session?.user || null;},get error(){return error;}};
 })();
