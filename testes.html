@@ -100,7 +100,7 @@
     </section>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.2/dist/umd/supabase.js"></script>
-  <script src="profiles-client.js"></script>
+  <script src="profiles-client.js?v=20261126-vocab2"></script>
   <script src="testes-vocab-data.js"></script>
   <script>
     (function () {
@@ -252,7 +252,18 @@
           else status("Modo visitante · progresso neste navegador.");
         }catch(e){status(accountMode?"Progresso da conta indisponível. Você pode tentar salvar novas conclusões.":"Contas indisponíveis · modo visitante.");}
         if(profile?.client)profile.client.auth.onAuthStateChange((_event,session)=>{if((session?.user.id||null)!==accountId)setTimeout(()=>location.reload(),0);});
-        try { units=await profile.vocabulary("pt",units); } catch(e) { status("Não foi possível carregar as correções mais recentes. Atualize a página."); grid.textContent="Vocabulário indisponível. Tente novamente."; return; }
+        try {
+          if(typeof profile?.vocabulary!=="function") throw new Error("Cliente de vocabulário não carregado");
+          units=await profile.vocabulary("pt",units);
+          try { localStorage.setItem("vocab-published-cache-pt",JSON.stringify(units)); } catch(_) {}
+        } catch(e) {
+          console.warn("Falha ao consultar correções do vocabulário:",e);
+          try {
+            const cached=JSON.parse(localStorage.getItem("vocab-published-cache-pt")||"null");
+            if(Array.isArray(cached)&&cached.length===units.length&&cached.every((u,i)=>u.id===units[i].id&&Array.isArray(u.palavras)&&u.palavras.length===25)) units=cached;
+          } catch(_) {}
+          status((accountMode?"Modo conta":"Modo visitante")+" · usando a versão disponível do vocabulário; correções recentes podem não aparecer.");
+        }
       if(!units.length) {
         grid.textContent="Não foi possível carregar as palavras. Atualize a página.";
       } else {
