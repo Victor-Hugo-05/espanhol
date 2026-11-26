@@ -34,6 +34,7 @@
 </div>
 <form id="recovery" hidden><label for="newPassword">Nova senha (mínimo 8 caracteres)</label><input id="newPassword" type="password" minlength="8" required autocomplete="new-password"><button>Atualizar senha</button></form>
 </section>
+<section id="vocabAdmin" hidden><h2>Administração</h2><p>Corrija palavras e traduções dos exercícios.</p><a href="editar-vocabulario.html">✏️ Editar vocabulário</a></section>
 <section id="dashboard" hidden><h2>Meu progresso</h2><p id="progressStatus" role="status"></p><div class="stats">
 <div class="stat">🇧🇷 Português<strong id="pt">—</strong><progress id="ptBar" max="40" value="0"></progress><p id="ptScore"></p><a href="testes.html">Praticar português</a></div>
 <div class="stat">🇩🇪 Alemão<strong id="de">—</strong><progress id="deBar" max="120" value="0"></progress><p id="deScore"></p><a href="testes-alemao.html">Praticar alemão</a></div>
@@ -52,6 +53,7 @@ async function render(){
  $("guest").hidden=!!user||recoveryMode;
  $("member").hidden=!user||recoveryMode;
  $("dashboard").hidden=!user||recoveryMode;
+ $("vocabAdmin").hidden=!api.isEditor||recoveryMode;
  $("recovery").hidden=!recoveryMode;
  if(!user||recoveryMode)return;
  $("account").textContent=user.email;
