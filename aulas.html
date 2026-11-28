@@ -31,4 +31,5 @@ $("available").hidden=false;$("mine").hidden=false;$("admin").hidden=!api.isEdit
 $("publish").onsubmit=e=>{e.preventDefault();run(async()=>{if(!api.isEditor)return;const start=parisDate($("day").value,$("time").value),duration=Number($("duration").value);if(start.getTime()<Date.now()+72*3600000)throw Error("Publique um horário com pelo menos 72 horas de antecedência.");const end=new Date(start.getTime()+duration*60000);const {error}=await client.from("lesson_slots").insert({starts_at:start.toISOString(),ends_at:end.toISOString(),language:$("language").value});if(error)throw Error(error.code==="23P01"?"Este horário se sobrepõe a outro já publicado.":error.message);status("Horário publicado.");await refresh();});};
 try{await refresh();status("");}catch(e){status("Não foi possível carregar os horários: "+e.message);}
 })();
-</script></body></html>
+</script><script src="site-language.js?v=20261128-1" defer></script>
+</body></html>
