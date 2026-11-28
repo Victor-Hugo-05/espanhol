@@ -88,4 +88,5 @@ $("rankingPrivacy").addEventListener("submit",e=>{e.preventDefault();action(asyn
 $("logout").onclick=()=>action(async()=>{const {error}=await client.auth.signOut({scope:"local"});if(error)throw error;status("Você saiu da conta.");await render();});
 $("recovery").addEventListener("submit",e=>{e.preventDefault();action(async()=>{const {error}=await client.auth.updateUser({password:$("newPassword").value});if(error)throw error;recoveryMode=false;$("newPassword").value="";history.replaceState(null,"",location.pathname);status("Senha atualizada.");await render();});});
 })();
-</script></body></html>
+</script><script src="site-language.js?v=20261128-1" defer></script>
+</body></html>
